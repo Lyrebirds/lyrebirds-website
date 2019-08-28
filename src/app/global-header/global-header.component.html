@@ -1,1 +1,5 @@
-<p>global-header works!</p>
+<div class="toolbar" role="banner">
+    <nav class="header" *ngFor="let page of pages">
+        <a [routerLink]=page.route>{{ page.name }}</a>
+    </nav>
+</div>
