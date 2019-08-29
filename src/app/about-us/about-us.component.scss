@@ -1,5 +1,15 @@
-.center {
+.content {
     margin: auto;
     width: 50%;
     text-align: center;
 }
+
+.background-image {
+    height:400px; 
+    background-size:cover; 
+    width:auto;
+    background-image:url('/assets/img/harbour.jpg');
+    background-position:50% 50%;
+    opacity: 50%;
+    margin: 0%;
+  }
