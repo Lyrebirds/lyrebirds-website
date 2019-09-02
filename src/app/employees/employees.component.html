@@ -1,4 +1,15 @@
 <h2>Who are we?</h2>
 <div class="content">
-    <app-employee-profile [employee]=employee *ngFor="let employee of employees"></app-employee-profile>
+    <mat-grid-list cols="3" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let employee of employees">
+            <mat-card>
+                <mat-card-title>
+                    {{ employee.name }}
+                </mat-card-title>
+                <mat-card-content>
+                    {{ employee.email }}
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>
