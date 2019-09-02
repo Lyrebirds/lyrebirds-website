@@ -1,5 +1,29 @@
-@import '@angular/material/prebuilt-themes/purple-green.css';
+@import "@angular/material/prebuilt-themes/purple-green.css";
 
 body {
-    margin: auto;
+  margin: auto;
+}
+
+.content {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.background-image {
+  height: 400px;
+  background-size: cover;
+  width: auto;
+  background-image: url("/assets/img/harbour.jpg");
+  background-position: 50% 50%;
+  margin: auto;
+  margin-top: 60px;
+  text-align: center;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 80px;
+  margin-top: 60px;
 }

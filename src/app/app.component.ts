@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lyrebirds';
+  pages = [
+    { route: "/", name: "Home" },
+    { route: "/about", name: "About" },
+    { route: "/contact", name: "Contact" },
+    { route: "/services", name: "Services" },
+  ];
 }
