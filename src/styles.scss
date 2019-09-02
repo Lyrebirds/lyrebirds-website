@@ -6,6 +6,7 @@ body {
 
 .content {
   margin: auto;
+  margin-top: 80px;
   width: 50%;
   text-align: center;
 }
@@ -13,12 +14,9 @@ body {
 .background-image {
   height: 400px;
   background-size: cover;
-  width: auto;
   background-image: url("/assets/img/harbour.jpg");
   background-position: 50% 50%;
-  margin: auto;
   margin-top: 60px;
-  text-align: center;
 }
 
 h1 {
