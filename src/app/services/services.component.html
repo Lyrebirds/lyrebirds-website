@@ -1,5 +1,5 @@
 <div class="content" (window:resize)="onResize($event)">
-    <mat-grid-list [cols]="columns" role="list" gutterSize=10px>
+    <mat-grid-list [cols]="columns" role="list" gutterSize=10px rowHeight="2:1">
         <mat-grid-tile *ngFor="let service of serviceList" role="listitem">
             <mat-card>
                 <mat-card-title>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OUR_SERVICES } from '../ourServices';
 
 @Component({
   selector: 'app-services',
@@ -7,24 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicesComponent implements OnInit {
 
-  serviceList = [
-    {
-      title: 'Red Team',
-      description: 'With this service we simulate a full scale attack'
-    },
-    {
-      title: 'Tech Checkup',
-      description: 'Often times, technology with known vulnerabilities are still in use, due to lack of awareness. Let us check it and update it, as this is quite easy and should be done. Often times, technology with known vulnerabilities are still in use, due to lack of awareness. Let us check it and update it, as this is quite easy and should be done.Often times, technology with known vulnerabilities are still in use, due to lack of awareness. Let us check it and update it, as this is quite easy and should be done. '
-    },
-    {
-      title: 'Employee training/testing',
-      description: 'With this service we simulate a full scale attack'
-    },
-    {
-      title: 'Data security (GDPR)',
-      description: 'With this service we simulate a full scale attack'
-    },
-  ]
+  serviceList = OUR_SERVICES
 
   columns = 2
 
