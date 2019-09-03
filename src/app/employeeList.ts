@@ -1,25 +1,25 @@
 import { Employee } from './employee';
 
 export const EMPLOYEES: Employee[] = [
-    {
-      id: 0,
-      title: 'Lorem Ipsum',
-      name: 'Kasper Kohsel Terndrup',
-      bio: 'Lorem Ipsum',
-      email: 'kter@lyrebirds.dk',
-    },
-    {
-      id: 1,
-      title: 'Lorem Ipsum',
-      name: 'Jens Hegner Stærmose',
-      bio: 'Lorem Ipsum',
-      email: 'jhs@lyrebirds.dk',
-    },
-    {
-      id: 2,
-      title: 'Lorem Ipsum',
-      name: 'Alexander Krog',
-      bio: 'Lorem Ipsum',
-      email: 'akrog@lyrebirds.dk',
-    }
-  ]
+  {
+    id: 0,
+    title: 'Lorem Ipsum',
+    name: 'Kasper Kohsel Terndrup',
+    email: 'kter@lyrebirds.dk',
+    image: "/assets/img/default-avatar.jpg"
+  },
+  {
+    id: 1,
+    title: 'Lorem Ipsum',
+    name: 'Jens Hegner Stærmose',
+    email: 'jhs@lyrebirds.dk',
+    image: "/assets/img/default-avatar.jpg"
+  },
+  {
+    id: 2,
+    title: 'Lorem Ipsum',
+    name: 'Alexander Krog',
+    email: 'akrog@lyrebirds.dk',
+    image: "/assets/img/default-avatar.jpg"
+  }
+]
