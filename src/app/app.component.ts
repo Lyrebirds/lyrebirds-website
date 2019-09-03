@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'lyrebirds';
+  title = 'Lyrebirds';
   pages = [
     { route: "/", name: "Home" },
     { route: "/about", name: "About" },

@@ -2,7 +2,11 @@
     <mat-card fxFlex="0 1 0" *ngFor="let service of serviceList" fxLayout="column">
         <mat-card-title>{{service.title}}</mat-card-title>
         <mat-card-content fxFlex>
-            <p>{{service.description}}</p>
+            <p>{{service.intro}}</p>
+            <div *ngFor="let item of service.body">
+                <h2>{{item.header}}</h2>
+                <p>{{item.content}}</p>
+            </div>
         </mat-card-content>
     </mat-card>
 </div>
