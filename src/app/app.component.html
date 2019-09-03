@@ -2,7 +2,12 @@
 <div class="navigation">
     <mat-toolbar color="primary" class="toolbar">
         <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
-            <mat-icon>menu</mat-icon>
+            <ng-container *ngIf="!sidenav.opened; else elseTemplate">
+                <mat-icon>menu</mat-icon>
+            </ng-container>
+            <ng-template #elseTemplate>
+                <mat-icon>close</mat-icon>
+            </ng-template>
         </button>
         <span>{{ title }}</span>
         <span class="spacer"></span>
@@ -16,13 +21,9 @@
             <mat-nav-list>
                 <a (click)="sidenav.toggle()" mat-list-item [routerLink]=page.route
                     *ngFor="let page of pages">{{ page.name }}</a>
-                <a (click)="sidenav.toggle()" mat-list-item>
-                    <mat-icon>close</mat-icon>
-                    Close
-                </a>
             </mat-nav-list>
         </mat-sidenav>
-        <mat-sidenav-content fxFlexFill>
+        <mat-sidenav-content #content fxFlexFill>
             <router-outlet>
             </router-outlet>
         </mat-sidenav-content>
