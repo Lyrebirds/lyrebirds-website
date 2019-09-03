@@ -18,6 +18,6 @@ export const OUR_SERVICES: Service[] = [
     },
     {
         title: 'Secure your Data',
-        description: `Your data is your business, but are you prepared to lose it? Data can be lost to a destructive attacker, or by unfortunate accidents. Securing your data is a vital precaution, and recovery must be available on demand. We can help you create and evaluate your data security strategy, in order to leverage the best technology has to offer, while making sure that you stay compliant with modern laws such as GDPR or the Cookie Directive`
+        description: `Your data is your business, but are you prepared to lose it? Data can be lost to a destructive attacker, or by unfortunate accidents. Securing your data is a vital precaution, and recovery must be available on demand. We can help you create and evaluate your data security strategy in order to leverage the best technology has to offer, while making sure that you stay compliant with modern laws such as GDPR or the Cookie directive.`
     },
 ]
