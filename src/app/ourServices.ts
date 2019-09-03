@@ -17,7 +17,7 @@ export const OUR_SERVICES: Service[] = [
         description: `Modern attacks are not limited to technological exploitation, and defenses are often breached by assailants targeting well meaning employees. Your defenses are only as secure as the weakest point, and your employees are a major part of those defenses. We offer workshops on recognizing attacks, such as phishing or social engineering, tailored to your specific security strategy. Let us help your company by educating your staff on their part in keeping up IT-security, and transform your employees from liabilities to valuable security assets.`
     },
     {
-        title: 'Data security (GDPR)',
-        description: 'Also cookies'
+        title: 'Secure your Data',
+        description: `Your data is your business, but are you prepared to lose it? Data can be lost to a destructive attacker, or by unfortunate accidents. Securing your data is a vital precaution, and recovery must be available on demand. We can help you create and evaluate your data security strategy, in order to leverage the best technology has to offer, while making sure that you stay compliant with modern laws such as GDPR or the Cookie Directive`
     },
 ]

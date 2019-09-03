@@ -1,14 +1,12 @@
-<div class="content" (window:resize)="onResize($event)">
-    <mat-grid-list [cols]="columns" role="list" gutterSize=10px rowHeight="2:1">
-        <mat-grid-tile *ngFor="let service of serviceList" role="listitem">
-            <mat-card>
-                <mat-card-title>
-                    {{ service.title }}
-                </mat-card-title>
-                <mat-card-content>
-                    {{ service.description }}
-                </mat-card-content>
-            </mat-card>
-        </mat-grid-tile>
-    </mat-grid-list>
-</div>
+<mat-grid-list [cols]="columns" role="list" gutterSize=10px (window:resize)="onResize($event)">
+    <mat-grid-tile *ngFor="let service of serviceList" role="listitem">
+        <mat-card>
+            <mat-card-title>
+                {{ service.title }}
+            </mat-card-title>
+            <mat-card-content>
+                {{ service.description }}
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
