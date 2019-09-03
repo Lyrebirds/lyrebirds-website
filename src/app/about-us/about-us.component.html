@@ -1,5 +1,5 @@
-<h1>Lyrebirds</h1>
-<div class="content">
-    <app-about-company></app-about-company>
-    <app-employees></app-employees>
+<h1 i18n>Who are we?</h1>
+<div class="content" fxLayout="row wrap" fxLayoutAlign="center stretch">
+    <app-employee-profile fxFlex="0 1 0" fxLayout="column" *ngFor="let employee of employees" [employee]=employee>
+    </app-employee-profile>
 </div>

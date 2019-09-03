@@ -19,8 +19,9 @@
     <mat-sidenav-container class="container" fxFlexFill>
         <mat-sidenav #sidenav>
             <mat-nav-list>
-                <a (click)="sidenav.toggle()" mat-list-item [routerLink]=page.route
-                    *ngFor="let page of pages">{{ page.name }}</a>
+                <a (click)="sidenav.toggle()" mat-list-item [routerLink]=page.route *ngFor="let page of pages">
+                    {{ page.name }}
+                </a>
             </mat-nav-list>
         </mat-sidenav>
         <mat-sidenav-content #content fxFlexFill>
