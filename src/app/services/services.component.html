@@ -1,12 +1,8 @@
-<mat-grid-list [cols]="columns" role="list" gutterSize=10px (window:resize)="onResize($event)">
-    <mat-grid-tile *ngFor="let service of serviceList" role="listitem">
-        <mat-card>
-            <mat-card-title>
-                {{ service.title }}
-            </mat-card-title>
-            <mat-card-content>
-                {{ service.description }}
-            </mat-card-content>
-        </mat-card>
-    </mat-grid-tile>
-</mat-grid-list>
+<div class="content" fxLayout="row wrap" fxLayoutAlign="center stretch">
+    <mat-card fxFlex="0 1 0" *ngFor="let service of serviceList" fxLayout="column">
+        <mat-card-title>{{service.title}}</mat-card-title>
+        <mat-card-content fxFlex>
+            <p>{{service.description}}</p>
+        </mat-card-content>
+    </mat-card>
+</div>

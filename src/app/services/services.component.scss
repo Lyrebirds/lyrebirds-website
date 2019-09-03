@@ -1,7 +1,10 @@
-mat-card {
-  text-align: center;
-}
-
 :host {
   background-image: url("/assets/img/harbour.jpg");
+}
+
+mat-card {
+  min-width: 300px;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 20px;
 }
