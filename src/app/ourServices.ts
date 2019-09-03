@@ -10,7 +10,7 @@ export const OUR_SERVICES: Service[] = [
     },
     {
         title: 'Tech Checkup',
-        description: `IT-Security is constantly evolving with vulnerabilities being constantly discovered and corrected. Have you been keeping up with the latest news on the software your company uses, and whether or not it is still safe? We have, and we'll help you assess your preferred tools, so that your can safely leverage the technology.`
+        description: `IT-Security is constantly evolving with vulnerabilities being constantly discovered and corrected. Have you been keeping up with the latest news on the software your company uses, and whether or not it is still safe? We have, and we'll help you assess your preferred tools, so that your can safely leverage the technology in your daily operation.`
     },
     {
         title: 'Employee Training',
@@ -18,6 +18,6 @@ export const OUR_SERVICES: Service[] = [
     },
     {
         title: 'Secure your Data',
-        description: `Your data is your business, but are you prepared to lose it? Data can be lost to a destructive attacker, or by unfortunate accidents. Securing your data is a vital precaution, and recovery must be available on demand. We can help you create and evaluate your data security strategy in order to leverage the best technology has to offer, while making sure that you stay compliant with modern laws such as GDPR or the Cookie directive.`
+        description: `Your data is your business, but are you prepared to lose it? Data can be lost to a destructive attack, or by unfortunate accidents. Securing your data is a vital precaution, and recovery must be available on demand. We can help you create and evaluate your data security strategy, while making sure that you stay compliant with modern laws such as GDPR or the Cookie directive.`
     },
 ]
