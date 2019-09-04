@@ -1,0 +1,28 @@
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+$lyrebirds-typography: mat-typography-config(
+  $font-family: "Cairo, sans-serif",
+  $display-4: mat-typography-level(96px, 96px, 300, $letter-spacing: -0.05em),
+  $display-3: mat-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
+  $display-2: mat-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
+  $display-1: mat-typography-level(34px, 40px, 400),
+  $headline: mat-typography-level(24px, 32px, 400),
+  $title: mat-typography-level(20px, 32px, 500),
+  $subheading-2: mat-typography-level(16px, 28px, 400),
+  $subheading-1: mat-typography-level(15px, 24px, 400),
+  $body-2: mat-typography-level(14px, 24px, 500),
+  $body-1: mat-typography-level(14px, 20px, 400),
+  $caption: mat-typography-level(12px, 20px, 400),
+  $button: mat-typography-level(14px, 14px, 500),
+  $input: mat-typography-level(inherit, 1.125, 400)
+);
+
+@include mat-core($lyrebirds-typography);
+
+$lyrebirds-primary: mat-palette($mat-red);
+$lyrebirds-accent: mat-palette($mat-pink, A200, A100, A400);
+$lyrebirds-warn: mat-palette($mat-red);
+$lyrebirds-theme: mat-light-theme($lyrebirds-primary, $lyrebirds-accent, $lyrebirds-warn);
+
+@include angular-material-theme($lyrebirds-theme);

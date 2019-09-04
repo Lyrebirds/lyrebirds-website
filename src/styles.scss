@@ -1,19 +1,8 @@
-@import "@angular/material/prebuilt-themes/purple-green.css";
-
-body {
-  margin: auto;
-}
+@import "theme";
 
 .content {
   margin: auto;
   margin-top: 80px;
   width: 80%;
   text-align: center;
-}
-
-h1 {
-  margin: auto;
-  text-align: center;
-  font-size: 80px;
-  margin-top: 60px;
 }

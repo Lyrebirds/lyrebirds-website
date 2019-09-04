@@ -1,8 +1,11 @@
 <div class="content" fxLayout="row wrap" fxLayoutAlign="center stretch">
-    <mat-card fxFlex="0 1 0" *ngFor="let service of serviceList" fxLayout="column">
+    <mat-card fxFlex="1 1 0" *ngFor="let service of serviceList" fxLayout="column">
         <mat-card-title>{{service.title}}</mat-card-title>
-        <mat-card-content fxFlex>
+        <mat-card-content>
             <p>{{service.intro}}</p>
+        </mat-card-content>
+        <img mat-card-image src="{{service.image}}">
+        <mat-card-content>
             <div *ngFor="let item of service.body">
                 <h2>{{item.header}}</h2>
                 <p>{{item.content}}</p>
