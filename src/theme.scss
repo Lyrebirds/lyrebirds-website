@@ -2,7 +2,7 @@
 // Plus imports for other components in your app.
 
 $lyrebirds-typography: mat-typography-config(
-  $font-family: "Cairo, sans-serif",
+  $font-family: "Nunito Sans, sans-serif",
   $display-4: mat-typography-level(96px, 96px, 300, $letter-spacing: -0.05em),
   $display-3: mat-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
   $display-2: mat-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
@@ -21,7 +21,7 @@ $lyrebirds-typography: mat-typography-config(
 @include mat-core($lyrebirds-typography);
 
 $lyrebirds-primary: mat-palette($mat-red);
-$lyrebirds-accent: mat-palette($mat-pink, A200, A100, A400);
+$lyrebirds-accent: mat-palette($mat-green);
 $lyrebirds-warn: mat-palette($mat-red);
 $lyrebirds-theme: mat-light-theme($lyrebirds-primary, $lyrebirds-accent, $lyrebirds-warn);
 
