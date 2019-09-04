@@ -19,7 +19,7 @@ export const OUR_SERVICES: Service[] = [
     },
     {
         title: 'Tech Checkup',
-        intro: `IT-Security is constantly evolving with vulnerabilities being constantly discovered and corrected. Have you been keeping up with the latest news on the software your company uses, and whether or not it is still safe? We have, and we'll help you assess your preferred tools, so that your can safely leverage the technology in your daily operation.`,
+        intro: `IT-Security is always evolving with vulnerabilities being constantly discovered and corrected. Have you been keeping up with the latest news on the software your company uses, and whether or not it is still safe? We have, and we'll help you assess your preferred tools, so that your can safely leverage the technology in your daily operation.`,
         body: [],
         image: "/assets/img/router_laptop.jpg"
     },
