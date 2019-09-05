@@ -14,7 +14,7 @@ export class AppComponent {
     { route: "/services", name: "Services" },
   ];
 
-  scrollLimit: number = 170;
+  scrollLimit: number = 100;
   scrolled: boolean = false;
 
   constructor() { }
