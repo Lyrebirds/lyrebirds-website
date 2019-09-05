@@ -25,6 +25,14 @@
 
 .container {
   flex: 1 0 auto;
-  background-image: url("/assets/img/horizont_javascript_far.jpg");
+  background-color: whitesmoke;
   background-size: cover;
+}
+
+.mat-nav-list {
+  margin-top: 60px;
+}
+
+.mat-list-item {
+  margin-bottom: 20px;
 }

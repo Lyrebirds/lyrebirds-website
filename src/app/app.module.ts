@@ -11,6 +11,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { ServicesComponent } from './services/services.component';
 import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
+import { PageTemplateComponent } from './page-template/page-template.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EmployeeProfileComponent } from './employee-profile/employee-profile.co
     ContactUsComponent,
     AboutCompanyComponent,
     ServicesComponent,
-    EmployeeProfileComponent
+    EmployeeProfileComponent,
+    PageTemplateComponent
   ],
   imports: [
     BrowserModule,

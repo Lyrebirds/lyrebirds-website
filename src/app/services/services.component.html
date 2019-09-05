@@ -1,21 +1,23 @@
-<div class="content" fxLayout="row wrap" fxLayoutAlign="center stretch">
-    <mat-card *ngFor="let service of serviceList" fxLayout="column">
-        <mat-card-title>
-            <div class="card-image-container">
-                <img mat-card-image src="{{service.image}}">
-                <div class="center-over-image mat-display-2">
-                    {{service.title}}
+<app-page-template [title]="'What we do'">
+    <div fxLayout="row wrap" fxLayoutAlign="center stretch">
+        <mat-card *ngFor="let service of serviceList" fxLayout="column">
+            <mat-card-title>
+                <div class="card-image-container">
+                    <img mat-card-image src="{{service.image}}">
+                    <div class="center-over-image mat-display-2">
+                        {{service.title}}
+                    </div>
                 </div>
-            </div>
-        </mat-card-title>
-        <mat-card-content>
-            <p>{{service.intro}}</p>
-        </mat-card-content>
-        <mat-card-content>
-            <div *ngFor="let item of service.body">
-                <h2>{{item.header}}</h2>
-                <p>{{item.content}}</p>
-            </div>
-        </mat-card-content>
-    </mat-card>
-</div>
+            </mat-card-title>
+            <mat-card-content>
+                <p>{{service.intro}}</p>
+            </mat-card-content>
+            <mat-card-content>
+                <div *ngFor="let item of service.body">
+                    <h2>{{item.header}}</h2>
+                    <p>{{item.content}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</app-page-template>
