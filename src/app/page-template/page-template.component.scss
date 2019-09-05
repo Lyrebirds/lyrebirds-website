@@ -4,12 +4,21 @@ html {
 }
 
 .hero-image {
-  height: 40%;
-  min-height: 350px;
+  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+@media screen and (max-width: 959px) {
+  .hero-image {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 }
 
 .hero-text {
