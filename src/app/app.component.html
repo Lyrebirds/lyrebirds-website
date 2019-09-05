@@ -11,7 +11,8 @@
                 <mat-icon>close</mat-icon>
             </ng-template>
         </button>
-        <span>{{ title }}</span>
+        <span [ngClass.gt-sm]="['spacer']"></span>
+        <div class="mat-headline">{{ title }}</div>
         <span class="spacer"></span>
         <div fxShow="true" fxHide.lt-md="true">
             <a mat-button [routerLink]=page.route *ngFor="let page of pages">
@@ -20,6 +21,7 @@
                 </div>
             </a>
         </div>
+        <span [ngClass.gt-sm]="['spacer']"></span>
     </mat-toolbar>
 
     <mat-sidenav-container class="container" fxFlexFill>
