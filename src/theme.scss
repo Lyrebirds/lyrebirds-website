@@ -20,7 +20,7 @@ $lyrebirds-typography: mat-typography-config(
 
 @include mat-core($lyrebirds-typography);
 
-$lyrebirds-primary: mat-palette($mat-red);
+$lyrebirds-primary: mat-palette($mat-teal, 800);
 $lyrebirds-accent: mat-palette($mat-green);
 $lyrebirds-warn: mat-palette($mat-red);
 $lyrebirds-theme: mat-light-theme($lyrebirds-primary, $lyrebirds-accent, $lyrebirds-warn);

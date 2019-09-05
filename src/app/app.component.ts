@@ -6,11 +6,33 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Lyrebirds';
+  title: string = 'Lyrebirds';
   pages = [
     { route: "/", name: "Home" },
     { route: "/about", name: "About" },
     { route: "/contact", name: "Contact" },
     { route: "/services", name: "Services" },
   ];
+
+  scrollLimit: number = 170;
+  scrolled: boolean = false;
+
+  constructor() { }
+
+  ngOnInit() {
+    window.addEventListener('scroll', this.scroll, true)
+  }
+
+  ngOnDestroy() {
+    window.removeEventListener('scroll', this.scroll, true);
+  }
+
+  onActivate(event) {
+    document.querySelector('mat-sidenav-content').scrollTo(0, 0);
+    this.scrolled = false;
+  }
+
+  scroll = (event: any): void => {
+    this.scrolled = event.srcElement.scrollTop > this.scrollLimit;
+  }
 }

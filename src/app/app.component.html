@@ -1,8 +1,9 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
 <div class="navigation">
-    <mat-toolbar color="primary" class="toolbar">
-        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+    <mat-toolbar color="primary" [ngClass]="{'toolbar': true, 'transparent': false }"
+        [ngClass.gt-sm]="{'toolbar': true, 'transparent': !scrolled }">
+        <button mat-icon-button (click)="sidenav.toggle();" fxShow="true" fxHide.gt-sm>
             <ng-container *ngIf="!sidenav.opened; else elseTemplate">
                 <mat-icon>menu</mat-icon>
             </ng-container>
@@ -32,7 +33,7 @@
             </mat-nav-list>
         </mat-sidenav>
         <mat-sidenav-content #content fxFlexFill>
-            <router-outlet>
+            <router-outlet (activate)="onActivate($event)">
             </router-outlet>
         </mat-sidenav-content>
     </mat-sidenav-container>
