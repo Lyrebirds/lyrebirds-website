@@ -19,6 +19,16 @@
 .toolbar {
   position: fixed;
   z-index: 2;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  &.transparent {
+    box-shadow: none;
+  }
+}
+
+.transparent {
+  background-color: transparent;
 }
 
 .mat-headline {
@@ -43,8 +53,4 @@
 
 .mat-list-item {
   margin-bottom: 20px;
-}
-
-.transparent {
-  background-color: transparent;
 }
