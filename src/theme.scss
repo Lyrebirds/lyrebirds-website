@@ -25,4 +25,16 @@ $lyrebirds-accent: mat-palette($mat-green);
 $lyrebirds-warn: mat-palette($mat-red);
 $lyrebirds-theme: mat-light-theme($lyrebirds-primary, $lyrebirds-accent, $lyrebirds-warn);
 
+@mixin footer-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  footer {
+    text-align: center;
+    color: whitesmoke;
+    background-color: mat-color($primary);
+  }
+}
+
 @include angular-material-theme($lyrebirds-theme);
+@include footer-theme($lyrebirds-theme);

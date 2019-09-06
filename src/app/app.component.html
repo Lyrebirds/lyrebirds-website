@@ -35,9 +35,15 @@
                 </a>
             </mat-nav-list>
         </mat-sidenav>
-        <mat-sidenav-content #content fxFlexFill>
+        <mat-sidenav-content #content fxLayout="column" fxLayoutAlign="space-between">
             <router-outlet (activate)="onActivate($event)">
             </router-outlet>
+            <div fxFlex="1 1 0"></div>
+            <footer fxFlex="0 0 100px">
+                <div>
+                    <p>Basic Footer</p>
+                </div>
+            </footer>
         </mat-sidenav-content>
     </mat-sidenav-container>
 </div>
