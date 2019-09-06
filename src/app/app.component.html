@@ -5,10 +5,10 @@
         [ngClass.gt-sm]="{'toolbar': true, 'transparent': !scrolled }">
         <button mat-icon-button (click)="sidenav.toggle();" fxShow="true" fxHide.gt-sm>
             <ng-container *ngIf="!sidenav.opened; else elseTemplate">
-                <mat-icon>menu</mat-icon>
+                <mat-icon inline=true>menu</mat-icon>
             </ng-container>
             <ng-template #elseTemplate>
-                <mat-icon>close</mat-icon>
+                <mat-icon inline=true>close</mat-icon>
             </ng-template>
         </button>
         <span fxFlex.gt-sm="1 1 auto"></span>
