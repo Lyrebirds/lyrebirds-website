@@ -12,6 +12,7 @@ import { AboutCompanyComponent } from './about-company/about-company.component';
 import { ServicesComponent } from './services/services.component';
 import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
 import { PageTemplateComponent } from './page-template/page-template.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PageTemplateComponent } from './page-template/page-template.component';
     AboutCompanyComponent,
     ServicesComponent,
     EmployeeProfileComponent,
-    PageTemplateComponent
+    PageTemplateComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
