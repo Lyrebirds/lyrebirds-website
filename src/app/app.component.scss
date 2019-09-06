@@ -25,6 +25,10 @@
   text-align: left;
 }
 
+.button-hover:hover {
+  background-color: rgba(80, 80, 80, 0.25);
+}
+
 .container {
   flex: 1 0 auto;
   background-color: whitesmoke;
