@@ -2,12 +2,6 @@ mat-card {
   width: 500px;
   text-align: center;
   margin: 20px;
-  margin-bottom: 20px;
-}
-
-p {
-  text-align: left;
-  font-size: 16px;
 }
 
 mat-card-content {
@@ -36,4 +30,11 @@ h2 {
 .mat-card img {
   max-height: 333px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mat-body-2 {
+  max-width: 800px;
+  width: 90%;
+  margin: 50px auto;
+  text-align: left;
 }
