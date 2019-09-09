@@ -1,2 +1,32 @@
 <app-page-template [title]="'Contact us!'">
+    <p></p>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" fxLayout="column">
+        <mat-form-field>
+            <input matInput placeholder="Enter your name" formControlName="name" required>
+            <mat-error *ngIf="hasError('email','required')">Name required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Enter your email" formControlName="email" required>
+            <mat-error *ngIf="hasError('email','required')">Email required</mat-error>
+            <mat-error *ngIf="hasError('email','email')">Not a valid email</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Phone number" formControlName="phone">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Subject" formControlName="subject">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Write a message" formControlName="text" required>
+            <mat-error *ngIf="hasError('email','required')">Message required</mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button type="submit" [disabled]="!contactForm.valid">Send Message</button>
+
+
+    </form>
 </app-page-template>

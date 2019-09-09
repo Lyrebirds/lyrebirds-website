@@ -13,6 +13,9 @@ import { ServicesComponent } from './services/services.component';
 import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
 import { PageTemplateComponent } from './page-template/page-template.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     SharedModule,
     FlexLayoutModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
