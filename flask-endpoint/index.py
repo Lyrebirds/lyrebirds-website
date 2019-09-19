@@ -22,6 +22,8 @@ def contact():
     
     #querystring = {"id": "createCard", "name": subject, "idList": contactBoardListId}
 
+    print('test')
+
     response = requests.post(url)
 
     return response.text
