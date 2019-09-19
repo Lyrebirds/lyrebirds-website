@@ -50,6 +50,10 @@ export const OUR_SERVICES: Service[] = [
             {
                 header: 'Security Workshops',
                 content: `We offer workshops on recognizing attacks, such as phishing or social engineering, tailored to your specific security strategy. Let us help your company by educating your staff on their part in keeping up IT-security, and transform your employees from liabilities to valuable security assets.`
+            },
+            {
+                header: 'Contingency Planning',
+                content: `While we believe that you should strive towards the best defense you can get, you should always have a plan for security failure scenarios. Depending on the attack, the ability to quickly react correctly can be crucial. Let us help you construct contingency plans, so that in the event of a security failure, you know who to contact and how to start the recovery.`
             }
         ],
         image: "/assets/img/harbour.jpg"
