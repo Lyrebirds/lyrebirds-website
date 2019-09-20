@@ -17,7 +17,7 @@ export const EMPLOYEES: Employee[] = [
   },
   {
     id: 2,
-    title: 'Specialist',
+    title: 'Consultant',
     name: 'Alexander Krog',
     email: 'akrog@lyrebirds.dk',
     image: "/assets/img/default-avatar.jpg"
