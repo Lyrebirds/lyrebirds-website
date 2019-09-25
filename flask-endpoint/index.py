@@ -26,9 +26,6 @@ slackUrl = f"https://hooks.slack.com/services/THWQR4ACU/BN3DDK5EU/{slackAppToken
 
 @app.route("/contact", methods = ['POST'])
 def contact():
-    print(request.get_json())
-    print(request.get_data())
-    print(request.args)
     name = request.get_json()['name']
     email = request.get_json()['email']
     phone = request.get_json()['phone']

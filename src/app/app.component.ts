@@ -9,7 +9,7 @@ export class AppComponent {
   title: string = 'Lyrebirds';
   pages = [
     { route: "/", name: "Home" },
-    { route: "/about", name: "About" },
+    //{ route: "/about", name: "About" },
     { route: "/contact", name: "Contact" },
     { route: "/services", name: "Services" },
   ];
