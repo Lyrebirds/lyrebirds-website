@@ -1,4 +1,16 @@
 <app-page-template [title]="'Who are we?'">
+    <p class="mat-body-2 intro" i18n>
+        Lyrebirds was founded by three software engineers, with different industry experiences. Our motivation for
+        starting Lyrebirds, came from first hand experience, with how insufficient the security is, in many important
+        IT-systems. We have seen how great IT-systems can really make a difference when embraced by companies and their
+        customers. But in order to maintain the trust in technology, the technology must be trustworthy.
+    </p>
+    <p class="mat-body-2 intro" i18n>
+        Security can be a difficult task, and sometimes new technological errors are discovered which endangers even the
+        most vigilant defenses. However, breaches and leaks are just as frequently caused by lack of proper
+        security maintenance. We believe that we can support your company's trust in technology, freeing you to focus on
+        your business.
+    </p>
     <div fxLayout="row wrap" fxLayoutAlign="center center">
         <app-employee-profile fxFlex="0 1 0" fxLayout="column" *ngFor="let employee of employees" [employee]=employee>
         </app-employee-profile>
