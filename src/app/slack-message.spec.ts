@@ -1,7 +1,7 @@
-import { SlackMessage } from './slack-message';
+import { ContactMessage } from './slack-message';
 
 describe('SlackMessage', () => {
   it('should create an instance', () => {
-    expect(new SlackMessage()).toBeTruthy();
+    expect(new ContactMessage()).toBeTruthy();
   });
 });

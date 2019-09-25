@@ -12,6 +12,7 @@ flask = "*"
 requests = "*"
 flask-limiter = "*"
 gunicorn = "*"
+dataclasses-json = "*"
 
 [requires]
 python_version = "3.7"
