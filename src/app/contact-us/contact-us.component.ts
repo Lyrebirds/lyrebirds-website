@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SlackService } from '../services/slack.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { SlackMessage } from '../slack-message';
+import { ContactMessage } from '../slack-message';
 
 @Component({
   selector: 'app-contact-us',
@@ -34,7 +34,7 @@ export class ContactUsComponent implements OnInit {
     const text = this.contactForm.value['text'];
     const email = this.contactForm.value['email'];
     const phone = this.contactForm.value['phone'];
-    this.slack.sendMessage(new SlackMessage(name, email, phone, subject, text));
+    this.slack.sendMessage(new ContactMessage(name, email, phone, subject, text));
   }
 
   hasError = (controlName: string, errorName: string) => {
