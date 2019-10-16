@@ -64,7 +64,7 @@ export const OUR_SERVICES: Service[] = [
         body: [
             {
                 header: 'Data Access Control',
-                content: `It is not always desireable to have execute strategy documents shared with your entire organization. Having control of data access will limit risks of exposure of internal information or breaking GDPR agreements with your costumers.`
+                content: `It is not always desireable to have executive strategy documents shared with your entire organization. Having control of data access will limit risks of exposure of internal information or breaking GDPR agreements with your customers.`
             },
             {
                 header: 'Encryption',
