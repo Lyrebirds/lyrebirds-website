@@ -2,44 +2,45 @@
     <p class="mat-body-2 intro" i18n>
         Whether you have questions about our services, your own security, or otherwise, you can always contact us. Feel
         free to write us an email at <a href="mailto:contact@lyrebirds.dk" target="_blank">contact@lyrebirds.dk</a> or
-        fill out the form below and
-        we will get back to you as soon possible.</p>
+        fill out the form below and we will get back to you as soon possible.</p>
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactForm">
 
         <mat-form-field class="input-field">
-            <input matInput placeholder="Enter your name" formControlName="name" required>
-            <mat-error *ngIf="hasError('name','required')">Name required</mat-error>
+            <input matInput placeholder="Enter your name" formControlName="name" required i18n-placeholder>
+            <mat-error *ngIf="hasError('name','required')" i18n>Name required</mat-error>
         </mat-form-field>
 
         <mat-form-field class="input-field">
-            <input matInput placeholder="Enter your email" formControlName="email" required>
-            <mat-error *ngIf="hasError('email','required')">Email required</mat-error>
-            <mat-error *ngIf="hasError('email','email')">Not a valid email</mat-error>
+            <input matInput placeholder="Enter your email" formControlName="email" required i18n-placeholder>
+            <mat-error *ngIf="hasError('email','required')" i18n>Email required</mat-error>
+            <mat-error *ngIf="hasError('email','email')" i18n>Not a valid email</mat-error>
         </mat-form-field>
 
         <mat-form-field class="input-field">
-            <input matInput placeholder="Phone number" formControlName="phone">
+            <input matInput placeholder="Phone number" formControlName="phone" i18n-placeholder>
         </mat-form-field>
 
         <mat-form-field class="input-field">
-            <input matInput placeholder="Subject" formControlName="subject">
+            <input matInput placeholder="Subject" formControlName="subject" i18n-placeholder>
         </mat-form-field>
 
         <mat-form-field class="input-field" appearance="fill">
-            <textarea matInput placeholder="Write a message" formControlName="text" required rows="10"></textarea>
-            <mat-error *ngIf="hasError('text','required')">Message required</mat-error>
+            <textarea matInput placeholder="Write a message" formControlName="text" required rows="10"
+                i18n-placeholder></textarea>
+            <mat-error *ngIf="hasError('text','required')" i18n>Message required</mat-error>
         </mat-form-field>
 
-        <button mat-raised-button type="submit" [disabled]="!contactForm.valid" color="warn">Send Message</button>
+        <button mat-raised-button type="submit" [disabled]="!contactForm.valid" color="warn" i18n>Send Message</button>
     </form>
 
     <mat-divider></mat-divider>
 
     <p class="mat-body-2 intro" i18n>
-        For secure communication, please use our public PGP key 
+        For secure communication, please use our public PGP key
     </p>
     <mat-card class="mat-body-2">
-        <mat-card-content class="pgp-signature" matTooltip="Click to copy PGP-key" matTooltipPosition="above" (click)="copyPGPKey()">
+        <mat-card-content class="pgp-signature" matTooltip="Click to copy PGP-key" matTooltipPosition="above"
+            (click)="copyPGPKey()" i18n-matTooltip>
             <code id="PUBLIC-PGP-KEY" style="word-break: break-all;" fxLayoutAlign="center center">
 -----BEGIN PGP PUBLIC KEY BLOCK-----<br>
 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=+E8o<br>
