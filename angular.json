@@ -61,6 +61,39 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "dk": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "outputPath": "dist/dk/",
+              "i18nFile": "src/i18n/messages.dk.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "dk",
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
             }
           }
         },
@@ -72,6 +105,9 @@
           "configurations": {
             "production": {
               "browserTarget": "lyrebirds-web:build:production"
+            },
+            "dk": {
+              "browserTarget": "lyrebirds-web:build:dk"
             }
           }
         },
@@ -124,6 +160,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "lyrebirds-web"
 }

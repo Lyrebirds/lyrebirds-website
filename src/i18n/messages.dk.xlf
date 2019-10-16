@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="ng2.template" source-language="en" target-language="da" datatype="plaintext">
+    <body>
+      <trans-unit datatype="html" approved="no" id="ef6c1ef8df3fff95c370de363a2363e7a9bb25b2"><source>
+        Lyrebirds was founded by three software engineers, with different industry experiences. Our motivation for
+        starting Lyrebirds, came from first hand experience, with how insufficient the security is, in many important
+        IT-systems. We have seen how great IT-systems can really make a difference when embraced by companies and their
+        customers. But in order to maintain the trust in technology, the technology must be trustworthy.
+    </source><target xml:lang="da" state="new">Lyrebirds blev startet af tre software ingeniører, med hver sin baggrund i IT-industrien. Motiviation bag Lyrebirds, kom fra førstehåndserfaring med hvor mangelfuld IT-sikkerhed desværre ofte er. Vi har oplevet hvordan IT systemer kan gøre en positiv forskel, når virksomheder og deres kunder kommer dem i møde. Men hvis tilliden til teknologien skal bibeholdes, skal teknologien være troværdig.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-us/about-us.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="aa98a8910b11c6d8b03dbb4bfad4d225ebb7e44c"><source>
+        Security can be a difficult task, and sometimes new technological errors are discovered which endangers even the
+        most vigilant defenses. However, breaches and leaks are just as frequently caused by lack of proper
+        security maintenance. We believe that we can support your company's trust in technology, freeing you to focus on
+        your business.
+    </source><target xml:lang="da" state="new">Sikkerhed kan være en vanskelig opgave, og nogle gange opdages teknologiske fejltrin, der kan tvinge selv det bedste forsvar i knæ. Men langt oftere er sikkerhedsbrister forårsaget af mangefuld opsætning og vedligeholdelse. Vi kan understøtte din tillid til teknologien, så du bliver frigjort til at fokusere på at drive din virksomhed.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-us/about-us.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="53c884cff4c1a3be0c9ba83d3548fdfecdb0a6a0"><source>
+        Whether you have questions about our services, your own security, or otherwise, you can always contact us. Feel
+        free to write us an email at <x equiv-text="&lt;a&gt;" ctype="x-a" id="START_LINK"/>contact@lyrebirds.dk<x equiv-text="&lt;/a&gt;" ctype="x-a" id="CLOSE_LINK"/> or
+        fill out the form below and we will get back to you as soon possible.</source><target xml:lang="da" state="new">Uanset om du har spørgsmål til vores tjenester, din egen sikkerhed eller andet, kan du altid kontakte os. Skriv gerne en e-mail til os via <x equiv-text="&lt;a&gt;" ctype="x-a" id="START_LINK"/> contact@lyrebirds.dk <x equiv-text="&lt;/a&gt;" ctype="x-a" id="CLOSE_LINK"/> eller udfyld formularen nedenfor. Så vender vi tilbage til dig så hurtigt som muligt.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="620ba8f74432771cec99850c63742aa11e19be33"><source>Enter your name</source><target xml:lang="da" state="new">Indtast dit navn</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="yes" id="4f25015c69f7e23714c642e14a711938efeab311"><source>Name required</source><target xml:lang="da" state="translated">Navn påkrævet</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="d9e4cf9eeb85c466d32b89f8572e8cce0081eb1b"><source>Enter your email</source><target xml:lang="da" state="new">Indtast din e-mail</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="234ce1f48e2e7c754873c9728092e878e08cf71d"><source>Email required</source><target xml:lang="da" state="translated">E-mail påkrævet</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group><?sid 1110954287-0?><alt-trans origin="autoFuzzy" tool="Swordfish" match-quality="74" ts="4">
+<source xml:lang="en">Name required</source>
+<target state="translated" xml:lang="da">Navn påkrævet</target>
+</alt-trans></trans-unit>
+      <trans-unit datatype="html" approved="no" id="67e487efd39c632566aed29b721ce9c4af5a4753"><source>Not a valid email</source><target xml:lang="da" state="new">Ikke en gyldig e-mail</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="63e1d28508d11998ba489a6ea4d8349e837162f5"><source>Phone number</source><target xml:lang="da" state="new">Telefonnummer</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="4b0ca852bafa5037c4e64c7b18f9cd1e14b799de"><source>Subject</source><target xml:lang="da" state="new">Emne</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="d78c37cd1afaf89d8d87a95c3e0e4734afaccd30"><source>Write a message</source><target xml:lang="da" state="new">Skriv din besked</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="58c8fb1249daa11b5c32623106a5e22fadb9ace2"><source>Message required</source><target xml:lang="da" state="new">Besked påkrævet</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="7d175f1b7310aecce08c1141c9ba8588b8642a99"><source>Send Message</source><target xml:lang="da" state="new">Send besked</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="43adcaabbf7c2bf217bcc55b4e472c7b68432e6e"><source>
+        For secure communication, please use our public PGP key
+    </source><target xml:lang="da" state="new">For sikker kommunikation anvend venligst vores PGP-nøgle</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="185c41b2043b6ab574ce0d26fafbd36d17c72711"><source>Click to copy PGP-key</source><target xml:lang="da" state="new">Klik for at kopierer PGP-nøglen</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact-us/contact-us.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="9e4517fbba6fb6b9fd4e57c951dbee1b0f8c1dd5"><source>
+        Lyrebirds is a cyber security consultancy company, specialized in the discovery of security
+        vulnerabilities, and incident prevention. We believe that security comes from preparation and awareness,
+        which is central in the services we provide. Our knowledge and expertize will be able to guide you to a
+        modern defense, allowing you to safely leverage the advantages of IT-technology.
+    </source><target xml:lang="da" state="new">Lyrebirds er en konsulentvirksomhed inden for cybersikkerhed, der er specialiseret i opdagelsen af IT-sårbarheder og forebyggelse af dem. Vi mener, at sikkerhed er en kombination af forberedelse og opmærksomhed, og er centralt i de tjenester, vi leverer. Vores viden og ekspertise vil være i stand til at guide dig til et moderne forsvar, så du sikkert kan udnytte fordelene ved IT-teknologi.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="3ccfc826bbeae54167fb828fe19948ad6b7f57e7"><source>
+                Contact Us
+            </source><target xml:lang="da" state="new">Kontakt Os</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="80f2f910f33750c82c667623b4fe68dc7046d430"><source>
+                    Your security strategy should reflect your business. Contact us and we'll figure out how our efforts
+                    best suit your needs.
+                </source><target xml:lang="da" state="new">Din sikkerhedsstrategi skal afspejle din virksomhed. Kontakt os, så finder vi ud af, hvordan vores indsats bedst passer til dine behov.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="34746fb1c7f3d2194d99652bdff89e6e14c9c4f4"><source>Contact</source><target xml:lang="da" state="new">Kontakt</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="61aae3aae2ade652520f4f240521d3660c16da65"><source>
+                Our Services
+            </source><target xml:lang="da" state="new">Vores Tjenester</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="ebdaefbea2809a6bd17066452428f82c3f4e37c1"><source>
+                    Read about some of the services we provide, to see how we can help you stay secure.
+                </source><target xml:lang="da" state="new">Læs om de tjenester vi leverer, og hvordan vi kan hjælpe din virksomhed.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="419d940613972cc3fae9c8ea0a4306dbf80616e5"><source>Services</source><target xml:lang="da" state="new">Ydelser</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="f216d2eb2adc6d0c3743429ea85154384bdbb127"><source>
+        Our services are always adjusted to fit the requirements of our individual clients, but here you can read about
+        some of the areas we can help you with. If you have any questions or specific requirements, feel free to <x equiv-text="&lt;a&gt;" ctype="x-a" id="START_LINK"/>contact us<x equiv-text="&lt;/a&gt;" ctype="x-a" id="CLOSE_LINK"/>!
+    </source><target xml:lang="da" state="new">Vi tilpasser altid vores ydelser til vores kunders individuelle behov, men herunder kan om de generelle områder vi kan hjælpe med. Hvis du har spørgsmål eller særlige behov, er du velkommen til at  <x equiv-text="&lt;a&gt;" ctype="x-a" id="START_LINK"/>kontakte os<x equiv-text="&lt;/a&gt;" ctype="x-a" id="CLOSE_LINK"/>!</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/services.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="ccd157467ecb7ca2824ac26bb5d19e7865a923e0"><source>
+                        <x equiv-text="{{service.title}}" id="INTERPOLATION"/>
+                    </source><target xml:lang="da" state="new"/><context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/services.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="f524ece43b00a8b7bb5e4833265a426bd2d53b1f"><source><x equiv-text="{{service.intro}}" id="INTERPOLATION"/></source><target xml:lang="da" state="new"/><context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/services.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="1039e3cbfda24aeccb798f55a4d87b169881403a"><source><x equiv-text="{{item.header}}" id="INTERPOLATION"/></source><target xml:lang="da" state="new"/><context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/services.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="327a86cb4ac1b1f8d824c23c9f93e4cc2e751446"><source><x equiv-text="{{item.content}}" id="INTERPOLATION"/></source><target xml:lang="da" state="new"/><context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/services.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="5df011664ab42a95c2582523a07a11050c492fd5"><source>
+            <x equiv-text="{{title}}" id="INTERPOLATION"/></source><target xml:lang="da" state="new"/><context-group purpose="location">
+          <context context-type="sourcefile">src/app/page-template/page-template.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+      <trans-unit datatype="html" approved="no" id="1a2a6e354e1d6c32e0e4f832b41603041f4cfed1"><source>
+            <x equiv-text="{{subtitle}}" id="INTERPOLATION"/></source><target xml:lang="da" state="new"/><context-group purpose="location">
+          <context context-type="sourcefile">src/app/page-template/page-template.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group><?sid 1110954287-0?></trans-unit>
+    </body>
+  </file>
+</xliff>

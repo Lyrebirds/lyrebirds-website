@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:dk": "ng build --output-path=dist/dk --aot --prod --base-href /dk/ --i18n-file=src/i18n/messages.dk.xlf --i18n-format=xlf --i18n-locale=dk",
+    "build-i18n": "npm run build && npm run build:dk"
   },
   "private": true,
   "dependencies": {
