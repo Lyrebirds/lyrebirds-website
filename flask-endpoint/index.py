@@ -16,6 +16,7 @@ limiter = Limiter(
 )
 
 trelloServiceEndpoint = os.environ.get('TRELLO_SERVICE_ENDPOINT')
+trelloBoardID = os.environ.get('TRELLO_BOARD_LIST_ID')
 trelloAppKey = os.environ.get('TRELLO_APP_KEY')
 trelloAppToken = os.environ.get('TRELLO_APP_TOKEN')
 
@@ -23,8 +24,6 @@ slackServiceEndpoint = os.environ.get('SLACK_SERVICE_ENDPOINT')
 slackWorkspaceID = os.environ.get('SLACK_WORKSPACE_ID')
 slackServiceID = os.environ.get('SLACK_SERVICE_ID')
 slackAppToken = os.environ.get('SLACK_APP_TOKEN')
-
-contactBoardListId = "5d828870c72fb21602d25480"
 
 slackUrl = f"{slackServiceEndpoint}/{slackWorkspaceID}/{slackServiceID}/{slackAppToken}"
 
@@ -38,7 +37,7 @@ def contact():
 
     now = time.strftime("%Y-%m-%d %H:%M")
 
-    trelloRequest = f'{trelloServiceEndpoint}?name="{subject}" | {name} | {now}&desc={body}\n\n{name}\n{email}\n{phone}&idList={contactBoardListId}&key={trelloAppKey}&token={trelloAppToken}'
+    trelloRequest = f'{trelloServiceEndpoint}?name="{subject}" | {name} | {now}&desc={body}\n\n{name}\n{email}\n{phone}&idList={trelloBoardID}&key={trelloAppKey}&token={trelloAppToken}'
 
     trelloResponse = requests.post(trelloRequest)
 
