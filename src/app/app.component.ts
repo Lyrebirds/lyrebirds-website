@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslatorService } from './translator.service';
 
 @Component({
   selector: 'app-root',
@@ -6,18 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title: string = 'Lyrebirds';
+
   pages = [
-    { route: "/", name: "Home" },
-    //{ route: "/about", name: "About" },
-    { route: "/contact", name: "Contact" },
-    { route: "/services", name: "Services" },
+    { route: "/", name: "PAGES.HOME" },
+    //{ route: "/about", name: "PAGES.ABOUT" },
+    { route: "/contact", name: "PAGES.CONTACT" },
+    { route: "/services", name: "PAGES.SERVICES" },
   ];
 
   scrollLimit: number = 100;
   scrolled: boolean = false;
 
-  constructor() { }
+  constructor(public translate: TranslatorService) { }
 
   ngOnInit() {
     window.addEventListener('scroll', this.scroll, true)

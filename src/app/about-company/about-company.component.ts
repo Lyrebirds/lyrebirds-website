@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutCompanyComponent implements OnInit {
 
+  cards = [
+    {
+      title: "FRONT.CARDS.CONTACT.TITLE",
+      content: "FRONT.CARDS.CONTACT.CONTENT",
+      route: "/contact",
+      button: "FRONT.CARDS.CONTACT.BUTTON",
+    },
+    {
+      title: "FRONT.CARDS.SERVICES.TITLE",
+      content: "FRONT.CARDS.SERVICES.CONTENT",
+      route: "/services",
+      button: "FRONT.CARDS.SERVICES.BUTTON"
+    },
+  ]
+
   constructor() { }
 
   ngOnInit() {

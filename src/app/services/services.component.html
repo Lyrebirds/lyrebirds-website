@@ -1,28 +1,19 @@
-<app-page-template [title]="'Our Services'">
-    <p class="mat-body-2 intro" i18n>
-        Our services are always adjusted to fit the requirements of our individual clients, but here you can read about
-        some of the areas we can help you with. If you have any questions or specific requirements, feel free to <a
-            href="/contact">contact us</a>!
-    </p>
+<app-page-template [title]="'SERVICES.HERO'">
+    <p class="mat-body-2 intro" [innerHTML]="'SERVICES.INTRO' | translate"></p>
     <div fxLayout="row wrap" fxLayoutAlign="center stretch">
         <mat-card *ngFor="let service of serviceList" fxLayout="column">
             <mat-card-title>
                 <div class="card-image-container">
                     <img mat-card-image src="{{service.image}}">
-                    <div class="center-over-image mat-display-2" i18n>
-                        {{service.title}}
+                    <div class="center-over-image mat-display-2">
+                        {{ service.title }}
                     </div>
                 </div>
             </mat-card-title>
             <mat-card-content>
-                <p i18n>{{service.intro}}</p>
+                <p>{{ service.intro }}</p>
             </mat-card-content>
-            <mat-card-content>
-                <div *ngFor="let item of service.body">
-                    <h2 i18n>{{item.header}}</h2>
-                    <p i18n>{{item.content}}</p>
-                </div>
-            </mat-card-content>
+            <mat-card-content [innerHTML]="service.content"></mat-card-content>
         </mat-card>
     </div>
 </app-page-template>
