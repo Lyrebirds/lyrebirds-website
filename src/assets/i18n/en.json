@@ -1,85 +1,90 @@
 {
-    "TITLE": "Lyrebirds",
-    "PAGES": {
-        "HOME": "Home",
-        "CONTACT": "Contact",
-        "ABOUT": "About",
-        "SERVICES": "Services"
-    },
-    "FRONT": {
-        "HERO": "Lyrebirds",
-        "TAGLINE": "Security Consultancy",
-        "INTRO": "Lyrebirds is a cyber security consultancy company, specialized in the discovery of security vulnerabilities, and incident prevention. We believe that security comes from preparation and awareness, which is central in the services we provide. Our knowledge and expertize will be able to guide you to a modern defense, allowing you to safely leverage the advantages of IT-technology.",
-        "CARDS": {
-            "CONTACT": {
-                "TITLE": "Contact Us",
-                "CONTENT": "Your security strategy should reflect your business. Contact us and we'll figure out how our efforts best suit your needs.",
-                "BUTTON": "Contact"
-            },
-            "SERVICES": {
-                "TITLE": "Our Services",
-                "CONTENT": "Read about some of the services we provide, to see how we can help you stay secure.",
-                "BUTTON": "Services"
-            }
-        }
-    },
-    "SERVICES": {
-        "HERO": "Our Services",
-        "INTRO": "Our services are always adjusted to fit the requirements of our individual clients, but here you can read about some of the areas we can help you with. If you have any questions or specific requirements, feel free to <a href=\"/contact\">contact us</a>!",
-        "EVAL": {
-            "TITLE": "Security Evaluation",
-            "INTRO": "How well would your system fare against an attack? We can check your defenses for weaknesses, before a real attacker does.",
-            "BODY": "<h2>Internal Review</h2><p>A through analysis of your IT-defenses, such as network configuration, user authentication, and intrusion detection.</p><h2>Simulated Attack</h2><p>The only way to know how well your organization is protected, is to see how it fares against attacks. We can perform so called Red Team attacks, which wont cause any damage, but will show where and how it could be done.</p>"
-        },
-        "CHECKUP": {
-            "TITLE": "Tech Checkup",
-            "INTRO": "IT-Security is always evolving with vulnerabilities being constantly discovered and corrected. We follow the evolution of cyber security, and can help you catch up.",
-            "BODY": "<h2>Software Tools</h2><p>The software you use in your daily operation, might no longer be as secure as it used to be. We can help review your preferred tools for known security faults, so that your can safely leverage the technology.</p><h2>Product Verification</h2><p>We can verify if your product lives up to modern security standards, and investigate if your suppliers are keeping a the same standard as you.</p>"
-        },
-        "TRAINING": {
-            "TITLE": "Employee Training",
-            "INTRO": "Modern attacks are not limited to technological exploitation, and defenses are often breached by assailants targeting well meaning employees. Your defenses are only as secure as the weakest point, and your employees are a major part of those defenses.",
-            "BODY": "<h2>Security Workshops</h2><p>We offer workshops on recognizing attacks, such as phishing or social engineering, tailored to your specific security strategy. Let us help your company by educating your staff on their part in keeping up IT-security, and transform your employees from liabilities to valuable security assets.</p><h2>Contingency Planning</h2><p>While we believe that you should strive towards the best defense you can get, you should always have a plan for security failure scenarios. Depending on the attack, the ability to quickly react correctly can be crucial. Let us help you construct contingency plans, so that in the event of a security failure, you know who to contact and how to start the recovery.</p>"
-        },
-        "DATA": {
-            "TITLE": "Secure your Data",
-            "INTRO": "Your data is your business, but is it safe? Data can be lost to a destructive attack, or by unfortunate accidents. Securing your data is a vital precaution, and recovery must be available on demand.",
-            "BODY": "<h2>Data Access Control</h2><p>It is not always desireable to have executive strategy documents shared with your entire organization. Having control of data access will limit risks of exposure of internal information or breaking GDPR agreements with your customers.</p><h2>Encryption</h2><p>Data can be stolen and communication intercepted, but if encrypted correctly your and your customers data will be safe.</p><h2>Compliance</h2><p>We can help you create and evaluate your data safety and security strategy, making sure that you stay compliant with modern laws such as GDPR or the Cookie directive.</p><h2>Data Backup</h2><p>When all else fails, being able to quickly restore data from recent backups, might be the deciding factor in a crisis. We can implement best practices, and make your data secure and recoverable.</p>"
-        }
-    },
-    "CONTACT": {
-        "HERO": "Contact us!",
-        "INTRO": "Whether you have questions about our services, your own security, or otherwise, you can always contact us. Feel free to write us an email at <a href='mailto:contact@lyrebirds.dk'  target='_blank'>contact@lyrebirds.dk</a> or fill out the form below and we will get back to you as soon possible.",
-        "FORM": {
-            "NAME": {
-                "PLACEHOLDER": "Enter your name",
-                "REQUIRED": "Name required"
-            },
-            "EMAIL": {
-                "PLACEHOLDER": "Enter your email",
-                "REQUIRED": "Email required",
-                "INVALID": "Not a valid email"
-            },
-            "PHONE": {
-                "PLACEHOLDER": "Phone number"
-            },
-            "SUBJECT": {
-                "PLACEHOLDER": "Subject"
-            },
-            "MESSAGE": {
-                "PLACEHOLDER": "Write us a message",
-                "REQUIRED": "Message required"
-            },
-            "SUBMIT": "Send Message"
-        },
-        "PGP": {
-            "USE": "For secure communication, please use our public PGP key",
-            "COPY": "Click to copy PGP-key",
-            "COPIED": "Copied PGP Key!"
-        }
-    },
-    "FOOTER": {
-        "FOLLOW": "Follow us",
-        "COPYRIGHT": "© 2019 Lyrebirds ApS"
-    }
+	"ABOUT": {
+		"HERO": "Who are we?",
+		"INTRO-1": "Lyrebirds was founded by three software engineers, with different industry experiences. Our motivation for starting Lyrebirds, came from first hand experience, with how insufficient the security is, in many important IT-systems. We have seen how great IT-systems can really make a difference when embraced by companies and their customers. But in order to maintain the trust in technology, the technology must be trustworthy.",
+		"INTRO-2": "Security can be a difficult task, and sometimes new technological errors are discovered which endangers even the most vigilant defenses. However, breaches and leaks are just as frequently caused by lack of proper security maintenance. We believe that we can support your company's trust in technology, freeing you to focus on your business."
+	},
+	"CONTACT": {
+		"FORM": {
+			"EMAIL": {
+				"INVALID": "Not a valid email",
+				"PLACEHOLDER": "Enter your email",
+				"REQUIRED": "Email required"
+			},
+			"MESSAGE": {
+				"PLACEHOLDER": "Write us a message",
+				"REQUIRED": "Message required"
+			},
+			"NAME": {
+				"PLACEHOLDER": "Enter your name",
+				"REQUIRED": "Name required"
+			},
+			"PHONE": {
+				"PLACEHOLDER": "Phone number"
+			},
+			"SUBJECT": {
+				"PLACEHOLDER": "Subject"
+			},
+			"SUBMIT": "Send Message"
+		},
+		"HERO": "Contact us!",
+		"INTRO": "Whether you have questions about our services, your own security, or otherwise, you can always contact us. Feel free to write us an email at <a href='mailto:contact@lyrebirds.dk'  target='_blank'>contact@lyrebirds.dk</a> or fill out the form below and we will get back to you as soon possible.",
+		"PGP": {
+			"COPIED": "PGP Key copied!",
+			"COPY": "Click to copy PGP-key",
+			"USE": "For secure communication, please use our public PGP key"
+		}
+	},
+	"FOOTER": {
+		"COPYRIGHT": "© 2019 Lyrebirds ApS",
+		"FOLLOW": "Follow us"
+	},
+	"FRONT": {
+		"CARDS": {
+			"CONTACT": {
+				"BUTTON": "Contact",
+				"CONTENT": "Your security strategy should reflect your business. Contact us and we'll figure out how our efforts best suit your needs.",
+				"TITLE": "Contact Us"
+			},
+			"SERVICES": {
+				"BUTTON": "Services",
+				"CONTENT": "Read about some of the services we provide, to see how we can help you stay secure.",
+				"TITLE": "Our Services"
+			}
+		},
+		"HERO": "Lyrebirds",
+		"INTRO": "Lyrebirds is a cyber security consultancy company, specialized in the discovery of security vulnerabilities, and incident prevention. We believe that security comes from preparation and awareness, which is central in the services we provide. Our knowledge and expertize will be able to guide you to a modern defense, allowing you to safely leverage the advantages of IT-technology.",
+		"TAGLINE": "Security Consultancy"
+	},
+	"PAGES": {
+		"ABOUT": "About",
+		"CONTACT": "Contact",
+		"HOME": "Home",
+		"SERVICES": "Services"
+	},
+	"SERVICES": {
+		"CHECKUP": {
+			"BODY": "<h2>Software Tools</h2><p>The software you use in your daily operation, might no longer be as secure as it used to be. We can help review your preferred tools for known security faults, so that your can safely leverage the technology.</p><h2>Product Verification</h2><p>We can verify if your product lives up to modern security standards, and investigate if your suppliers are keeping a the same standard as you.</p>",
+			"INTRO": "IT-Security is always evolving with vulnerabilities being constantly discovered and corrected. We follow the evolution of cyber security, and can help you catch up.",
+			"TITLE": "Tech Checkup"
+		},
+		"DATA": {
+			"BODY": "<h2>Data Access Control</h2><p>It is not always desireable to have executive strategy documents shared with your entire organization. Having control of data access will limit risks of exposure of internal information or breaking GDPR agreements with your customers.</p><h2>Encryption</h2><p>Data can be stolen and communication intercepted, but if encrypted correctly your and your customers data will be safe.</p><h2>Compliance</h2><p>We can help you create and evaluate your data safety and security strategy, making sure that you stay compliant with modern laws such as GDPR or the Cookie directive.</p><h2>Data Backup</h2><p>When all else fails, being able to quickly restore data from recent backups, might be the deciding factor in a crisis. We can implement best practices, and make your data secure and recoverable.</p>",
+			"INTRO": "Your data is your business, but is it safe? Data can be lost to a destructive attack, or by unfortunate accidents. Securing your data is a vital precaution, and recovery must be available on demand.",
+			"TITLE": "Secure your Data"
+		},
+		"EVAL": {
+			"BODY": "<h2>Internal Review</h2><p>A through analysis of your IT-defenses, such as network configuration, user authentication, and intrusion detection.</p><h2>Simulated Attack</h2><p>The only way to know how well your organization is protected, is to see how it fares against attacks. We can perform so called Red Team attacks, which wont cause any damage, but will show where and how it could be done.</p>",
+			"INTRO": "How well would your system fare against an attack? We can check your defenses for weaknesses, before a real attacker does.",
+			"TITLE": "Security Evaluation"
+		},
+		"HERO": "Our Services",
+		"INTRO": "Our services are always adjusted to fit the requirements of our individual clients, but here you can read about some of the areas we can help you with. If you have any questions or specific requirements, feel free to <a href=\"/contact\">contact us</a>!",
+		"TRAINING": {
+			"BODY": "<h2>Security Workshops</h2><p>We offer workshops on recognizing attacks, such as phishing or social engineering, tailored to your specific security strategy. Let us help your company by educating your staff on their part in keeping up IT-security, and transform your employees from liabilities to valuable security assets.</p><h2>Contingency Planning</h2><p>While we believe that you should strive towards the best defense you can get, you should always have a plan for security failure scenarios. Depending on the attack, the ability to quickly react correctly can be crucial. Let us help you construct contingency plans, so that in the event of a security failure, you know who to contact and how to start the recovery.</p>",
+			"INTRO": "Modern attacks are not limited to technological exploitation, and defenses are often breached by assailants targeting well meaning employees. Your defenses are only as secure as the weakest point, and your employees are a major part of those defenses.",
+			"TITLE": "Employee Training"
+		}
+	},
+	"TITLE": "Lyrebirds"
 }

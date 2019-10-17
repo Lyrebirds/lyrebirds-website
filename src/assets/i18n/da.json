@@ -1,0 +1,90 @@
+{
+	"ABOUT": {
+		"HERO": "Hvem er vi?",
+		"INTRO-1": "Lyrebirds blev startet af tre software ingeniører, med hver sin baggrund i IT-industrien. Motiviation bag Lyrebirds, kom fra førstehåndserfaring med hvor mangelfuld IT-sikkerhed desværre ofte er. Vi har oplevet hvordan IT systemer kan gøre en positiv forskel, når virksomheder og deres kunder kommer dem i møde. Men hvis tilliden til teknologien skal bibeholdes, skal teknologien være troværdig.",
+		"INTRO-2": "Sikkerhed kan være en vanskelig opgave, og nogle gange opdages teknologiske fejltrin, der kan tvinge selv det bedste forsvar i knæ. Men langt oftere er sikkerhedsbrister forårsaget af mangefuld opsætning og vedligeholdelse. Vi kan understøtte din tillid til teknologien, så du bliver frigjort til at fokusere på at drive din virksomhed."
+	},
+	"CONTACT": {
+		"FORM": {
+			"EMAIL": {
+				"INVALID": "Ikke en gyldig e-mail",
+				"PLACEHOLDER": "Indtast din e-mail",
+				"REQUIRED": "E-mail påkrævet"
+			},
+			"MESSAGE": {
+				"PLACEHOLDER": "Skriv din besked",
+				"REQUIRED": "Besked påkrævet"
+			},
+			"NAME": {
+				"PLACEHOLDER": "Indtast dit navn",
+				"REQUIRED": "Navn påkrævet"
+			},
+			"PHONE": {
+				"PLACEHOLDER": "Telefonnummer"
+			},
+			"SUBJECT": {
+				"PLACEHOLDER": "Emne"
+			},
+			"SUBMIT": "Send Besked"
+		},
+		"HERO": "Kontakt os!",
+		"INTRO": "Uanset om du har spørgsmål til vores tjenester, din egen sikkerhed eller andet, kan du altid kontakte os. Skriv gerne en e-mail til os via <a href='mailto:contact@lyrebirds.dk'  target='_blank'>contact@lyrebirds.dk</a> eller udfyld formularen nedenfor. Så vender vi tilbage til dig så hurtigt som muligt.",
+		"PGP": {
+			"COPIED": "PGP-nøgle kopieret!",
+			"COPY": "Klik for at kopiere PGP-nøglen",
+			"USE": "For sikker kommunikation anvend venligst vores PGP-nøgle"
+		}
+	},
+	"FOOTER": {
+		"COPYRIGHT": "© 2019 Lyrebirds ApS",
+		"FOLLOW": "Følg os"
+	},
+	"FRONT": {
+		"CARDS": {
+			"CONTACT": {
+				"BUTTON": "Kontakt",
+				"CONTENT": "Din sikkerhedsstrategi skal afspejle din virksomhed. Kontakt os, så finder vi ud af, hvordan vores indsats bedst passer til dine behov.",
+				"TITLE": "Kontakt"
+			},
+			"SERVICES": {
+				"BUTTON": "Services",
+				"CONTENT": "Læs om hvad vi tilbyder, og hvordan vi kan hjælpe din virksomhed.",
+				"TITLE": "Vores Services"
+			}
+		},
+		"HERO": "Lyrebirds",
+		"INTRO": "Lyrebirds er en konsulentvirksomhed inden for cybersikkerhed, der er specialiseret i opdagelsen af IT-sårbarheder og forebyggelse af dem. Vi mener, at sikkerhed er en kombination af forberedelse og opmærksomhed, og er centralt i de tjenester, vi leverer. Vores viden og ekspertise vil være i stand til at guide dig til et moderne forsvar, så du sikkert kan udnytte fordelene ved IT-teknologi.",
+		"TAGLINE": "IT-Sikkerhedsrådgivning"
+	},
+	"PAGES": {
+		"ABOUT": "Om Os",
+		"CONTACT": "Kontakt",
+		"HOME": "Forside",
+		"SERVICES": "Services"
+	},
+	"SERVICES": {
+		"CHECKUP": {
+			"BODY": "",
+			"INTRO": "",
+			"TITLE": "Teknisk kontrol"
+		},
+		"DATA": {
+			"BODY": "",
+			"INTRO": "",
+			"TITLE": "Sikre dine data"
+		},
+		"EVAL": {
+			"BODY": "",
+			"INTRO": "Hvor godt kunne dit system klare sig mod et angreb? Vi kan kontrollere dine forsvar for svagheder, før en rigtig angriber gør det.",
+			"TITLE": "Sikkerhedsvurdering"
+		},
+		"HERO": "Vores Services",
+		"INTRO": "",
+		"TRAINING": {
+			"BODY": "",
+			"INTRO": "",
+			"TITLE": ""
+		}
+	},
+	"TITLE": "Lyrebirds"
+}
