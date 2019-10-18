@@ -12,7 +12,9 @@
             </ng-template>
         </button>
         <span fxFlex.gt-sm="1 1 auto"></span>
-        <div class="mat-headline">{{ 'TITLE' | translate }}</div>
+        <div [routerLink]="[ '/' | localize ]" style="cursor: pointer" class="mat-headline">
+            {{ 'TITLE' | translate }}
+        </div>
         <span fxFlex="1 1 auto"></span>
         <div fxShow="true" fxHide.lt-md="true">
             <a mat-button [routerLink]="[ page.route | localize ]" *ngFor="let page of pages"

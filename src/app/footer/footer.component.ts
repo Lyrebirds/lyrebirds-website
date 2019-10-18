@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalizeRouterService } from 'localize-router';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+
+  currentLang: string = '';
+
+  constructor(private localize: LocalizeRouterService) {
+    this.currentLang = this.localize.parser.currentLang;
+  }
+
+  changeLanguage() {
+    this.currentLang = this.localize.parser.locales.find(lang => lang != this.currentLang)
+    this.localize.changeLanguage(this.currentLang);
+  }
 
   ngOnInit() {
   }
