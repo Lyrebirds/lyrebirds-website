@@ -86,5 +86,8 @@
 			"TITLE": "Employee Training"
 		}
 	},
-	"TITLE": "Lyrebirds"
+	"TITLE": "Lyrebirds",
+	"contact": "contact",
+	"about": "about",
+	"services": "services"
 }
