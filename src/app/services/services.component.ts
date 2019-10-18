@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { TranslatorService } from '../translator.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-services',
@@ -41,9 +41,9 @@ export class ServicesComponent implements OnInit {
 
   columns = 2
 
-  constructor(translate: TranslatorService) {
+  constructor(translate: TranslateService) {
     this.serviceList.forEach(service => {
-      translate.translator.get('SERVICES.' + service.id).subscribe(res => {
+      translate.get('SERVICES.' + service.id).subscribe(res => {
         service.title = res.TITLE;
         service.intro = res.INTRO;
         service.content = res.BODY;

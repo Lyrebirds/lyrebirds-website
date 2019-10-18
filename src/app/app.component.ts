@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslatorService } from './translator.service';
+import { LocalizeRouterService } from 'localize-router';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +18,7 @@ export class AppComponent {
   scrollLimit: number = 100;
   scrolled: boolean = false;
 
-  constructor(public translate: TranslatorService) { }
+  constructor(private localize: LocalizeRouterService) { }
 
   ngOnInit() {
     window.addEventListener('scroll', this.scroll, true)

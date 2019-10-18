@@ -7,7 +7,7 @@
                 <p>{{ card.content | translate }}</p>
             </mat-card-content>
             <mat-card-actions>
-                <a [routerLink]="card.route">
+                <a [routerLink]="[ card.route | localize ]">
                     <button mat-raised-button color="warn">{{ card.button | translate }}</button>
                 </a>
             </mat-card-actions>

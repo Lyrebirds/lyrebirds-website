@@ -21,7 +21,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 // For Translation with AOT
 export function HttpLoaderFactory(httpClient: HttpClient) {
-  return new TranslateHttpLoader(httpClient);
+  return new TranslateHttpLoader(httpClient, '/assets/locales/', '.json');
 }
 
 @NgModule({

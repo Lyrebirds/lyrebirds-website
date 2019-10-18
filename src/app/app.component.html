@@ -15,7 +15,7 @@
         <div class="mat-headline">{{ 'TITLE' | translate }}</div>
         <span fxFlex="1 1 auto"></span>
         <div fxShow="true" fxHide.lt-md="true">
-            <a mat-button [routerLink]=page.route *ngFor="let page of pages"
+            <a mat-button [routerLink]="[ page.route | localize ]" *ngFor="let page of pages"
                 [ngClass.gt-sm]="{ 'button-hover': !scrolled }">
                 <div class="mat-button">{{ page.name | translate }}</div>
             </a>
@@ -26,7 +26,8 @@
     <mat-sidenav-container class="container" fxFlexFill>
         <mat-sidenav #sidenav>
             <mat-nav-list>
-                <a (click)="sidenav.toggle()" mat-list-item [routerLink]=page.route *ngFor="let page of pages">
+                <a (click)="sidenav.toggle()" mat-list-item [routerLink]="[ page.route | localize ]"
+                    *ngFor="let page of pages">
                     <div class="mat-button">{{ page.name | translate }}</div>
                 </a>
             </mat-nav-list>

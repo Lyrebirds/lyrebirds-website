@@ -3,7 +3,7 @@ import { SlackService } from '../services/slack.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ContactMessage } from '../slack-message';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { TranslatorService } from '../translator.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-us',
@@ -14,7 +14,7 @@ export class ContactUsComponent implements OnInit {
 
   contactForm: FormGroup;
 
-  constructor(private slack: SlackService, private _snackBar: MatSnackBar, private translate: TranslatorService) { }
+  constructor(private slack: SlackService, private _snackBar: MatSnackBar, private translator: TranslateService) { }
 
   ngOnInit() {
     this.contactForm = new FormGroup({
@@ -42,7 +42,7 @@ export class ContactUsComponent implements OnInit {
   copyPGPKey() {
     const copyText = document.getElementById("PUBLIC-PGP-KEY").innerText;
     navigator.clipboard.writeText(copyText);
-    this.translate.translator.get('CONTACT.PGP.COPIED').subscribe((text: string) => {
+    this.translator.get('CONTACT.PGP.COPIED').subscribe((text: string) => {
       this.openSnackBar(text);
     });
   }
