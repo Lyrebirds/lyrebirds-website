@@ -13,7 +13,6 @@ export class SlackService {
   webHook = '/api/contact';
 
   sendMessage(message: ContactMessage) {
-
     const options = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
@@ -21,6 +20,6 @@ export class SlackService {
       responseType: 'text' as 'json'
     };
 
-    this.http.post(this.webHook, message, options).subscribe(() => console.log('message sent'));
+    return this.http.post(this.webHook, message, options)
   }
 }

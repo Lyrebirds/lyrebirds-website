@@ -13,6 +13,8 @@ import { TranslateService } from '@ngx-translate/core';
 export class ContactUsComponent implements OnInit {
 
   contactForm: FormGroup;
+  messageReceived: boolean = false;
+  serverError: boolean = false;
 
   constructor(private slack: SlackService, private _snackBar: MatSnackBar, private translator: TranslateService) { }
 
@@ -32,7 +34,12 @@ export class ContactUsComponent implements OnInit {
     const text = this.contactForm.value['text'];
     const email = this.contactForm.value['email'];
     const phone = this.contactForm.value['phone'];
-    this.slack.sendMessage(new ContactMessage(name, email, phone, subject, text));
+    this.slack.sendMessage(new ContactMessage(name, email, phone, subject, text)).subscribe(
+      ok => { this.messageReceived = true; },
+      error => {
+        this.serverError = true;
+        document.getElementById("intro").scrollIntoView({ behavior: "smooth" })
+      })
   }
 
   hasError = (controlName: string, errorName: string) => {

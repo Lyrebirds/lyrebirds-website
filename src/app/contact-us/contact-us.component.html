@@ -1,6 +1,14 @@
 <app-page-template [title]="'CONTACT.HERO'">
-    <p class="mat-body-2 intro" [innerHTML]="'CONTACT.INTRO' | translate"></p>
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactForm">
+    <p class="mat-body-2 intro" [innerHTML]="'CONTACT.INTRO' | translate" id="intro"></p>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactForm" *ngIf="!messageReceived; else receipt">
+
+        <div *ngIf="serverError" id="error">
+            <mat-divider></mat-divider>
+            <p class="mat-body-2" style="color: red;">
+                {{ 'CONTACT.FORM.ERROR' | translate }}
+            </p>
+            <mat-divider></mat-divider>
+        </div>
 
         <mat-form-field class="input-field">
             <input matInput [placeholder]="'CONTACT.FORM.NAME.PLACEHOLDER' | translate" formControlName="name">
@@ -32,6 +40,17 @@
         <button mat-raised-button type="submit" [disabled]="!contactForm.valid"
             color="warn">{{ 'CONTACT.FORM.SUBMIT' | translate }}</button>
     </form>
+
+    <ng-template #receipt>
+        <div class="receipt" fxLayout="row" fxLayoutAlign="center center">
+            <mat-card>
+                <mat-card-header fxLayout="row" fxLayoutAlign="center">
+                    <mat-card-title>{{ 'CONTACT.FORM.MESSAGE_SENT' | translate }}</mat-card-title>
+                    <fa-icon style="font-size: 2.5em; color: green" [icon]="['far', 'check-circle']"></fa-icon>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </ng-template>
 
     <mat-divider></mat-divider>
 
