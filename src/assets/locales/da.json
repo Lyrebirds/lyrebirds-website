@@ -25,7 +25,9 @@
 			"SUBJECT": {
 				"PLACEHOLDER": "Emne"
 			},
-			"SUBMIT": "Send Besked"
+			"SUBMIT": "Send Besked",
+			"ERROR": "Beskeden blev ikke modtaget, grundet en ukendt fejl. Kontakt os via e-email, eller prøv igen senere.",
+			"MESSAGE_SENT": "Besked afsendt!"
 		},
 		"HERO": "Kontakt os!",
 		"INTRO": "Uanset om du har spørgsmål til vores tjenester, din egen sikkerhed eller andet, kan du altid kontakte os. Skriv gerne en e-mail til os via <a href='mailto:contact@lyrebirds.dk'  target='_blank'>contact@lyrebirds.dk</a> eller udfyld formularen nedenfor. Så vender vi tilbage til dig så hurtigt som muligt.",

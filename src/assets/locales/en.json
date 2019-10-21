@@ -25,7 +25,9 @@
 			"SUBJECT": {
 				"PLACEHOLDER": "Subject"
 			},
-			"SUBMIT": "Send Message"
+			"SUBMIT": "Send Message",
+			"ERROR": "An error occured while trying to send the message. Please use our email, or try again later.",
+			"MESSAGE_SENT": "Message sent!"
 		},
 		"HERO": "Contact us!",
 		"INTRO": "Whether you have questions about our services, your own security, or otherwise, you can always contact us. Feel free to write us an email at <a href='mailto:contact@lyrebirds.dk'  target='_blank'>contact@lyrebirds.dk</a> or fill out the form below and we will get back to you as soon possible.",
