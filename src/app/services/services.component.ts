@@ -10,18 +10,18 @@ import { TranslateService } from '@ngx-translate/core';
 export class ServicesComponent implements OnInit {
   serviceList = [
     {
-      id: "EVAL",
-      title: "",
-      intro: "",
-      content: "",
-      image: "/assets/img/horizont_javascript_close.jpg"
-    },
-    {
       id: "CHECKUP",
       title: "",
       intro: "",
       content: "",
       image: "/assets/img/router_laptop.jpg"
+    },
+    {
+      id: "EVAL",
+      title: "",
+      intro: "",
+      content: "",
+      image: "/assets/img/horizont_javascript_close.jpg"
     },
     {
       id: "TRAINING",

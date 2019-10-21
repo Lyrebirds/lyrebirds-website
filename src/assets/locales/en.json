@@ -64,27 +64,27 @@
 		"SERVICES": "Services"
 	},
 	"SERVICES": {
+		"HERO": "Services",
+		"INTRO": "Our services are always adjusted to fit the requirements of our clients, but here you can read about some of the areas we can help you. If you have any questions or specific needs, feel free to <a href=\"/contact\">contact us</a>!",
 		"CHECKUP": {
-			"BODY": "<h2>Software Tools</h2><p>The software you use in your daily operation, might no longer be as secure as it used to be. We can help review your preferred tools for known security faults, so that your can safely leverage the technology.</p><h2>Product Verification</h2><p>We can verify if your product lives up to modern security standards, and investigate if your suppliers are keeping a the same standard as you.</p>",
-			"INTRO": "IT-Security is always evolving with vulnerabilities being constantly discovered and corrected. We follow the evolution of cyber security, and can help you catch up.",
-			"TITLE": "Tech Checkup"
-		},
-		"DATA": {
-			"BODY": "<h2>Data Access Control</h2><p>It is not always desireable to have executive strategy documents shared with your entire organization. Having control of data access will limit risks of exposure of internal information or breaking GDPR agreements with your customers.</p><h2>Encryption</h2><p>Data can be stolen and communication intercepted, but if encrypted correctly your and your customers data will be safe.</p><h2>Compliance</h2><p>We can help you create and evaluate your data safety and security strategy, making sure that you stay compliant with modern laws such as GDPR or the Cookie directive.</p><h2>Data Backup</h2><p>When all else fails, being able to quickly restore data from recent backups, might be the deciding factor in a crisis. We can implement best practices, and make your data secure and recoverable.</p>",
-			"INTRO": "Your data is your business, but is it safe? Data can be lost to a destructive attack, or by unfortunate accidents. Securing your data is a vital precaution, and recovery must be available on demand.",
-			"TITLE": "Secure your Data"
+			"TITLE": "Tech Stack Management",
+			"INTRO": "Most attacks on security, exploit already known vulnerabilities and could be prevented if a timely reaction to newly disclosed vulnerabilities is employed.",
+			"BODY": "<h2>Preparation</h2><p>Let us help you map your current tech stack, from your endpoints such as website technology, mail server, modems/routers to backup and encryption methods. With a complete report of your IT ecosystem, we can compare this with the currently known vulnerabilities and our expertise on which places already have existing weaknesses.</p><h2>Awareness</h2><p>IT-Security is always evolving, with vulnerabilities being constantly discovered and corrected. We follow the evolution of cybersecurity every day and understand the expandability of vulnerabilities, even if not explicitly stated. We compare your tech stack with the advancements in real-time and find, in time, any problems before potential hackers do.</p>"
 		},
 		"EVAL": {
-			"BODY": "<h2>Internal Review</h2><p>A through analysis of your IT-defenses, such as network configuration, user authentication, and intrusion detection.</p><h2>Simulated Attack</h2><p>The only way to know how well your organization is protected, is to see how it fares against attacks. We can perform so called Red Team attacks, which wont cause any damage, but will show where and how it could be done.</p>",
-			"INTRO": "How well would your system fare against an attack? We can check your defenses for weaknesses, before a real attacker does.",
-			"TITLE": "Security Evaluation"
+			"TITLE": "Security Evaluation",
+			"INTRO": "How well would your current security measures fare against an attack? We can check your defences for weaknesses before a real attacker does.",
+			"BODY": "<h2>Current IT Security Evaluation</h2><p>We can help you evaluate your current IT Security plans to help you find out if your plan still encapsulates all your devices and solutions.</p><h2>Simulated Attack</h2><p>The only way to know how well your organization is protected is to see how it fares against attacks. We can perform so-called Red Team attacks, which won't cause any damage, but will show where and how it could be done.</p>"
 		},
-		"HERO": "Our Services",
-		"INTRO": "Our services are always adjusted to fit the requirements of our individual clients, but here you can read about some of the areas we can help you with. If you have any questions or specific requirements, feel free to <a href=\"/contact\">contact us</a>!",
 		"TRAINING": {
-			"BODY": "<h2>Security Workshops</h2><p>We offer workshops on recognizing attacks, such as phishing or social engineering, tailored to your specific security strategy. Let us help your company by educating your staff on their part in keeping up IT-security, and transform your employees from liabilities to valuable security assets.</p><h2>Contingency Planning</h2><p>While we believe that you should strive towards the best defense you can get, you should always have a plan for security failure scenarios. Depending on the attack, the ability to quickly react correctly can be crucial. Let us help you construct contingency plans, so that in the event of a security failure, you know who to contact and how to start the recovery.</p>",
-			"INTRO": "Modern attacks are not limited to technological exploitation, and defenses are often breached by assailants targeting well meaning employees. Your defenses are only as secure as the weakest point, and your employees are a major part of those defenses.",
-			"TITLE": "Employee Training"
+			"TITLE": "Employee Training",
+			"INTRO": "Modern attacks are not limited to technological exploitation, and defences are often breached by assailants targeting well-meaning employees. Your defences are only as secure as the weakest point, and your employees are a major part of those defences.",
+			"BODY": "<h2>Security Workshops</h2><p>We offer workshops on recognizing attacks, such as phishing or social engineering, tailored to your specific security strategy. Let us help your company by educating your staff on their part in keeping up IT-security, and transform your employees from liabilities to valuable security assets.</p><h2>Contingency Planning</h2><p>While we believe that you should strive towards the best defence you can get, you should always have a plan for security failure scenarios. Depending on the attack, the ability to quickly react correctly can be crucial. Let us help you construct contingency plans so that in the event of a security failure, you know who to contact and how to start the recovery.</p>"
+		},
+		"DATA": {
+			"TITLE": "Secure your Data",
+			"INTRO": "Your data is your business, but is it safe? Data can be lost to a destructive attack, or by unfortunate accidents. Securing your information is a vital precaution, and recovery must be available on demand.",
+			"BODY": "<h2>Data Access Control</h2><p>It is not always desirable to have executive strategy documents shared with your entire organization. Having control of data access will limit risks of exposure of private information or breaking GDPR agreements with your customers.</p><h2>Encryption</h2><p>Data can be stolen, and communication intercepted, but if encrypted correctly, your and your customer's data will be safe.</p><h2>Compliance</h2><p>We can help you create and evaluate your data safety and security strategy, making sure that you stay compliant with modern laws such as GDPR or the Cookie directive.</p><h2>Data Backup</h2><p>When all else fails, being able to restore data from recent backups quickly, might be the deciding factor in a crisis. We can implement best practices and make your data secure and recoverable.</p>"
 		}
 	},
 	"TITLE": "Lyrebirds",
