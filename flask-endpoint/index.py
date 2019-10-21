@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_limiter import Limiter
+from flask.logging import create_logger
 from flask_limiter.util import get_remote_address
 from flask import request
 import requests
@@ -14,6 +15,7 @@ limiter = Limiter(
     key_func=get_remote_address,
     default_limits=["100 per day", "10 per hour"]
 )
+log = create_logger(app)
 
 trelloServiceEndpoint = os.environ.get('TRELLO_SERVICE_ENDPOINT')
 trelloBoardID = os.environ.get('TRELLO_BOARD_LIST_ID')
@@ -27,7 +29,8 @@ slackAppToken = os.environ.get('SLACK_APP_TOKEN')
 
 slackUrl = f"{slackServiceEndpoint}/{slackWorkspaceID}/{slackServiceID}/{slackAppToken}"
 
-@app.route("/contact", methods = ['POST'])
+
+@app.route("/contact", methods=['POST'])
 def contact():
     name = request.get_json()['name']
     email = request.get_json()['email']
@@ -41,18 +44,24 @@ def contact():
 
     trelloResponse = requests.post(trelloRequest)
 
-    cardShortLink = json.loads(trelloResponse.text)['shortLink']
+    if (trelloResponse.status_code != requests.codes['ok']):
+        log.error('Got error from trello: ' + trelloResponse.raw)
+        return 'Something went wrong, please try again later', 500
 
+    cardShortLink = json.loads(trelloResponse.text)['shortLink']
     cardUrl = f'https://trello.com/c/{cardShortLink}'
 
-    slackMessage = SlackMessage(name, email, phone, subject, body, cardUrl, now)
+    slackMessage = SlackMessage(
+        name, email, phone, subject, body, cardUrl, now)
 
     slackResponse = requests.post(slackUrl, json=slackMessage.toJSON())
 
-    return 'ok'
+    return 'ok', 200
+
 
 def run():
     app.run(host='0.0.0.0', port=5000)
+
 
 if __name__ == "__main__":
     run()
