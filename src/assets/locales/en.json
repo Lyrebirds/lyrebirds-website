@@ -69,9 +69,9 @@
 		"HERO": "Services",
 		"INTRO": "Our services are always adjusted to fit the requirements of our clients, but here you can read about some of the areas we can help you. If you have any questions or specific needs, feel free to <a href=\"/contact\">contact us</a>!",
 		"CHECKUP": {
-			"TITLE": "Tech Stack Management",
-			"INTRO": "Most attacks on security, exploit already known vulnerabilities and could be prevented if a timely reaction to newly disclosed vulnerabilities is employed.",
-			"BODY": "<h2>Preparation</h2><p>Let us help you map your current tech stack, from your endpoints such as website technology, mail server, modems/routers to backup and encryption methods. With a complete report of your IT ecosystem, we can compare this with the currently known vulnerabilities and our expertise on which places already have existing weaknesses.</p><h2>Awareness</h2><p>IT-Security is always evolving, with vulnerabilities being constantly discovered and corrected. We follow the evolution of cybersecurity every day and understand the expandability of vulnerabilities, even if not explicitly stated. We compare your tech stack with the advancements in real-time and find, in time, any problems before potential hackers do.</p>"
+			"TITLE": "Technology Management",
+			"INTRO": "Most attacks on security will exploit publicly known vulnerabilities, and could have been prevented by a timely reaction to newly disclosed vulnerabilities.",
+			"BODY": "<h2>Preparation</h2><p>We can create a map of your IT-technology, from your online services, such as websites, mail servers or network equipment, to backups and encryption. With a complete report on your IT ecosystem, you will know if your IT currently contains publicly known vulnerabilities, and either rest easy or start correcting the risks.</p><h2>Awareness</h2><p>IT-Security is always evolving, with vulnerabilities being constantly discovered and corrected. We follow the evolution of cyber security every day, and understand how newly discovered vulnerabilities could affect you. With a map of your IT-technology, we can monitor the advancements in real-time and alert you of threats, before hackers use them to target you.</p>"
 		},
 		"EVAL": {
 			"TITLE": "Security Evaluation",
