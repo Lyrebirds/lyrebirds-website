@@ -72,9 +72,9 @@
 			"BODY": "<h2>Forberedelse</h2><p>Vi kortlægger jeres IT-teknologi, fra jeres online services, så som hjemmeside, mail servere eller netwærksudstyr, til backup og kryptering. Med en komplet rapport over jeres IT økosystem, kan vi finde ud af om jeres system er i fare for allerede kendte sårbarheder og, hvis fejl eksisterer, påbegynde processen med at få rettet disse.</p><h2>Bevidsthed</h2><p>IT-sikkerhed er i konstant udvikling, og sårbarheder opdages og rettes konstant. Vi følger udviklingen inden for cybersikkerhed hver dag og forstår, hvordan nyligt fundne sårbarheder kunne påvirke dig. Med et kort over din IT-teknologi kan vi overvåge udviklingen i realtid og advare dig om trusler, før hackere bruger dem til at målrette dig.</p>"
 		},
 		"EVAL": {
-			"BODY": "",
-			"INTRO": "Hvor godt kunne dit system klare sig mod et angreb? Vi kan kontrollere dine forsvar for svagheder, før en rigtig angriber gør det.",
-			"TITLE": "Sikkerhedsvurdering"
+			"BODY": "<h2>Nuværende IT</h2><p>Vi kan evaluere dine nuværende IT-sikkerhedsplaner, for at afdække, om din plan stadig indkapsulerer alle dine enheder og IT-løsninger.</p><h2>Simulerede Angreb</h2><p>Den bedste måde at finde us af, hvor godt din organisation er beskyttet, er at se, hvordan den modstår et angreb. Vi kan udføre såkaldte Red Team-angreb, som ikke forårsager nogen skade, men som viser, hvor og hvordan det kunne gøres.</p>",
+			"INTRO": "Hvor godt vil dit system klare sig mod et angreb? Vi kan gennemgå dit forsvar for svagheder, inden du bliver udsat for et rigtigt angreb.",
+			"TITLE": "Evaluering af Sikkerheden"
 		},
 		"DATA": {
 			"TITLE": "Datasikkerhed",
@@ -84,9 +84,9 @@
 		"HERO": "Vores Services",
 		"INTRO": "",
 		"TRAINING": {
-			"BODY": "",
-			"INTRO": "",
-			"TITLE": ""
+			"BODY": "<h2>Sikkerhedskursus</h2><p>Vi tilbyder workshops om genkendelse af angreb, såsom phishing eller social engineering, skræddersyet til din specifikke sikkerhedsstrategi. Lad os hjælpe din virksomhed med at oplære dine medarbejdere i deres del af IT-sikkerheden, så de indgår aktivt i forsvaret af din IT.</p><h2>Beredskabsplanlægning</h2><p>Selvom vi mener, at du skal stræbe mod det bedste forsvar, du kan få, bør du altid have en plan for håndtering af sikkerhedsbrud. Afhængigt af angrebet kan evnen til at reagere hurtigt, være afgørende. Lad os hjælpe dig med at konstruere beredskabsplaner, så i tilfælde af en sikkerhedsbrist, ved du, hvem du skal kontakte, og hvordan du kan komme igang igen.</p>",
+			"INTRO": "Moderne angreb er ikke begrænset til teknologien, og sikkerhedsbrud er ofte rettet imod hjælpesomme medarbejdere. Din beskyttelse er kun så godt som det svageste punkt, og dine medarbejdere er en vigtig del af dette forsvar.",
+			"TITLE": "Workshops for Ansatte"
 		}
 	},
 	"TITLE": "Lyrebirds",

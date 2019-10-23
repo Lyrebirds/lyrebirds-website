@@ -76,12 +76,12 @@
 		"EVAL": {
 			"TITLE": "Security Evaluation",
 			"INTRO": "How well would your current security measures fare against an attack? We can check your defences for weaknesses before a real attacker does.",
-			"BODY": "<h2>Current IT Security Evaluation</h2><p>We can help you evaluate your current IT Security plans to help you find out if your plan still encapsulates all your devices and solutions.</p><h2>Simulated Attack</h2><p>The only way to know how well your organization is protected is to see how it fares against attacks. We can perform so-called Red Team attacks, which won't cause any damage, but will show where and how it could be done.</p>"
+			"BODY": "<h2>Current IT Security Evaluation</h2><p>We can evaluate your current IT Security plans, to help you find out if your plan still encapsulates all your devices and solutions.</p><h2>Simulated Attack</h2><p>The best way to know how well your organization is protected is to see how it fares against attacks. We can perform so-called Red Team attacks, which won't cause any damage, but will show where and how it could be done.</p>"
 		},
 		"TRAINING": {
-			"TITLE": "Employee Training",
+			"TITLE": "Employee Workshops",
 			"INTRO": "Modern attacks are not limited to technological exploitation, and defences are often breached by assailants targeting well-meaning employees. Your defences are only as secure as the weakest point, and your employees are a major part of those defences.",
-			"BODY": "<h2>Security Workshops</h2><p>We offer workshops on recognizing attacks, such as phishing or social engineering, tailored to your specific security strategy. Let us help your company by educating your staff on their part in keeping up IT-security, and transform your employees from liabilities to valuable security assets.</p><h2>Contingency Planning</h2><p>While we believe that you should strive towards the best defence you can get, you should always have a plan for security failure scenarios. Depending on the attack, the ability to quickly react correctly can be crucial. Let us help you construct contingency plans so that in the event of a security failure, you know who to contact and how to start the recovery.</p>"
+			"BODY": "<h2>Security Training</h2><p>We offer workshops on recognizing attacks, such as phishing or social engineering, tailored to your specific security strategy. Let us help your company by educating your staff on their part in keeping up IT-security, and transform your employees from liabilities to valuable security assets.</p><h2>Contingency Planning</h2><p>While we believe that you should strive towards the best defence you can get, you should always have a plan for security failure scenarios. Depending on the attack, the ability to quickly react correctly can be crucial. Let us help you construct contingency plans such that in the event of a security failure, you know who to contact and how to start the recovery.</p>"
 		},
 		"DATA": {
 			"TITLE": "Secure your Data",
