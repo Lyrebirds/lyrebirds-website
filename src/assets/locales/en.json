@@ -67,7 +67,7 @@
 	},
 	"SERVICES": {
 		"HERO": "Services",
-		"INTRO": "Our services are always adjusted to fit the requirements of our clients, but here you can read about some of the areas we can help you. If you have any questions or specific needs, feel free to <a href=\"/contact\">contact us</a>!",
+		"INTRO": "Our services are always adjusted to fit the requirements of our clients, but here you can read about some of the areas we can help you with. If you have any questions or specific needs, feel free to <a href=\"/en/contact\">contact us</a>!",
 		"CHECKUP": {
 			"TITLE": "Technology Management",
 			"INTRO": "Most attacks on security will exploit publicly known vulnerabilities, and could have been prevented by a timely reaction to newly disclosed vulnerabilities.",
