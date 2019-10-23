@@ -14,28 +14,28 @@ export class ServicesComponent implements OnInit {
       title: "",
       intro: "",
       content: "",
-      image: "/assets/img/router_laptop.jpg"
+      image: "/assets/img/router_laptop_min.jpg"
     },
     {
       id: "EVAL",
       title: "",
       intro: "",
       content: "",
-      image: "/assets/img/horizont_javascript_close.jpg"
+      image: "/assets/img/horizont_javascript_close_min.jpg"
     },
     {
       id: "TRAINING",
       title: "",
       intro: "",
       content: "",
-      image: "/assets/img/harbour.jpg"
+      image: "/assets/img/harbour_min.jpg"
     },
     {
       id: "DATA",
       title: "",
       intro: "",
       content: "",
-      image: "/assets/img/horizont_javascript_far.jpg"
+      image: "/assets/img/horizont_javascript_far_min.jpg"
     }
   ]
 
