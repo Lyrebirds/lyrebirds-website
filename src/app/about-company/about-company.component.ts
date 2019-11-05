@@ -24,17 +24,15 @@ export class AboutCompanyComponent implements OnInit {
     },
   ]
 
-  constructor(private meta: Meta, private translator: TranslateService) { }
+  constructor(private meta:Meta, private translator:TranslateService) {
+    this.meta.addTag({ name: "description", content: "Lyrebirds is a cyber security consultancy company, specialized in the discovery of security vulnerabilities, and incident prevention" });
+
+    this.translator.get('FRONT.META.KEYWORDS').subscribe((keywords: string) => {
+      this.meta.addTag({ name: "keywords", content: keywords});
+    })
+  }
 
   ngOnInit() {
-    this.meta.addTag({ name: "description", content: "Lyrebirds is a cyber security consultancy company, specialized in the discovery of security vulnerabilities, and incident prevention." });
-
-    this.translator.get('FRONT.META.AUTHOR').subscribe((author: string) => {
-      this.meta.updateTag({ name: "author", content: author });
-    })
-    this.translator.get('FRONT.META.KEYWORDS').subscribe((keywords: string) => {
-      this.meta.updateTag({ name: "keywords", content: keywords });
-    })
   }
 
 }
