@@ -27,7 +27,7 @@ export class AboutCompanyComponent implements OnInit {
   constructor(private meta:Meta, private translator:TranslateService) {}
 
   ngOnInit() {
-    this.meta.addTag({ name: "description", content: "Lyrebirds is a cyber security consultancy company, specialized in the discovery of security vulnerabilities, and incident prevention." });
+    this.meta.addTag({ name: "description", content: "Lyrebirds is a cyber security consultancy company, specialized in the discovery of security vulnerabilities, and incident prevention" });
 
     this.translator.get('FRONT.META.AUTHOR').subscribe((author: string) => {
       this.meta.addTag({ name: "author", content: author});
