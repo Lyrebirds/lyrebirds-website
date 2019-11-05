@@ -5,6 +5,10 @@
 		"INTRO-2": "Sikkerhed kan være en vanskelig opgave, og nogle gange opdages teknologiske fejltrin, der kan tvinge selv det bedste forsvar i knæ. Men langt oftere er sikkerhedsbrister forårsaget af mangefuld opsætning og vedligeholdelse. Vi kan understøtte din tillid til teknologien, så du bliver frigjort til at fokusere på at drive din virksomhed."
 	},
 	"CONTACT": {
+		"META": {
+			"DESCRIPTION": "Uanset om du har spørgsmål til vores tjenester, din egen sikkerhed eller andet, kan du altid kontakte os. Skriv gerne en e-mail til os via <a href='mailto:contact@lyrebirds.dk'  target='_blank'>contact@lyrebirds.dk</a> eller udfyld formularen på vores hjemmeside.",
+			"AUTHOR":"Lyrebirds ApS"
+		},
 		"FORM": {
 			"EMAIL": {
 				"INVALID": "Ikke en gyldig e-mail",
@@ -43,6 +47,10 @@
 		"OTHERLANG": "English"
 	},
 	"FRONT": {
+		"META": {
+			"DESCRIPTION": "Lyrebirds is a cyber security consultancy company, specialized in the discovery of security vulnerabilities, and incident prevention.",
+			"AUTHOR": "Lyrebirds ApS"
+		},
 		"CARDS": {
 			"CONTACT": {
 				"BUTTON": "Kontakt",
