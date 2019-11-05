@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about-company',
@@ -22,7 +24,14 @@ export class AboutCompanyComponent implements OnInit {
     },
   ]
 
-  constructor() { }
+  constructor(private meta:Meta, private translator:TranslateService) {
+    this.translator.get('FRONT.META.DESCRIPTION').subscribe((text: string) => {
+      this.meta.addTag({ name: "description", content: text });
+    })
+    this.translator.get('FRONT.META.AUTHOR').subscribe((author: string) => {
+      this.meta.addTag({ name: "author", content: author});
+    })
+  }
 
   ngOnInit() {
   }
