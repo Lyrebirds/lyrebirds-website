@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { LocalizeRouterService } from 'localize-router';
+import { TranslateService } from '@ngx-translate/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +20,11 @@ export class AppComponent {
   scrollLimit: number = 100;
   scrolled: boolean = false;
 
-  constructor(private localize: LocalizeRouterService) { }
+  constructor(private localize: LocalizeRouterService, private meta:Meta, private translator:TranslateService) {  
+    this.translator.get('FRONT.META.AUTHOR').subscribe((author: string) => {
+      this.meta.addTag({ name: "author", content: author});
+    })
+  }
 
   ngOnInit() {
     window.addEventListener('scroll', this.scroll, true)
