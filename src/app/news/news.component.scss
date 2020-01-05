@@ -36,25 +36,19 @@
 }
 
 .article-content {
+    transition: height 0.2s ease-in-out;
     text-align: left;
     margin-bottom: 5px;
     padding-bottom: 5px;
-    max-height:400px;
+    height:400px;
     overflow:hidden;
     text-overflow: ellipsis;
     content: "";
     position:relative;
-    animation-duration: 1s;
 }
 
-.article-content:before{
-    content:'';
-    width:100%;
-    height:100%;    
-    position:absolute;
-    left:0;
-    top:0;
-    background:linear-gradient(transparent 350px, white);
+.article-mask {
+    mask-image: linear-gradient(to bottom, black 350px, transparent);
 }
 
 .list-item:hover{
