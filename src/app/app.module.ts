@@ -22,8 +22,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 //Font Awesome
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
+import { faTwitter, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faCheckCircle, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 
 // For Translation with AOT
@@ -67,6 +67,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 })
 export class AppModule {
   constructor(private library: FaIconLibrary) {
-    library.addIcons(faTwitter, faLinkedin, faCheckCircle, faLanguage);
+    library.addIcons(faTwitter, faLinkedin, faFacebook, faCheckCircle, faLanguage, faEnvelope);
   }
 }

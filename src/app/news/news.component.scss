@@ -47,6 +47,17 @@
     position:relative;
 }
 
+.article-content img {
+    width: 200px;
+}
+
+.article-content-img {
+    box-shadow: none;
+    padding: 0 15px;
+    float: left;
+    width: 200px;
+}
+
 .article-mask {
     mask-image: linear-gradient(to bottom, black 350px, transparent);
 }
@@ -66,3 +77,10 @@
         padding: 5px;
     }
 }
+
+.offset-anchor {
+    position: relative;
+    top: -140px;
+    left: 0;
+  }
+  

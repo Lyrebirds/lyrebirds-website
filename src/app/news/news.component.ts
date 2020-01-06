@@ -7,6 +7,8 @@ import { ARTICLES } from '../articles';
   styleUrls: ['./news.component.scss']
 })
 export class NewsComponent implements OnInit {
+  currentUrl = window.location.href;
+
 
   articles = ARTICLES;
 
@@ -16,7 +18,6 @@ export class NewsComponent implements OnInit {
   }
 
   toggleCollapseArticle(articleId, buttonId){
-    console.log("Test")
     let article = document.getElementById(articleId);
     let button = document.getElementById(buttonId);
     if(button.innerText == " More"){
