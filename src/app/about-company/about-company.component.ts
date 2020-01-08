@@ -25,7 +25,7 @@ export class AboutCompanyComponent implements OnInit {
   ]
 
   constructor(private meta:Meta, private translator:TranslateService) {
-    this.meta.addTag({ name: "description", content: "Lyrebirds is a cyber security consultancy company, specialized in the discovery of security vulnerabilities, and incident prevention" });
+    //this.meta.addTag({ name: "description", content: "Lyrebirds is a cyber security consultancy company, specialized in the discovery of security vulnerabilities, and incident prevention" });
 
     this.translator.get('FRONT.META.KEYWORDS').subscribe((keywords: string) => {
       this.meta.addTag({ name: "keywords", content: keywords});

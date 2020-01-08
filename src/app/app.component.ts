@@ -15,6 +15,7 @@ export class AppComponent {
     //{ route: "/about", name: "PAGES.ABOUT" },
     { route: "/contact", name: "PAGES.CONTACT" },
     { route: "/services", name: "PAGES.SERVICES" },
+    { route: "/news", name: "PAGES.NEWS"}
   ];
 
   scrollLimit: number = 100;
