@@ -41,6 +41,15 @@
 			"USE": "For secure communication, please use our public PGP key"
 		}
 	},
+	"NEWS": {
+		"HERO": "News",
+		"INTRO": "",
+		"ARTICLE_BUTTONS": {
+			"MORE": "More",
+			"LESS": "Less",
+			"SHARE": "Share"
+		}
+	},
 	"FOOTER": {
 		"COPYRIGHT": "© 2019 Lyrebirds ApS",
 		"FOLLOW": "Follow us",
@@ -72,7 +81,8 @@
 		"ABOUT": "About",
 		"CONTACT": "Contact",
 		"HOME": "Home",
-		"SERVICES": "Services"
+		"SERVICES": "Services",
+		"NEWS": "News"
 	},
 	"SERVICES": {
 		"HERO": "Services",
@@ -101,5 +111,6 @@
 	"TITLE": "Lyrebirds",
 	"contact": "contact",
 	"about": "about",
-	"services": "services"
+	"services": "services",
+	"news": "news"
 }

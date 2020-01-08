@@ -41,6 +41,15 @@
 			"USE": "For sikker kommunikation anvend venligst vores PGP-nøgle"
 		}
 	},
+	"NEWS": {
+		"HERO": "Nyheder",
+		"INTRO": "",
+		"ARTICLE_BUTTONS": {
+			"MORE": "Mere",
+			"LESS": "Mindre",
+			"SHARE": "Del"
+		}
+	},
 	"FOOTER": {
 		"COPYRIGHT": "© 2019 Lyrebirds ApS",
 		"FOLLOW": "Følg os",
@@ -72,7 +81,8 @@
 		"ABOUT": "Om Os",
 		"CONTACT": "Kontakt",
 		"HOME": "Forside",
-		"SERVICES": "Services"
+		"SERVICES": "Services",
+		"NEWS": "Nyheder"
 	},
 	"SERVICES": {
 		"CHECKUP": {
@@ -101,5 +111,6 @@
 	"TITLE": "Lyrebirds",
 	"contact": "kontakt",
 	"about": "om_os",
-	"services": "services"
+	"services": "services",
+	"news": "nyheder"
 }
