@@ -43,7 +43,11 @@
 	},
 	"NEWS": {
 		"HERO": "News",
-		"INTRO": ""
+		"INTRO": "",
+		"ARTICLE_BUTTONS": {
+			"MORE": "More",
+			"SHARE": "Share"
+		}
 	},
 	"FOOTER": {
 		"COPYRIGHT": "© 2019 Lyrebirds ApS",

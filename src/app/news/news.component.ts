@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ARTICLES } from '../articles';
-import { HttpBackend } from '@angular/common/http';
+import { CableHauntVulnerabilityComponent } from './cable-haunt-vulnerability/cable-haunt-vulnerability.component';
 
 @Component({
   selector: 'app-news',
@@ -9,8 +9,6 @@ import { HttpBackend } from '@angular/common/http';
 })
 export class NewsComponent implements OnInit {
   currentUrl = window.location.href;
-
-  articles = ARTICLES;
 
   constructor() { }
 

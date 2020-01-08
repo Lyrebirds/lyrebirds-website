@@ -25,6 +25,7 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faTwitter, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faCheckCircle, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
+import { CableHauntVulnerabilityComponent } from './news/cable-haunt-vulnerability/cable-haunt-vulnerability.component';
 
 // For Translation with AOT
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -41,7 +42,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ServicesComponent,
     EmployeeProfileComponent,
     PageTemplateComponent,
-    FooterComponent
+    FooterComponent,
+    CableHauntVulnerabilityComponent
   ],
   imports: [
     BrowserModule,

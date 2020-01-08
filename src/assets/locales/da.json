@@ -43,7 +43,12 @@
 	},
 	"NEWS": {
 		"HERO": "Nyheder",
-		"INTRO": ""
+		"INTRO": "",
+		"ARTICLE_BUTTONS": {
+			"MORE": "Mere",
+			"LESS": "Mindre",
+			"SHARE": "Del"
+		}
 	},
 	"FOOTER": {
 		"COPYRIGHT": "© 2019 Lyrebirds ApS",
