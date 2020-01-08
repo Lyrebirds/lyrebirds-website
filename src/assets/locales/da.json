@@ -7,7 +7,7 @@
 	"CONTACT": {
 		"META": {
 			"DESCRIPTION": "Uanset om du har spørgsmål til vores tjenester, din egen sikkerhed eller andet, kan du altid kontakte os. Skriv gerne en e-mail til os via <a href='mailto:contact@lyrebirds.dk'  target='_blank'>contact@lyrebirds.dk</a> eller udfyld formularen på vores hjemmeside.",
-			"AUTHOR":"Lyrebirds ApS"
+			"AUTHOR": "Lyrebirds ApS"
 		},
 		"FORM": {
 			"EMAIL": {
@@ -87,7 +87,7 @@
 	"SERVICES": {
 		"CHECKUP": {
 			"TITLE": "Teknologisk Overblik",
-			"INTRO": "De fleste sikkerhedsangreb udnytter allerede publiceret fejl i systemer som ofte kan fohindres hvis rettidig kendskab og indgreb foretages til nye offentliggjorte sårbarheder.",
+			"INTRO": "De fleste sikkerhedsangreb udnytter allerede publiceret fejl i systemer som ofte kan forhindres hvis rettidig kendskab og indgreb foretages til nye offentliggjorte sårbarheder.",
 			"BODY": "<h2>Forberedelse</h2><p>Vi kortlægger jeres IT-teknologi, fra jeres online services, så som hjemmeside, mail servere eller netværksudstyr, til backup og kryptering. Med en komplet rapport over jeres IT økosystem, kan vi finde ud af om jeres system er i fare for allerede kendte sårbarheder og, hvis fejl eksisterer, påbegynde processen med at få rettet disse.</p><h2>Bevidsthed</h2><p>IT-sikkerhed er i konstant udvikling, og sårbarheder opdages og rettes konstant. Vi følger udviklingen inden for cybersikkerhed hver dag og forstår, hvordan nyligt fundne sårbarheder kan påvirke jer. Med et kort over din IT-teknologi kan vi overvåge udviklingen i realtid og advare jer om trusler, før hackere bruger imod jer.</p>"
 		},
 		"EVAL": {
