@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ARTICLES } from '../articles';
+import { HttpBackend } from '@angular/common/http';
 
 @Component({
   selector: 'app-news',
@@ -8,7 +9,6 @@ import { ARTICLES } from '../articles';
 })
 export class NewsComponent implements OnInit {
   currentUrl = window.location.href;
-
 
   articles = ARTICLES;
 
