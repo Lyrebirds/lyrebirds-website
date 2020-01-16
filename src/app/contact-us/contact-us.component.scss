@@ -19,15 +19,30 @@
 }
 
 .header-divider {
-  border-left:1px solid #38546d; 
-  border-right:1px solid #16222c; 
-  height:80px;
-  position:absolute;
-  right:249px;
-  top:10px; 
+  border-left: 1px solid #38546d;
+  border-right: 1px solid #16222c;
+  height: 80px;
+  position: absolute;
+  right: 249px;
+  top: 10px;
 }
 
 .pgp-signature {
   font-size: 12px;
   cursor: pointer;
+}
+
+mat-card {
+  margin: 20px;
+  padding: 20px;
+}
+
+.mat-card-header .mat-card-title {
+  margin: 0px;
+  margin-bottom: 0px;
+}
+
+.receipt {
+  margin: auto;
+  align-content: center;
 }

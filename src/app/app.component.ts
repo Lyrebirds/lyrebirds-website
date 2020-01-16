@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { LocalizeRouterService } from 'localize-router';
+import { TranslateService } from '@ngx-translate/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,18 +9,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title: string = 'Lyrebirds';
+
   pages = [
-    { route: "/", name: "Home" },
-    { route: "/about", name: "About" },
-    { route: "/contact", name: "Contact" },
-    { route: "/services", name: "Services" },
+    { route: "/", name: "PAGES.HOME" },
+    { route: "/about", name: "PAGES.ABOUT" },
+    { route: "/contact", name: "PAGES.CONTACT" },
+    { route: "/services", name: "PAGES.SERVICES" },
+    { route: "/news", name: "PAGES.NEWS"}
   ];
 
   scrollLimit: number = 100;
   scrolled: boolean = false;
 
-  constructor() { }
+  constructor(private localize: LocalizeRouterService, private meta:Meta, private translator:TranslateService) {  
+    this.translator.get('FRONT.META.AUTHOR').subscribe((author: string) => {
+      this.meta.addTag({ name: "author", content: author});
+    })
+  }
 
   ngOnInit() {
     window.addEventListener('scroll', this.scroll, true)

@@ -1,18 +1,55 @@
-import { Component, OnInit } from '@angular/core';
-import { OUR_SERVICES } from '../ourServices';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+  styleUrls: ['./services.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ServicesComponent implements OnInit {
-
-  serviceList = OUR_SERVICES
+  serviceList = [
+    {
+      id: "CHECKUP",
+      title: "",
+      intro: "",
+      content: "",
+      image: "/assets/img/router_laptop_min.jpg"
+    },
+    {
+      id: "EVAL",
+      title: "",
+      intro: "",
+      content: "",
+      image: "/assets/img/horizont_javascript_close_min.jpg"
+    },
+    {
+      id: "TRAINING",
+      title: "",
+      intro: "",
+      content: "",
+      image: "/assets/img/harbour_min.jpg"
+    },
+    {
+      id: "DATA",
+      title: "",
+      intro: "",
+      content: "",
+      image: "/assets/img/horizont_javascript_far_min.jpg"
+    }
+  ]
 
   columns = 2
 
-  constructor() { }
+  constructor(translate: TranslateService) {
+    this.serviceList.forEach(service => {
+      translate.get('SERVICES.' + service.id).subscribe(res => {
+        service.title = res.TITLE;
+        service.intro = res.INTRO;
+        service.content = res.BODY;
+      });
+    });
+  }
 
   ngOnInit() {
     this.columns = window.innerWidth <= 960 ? 1 : 2;

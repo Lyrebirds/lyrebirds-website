@@ -1,4 +1,5 @@
 @import "~@angular/material/theming";
+@import "./src/lib/core/theming/palette";
 
 $lyrebirds-typography: mat-typography-config(
   $font-family: "Nunito Sans, sans-serif",
@@ -19,7 +20,7 @@ $lyrebirds-typography: mat-typography-config(
 
 @include mat-core($lyrebirds-typography);
 
-$lyrebirds-primary: mat-palette($mat-blue-grey, 700);
+$lyrebirds-primary: mat-palette($ch-blue, 500);
 $lyrebirds-accent: mat-palette($mat-green);
 $lyrebirds-warn: mat-palette($mat-red);
 $lyrebirds-theme: mat-light-theme($lyrebirds-primary, $lyrebirds-accent, $lyrebirds-warn);

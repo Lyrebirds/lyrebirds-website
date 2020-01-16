@@ -1,13 +1,21 @@
-<div fxLayout="column">
-    <p class="mat-body-2">Follow us</p>
-    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="35px">
-        <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/lyrebirds">
-            <mat-icon style="font-size: 2em; color: whitesmoke" fontSet="fab" fontIcon="fa-linkedin-in"></mat-icon>
-        </a>
-        <a target="_blank" rel="noopener" href="https://www.twitter.com/lyrebirds_dk">
-            <mat-icon style="font-size: 2em; color: whitesmoke" fontSet="fab" fontIcon="fa-twitter"></mat-icon>
-        </a>
+<div fxLayout="row" fxLayoutAlign="center stretch">
+    <div class="spacer" fxFlex="3 1 30"></div>
+    <div fxLayout="column" fxFlex="5 1 50">
+        <p class="mat-body-2">{{ 'FOOTER.FOLLOW' | translate }}</p>
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="35px">
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/lyrebirds">
+                <fa-icon style="font-size: 2.5em; color: whitesmoke" [icon]="['fab', 'linkedin']"></fa-icon>
+            </a>
+            <a target="_blank" rel="noopener" href="https://www.twitter.com/lyrebirds_dk">
+                <fa-icon style="font-size: 2.5em; color: whitesmoke" [icon]="['fab', 'twitter']"></fa-icon>
+            </a>
+        </div>
+        <p class="mat-caption">{{ 'FOOTER.COPYRIGHT' | translate }}</p>
     </div>
-    <p class="mat-caption">© 2019 Lyrebirds ApS</p>
-
+    <div fxFlex="3 1 30" fxLayout="row" fxLayoutAlign="start center">
+        <div (click)="changeLanguage()" style="margin: 25px 0px 0px 0px; text-align: left; cursor: pointer;">
+            <fa-icon style="font-size: 2.5em; color: whitesmoke" [icon]="['fas', 'language']"></fa-icon>
+            <div class="mat-body-2">{{ 'FOOTER.OTHERLANG' | translate }}</div>
+        </div>
+    </div>
 </div>
