@@ -43,7 +43,7 @@ export class ServicesComponent implements OnInit {
     }
   ]
 
-  columns = 1
+  columns = 2
 
   constructor(translate: TranslateService) {
     this.serviceList.forEach(service => {
