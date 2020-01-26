@@ -12,7 +12,7 @@ export class AppComponent {
 
   pages = [
     { route: "/", name: "PAGES.HOME" },
-    //{ route: "/about", name: "PAGES.ABOUT" },
+    { route: "/about", name: "PAGES.ABOUT" },
     { route: "/contact", name: "PAGES.CONTACT" },
     { route: "/services", name: "PAGES.SERVICES" },
     { route: "/news", name: "PAGES.NEWS"}

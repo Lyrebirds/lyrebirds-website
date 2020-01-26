@@ -14,32 +14,36 @@ export class ServicesComponent implements OnInit {
       title: "",
       intro: "",
       content: "",
-      image: "/assets/img/router_laptop_min.jpg"
+      image: "/assets/img/router_laptop_min.jpg",
+      icon: ['fas', "laptop-code"]
     },
     {
       id: "EVAL",
       title: "",
       intro: "",
       content: "",
-      image: "/assets/img/horizont_javascript_close_min.jpg"
+      image: "/assets/img/horizont_javascript_close_min.jpg",
+      icon: ['fas', "bug"]
     },
     {
       id: "TRAINING",
       title: "",
       intro: "",
       content: "",
-      image: "/assets/img/harbour_min.jpg"
+      image: "/assets/img/harbour_min.jpg",
+      icon: ['fas', "users"]
     },
     {
       id: "DATA",
       title: "",
       intro: "",
       content: "",
-      image: "/assets/img/horizont_javascript_far_min.jpg"
+      image: "/assets/img/horizont_javascript_far_min.jpg",
+      icon: ['fas', "fingerprint"]
     }
   ]
 
-  columns = 2
+  columns = 1
 
   constructor(translate: TranslateService) {
     this.serviceList.forEach(service => {
@@ -47,15 +51,16 @@ export class ServicesComponent implements OnInit {
         service.title = res.TITLE;
         service.intro = res.INTRO;
         service.content = res.BODY;
+
       });
     });
   }
 
   ngOnInit() {
-    this.columns = window.innerWidth <= 960 ? 1 : 2;
+    this.columns = window.innerWidth <= 600 ? 1 : 2;
   }
 
   onResize() {
-    this.columns = window.innerWidth <= 960 ? 1 : 2;
+    this.columns = window.innerWidth <= 600 ? 1 : 2;
   }
 }

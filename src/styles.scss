@@ -14,9 +14,28 @@
   max-width: 800px;
   width: 90%;
   margin: 50px auto;
-  text-align: justify;
+  text-align: center;
 }
 
 .mat-simple-snackbar span {
+  margin: auto;
+}
+
+mat-card {
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+}
+
+mat-card-content {
+  text-align: center;
+  flex: 1 0 auto;
+}
+
+mat-card-actions button {
+  margin: 10px auto;
+}
+
+.card-container {
   margin: auto;
 }
