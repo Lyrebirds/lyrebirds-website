@@ -1,8 +1,8 @@
 <app-page-template [title]="'ABOUT.HERO'">
     <p class="mat-body-2 intro">{{ 'ABOUT.INTRO-1' | translate }}</p>
     <p class="mat-body-2 intro">{{ 'ABOUT.INTRO-2' | translate }}</p>
-    <div fxLayout="row wrap" fxLayoutAlign="center center">
-        <app-employee-profile fxFlex="0 1 0" fxLayout="column" *ngFor="let employee of employees" [employee]=employee>
+    <div fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+        <app-employee-profile fxFlex="0 0 0" fxLayout="column" *ngFor="let employee of employees" [employee]=employee>
         </app-employee-profile>
     </div>
 </app-page-template>
