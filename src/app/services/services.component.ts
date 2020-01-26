@@ -57,10 +57,10 @@ export class ServicesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.columns = window.innerWidth <= 960 ? 1 : 1;
+    this.columns = window.innerWidth <= 600 ? 1 : 2;
   }
 
   onResize() {
-    this.columns = window.innerWidth <= 960 ? 1 : 1;
+    this.columns = window.innerWidth <= 600 ? 1 : 2;
   }
 }

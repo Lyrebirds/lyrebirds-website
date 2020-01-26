@@ -21,5 +21,30 @@
   text-align: left;
   font-weight: bold;
   margin: 30px;
+}
+
+.tex-mobile {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 800px;
+  margin: 30px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.tex2-mobile {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 800px;
+  //width: 90%;
+  //margin-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.tit-mobile {
+  text-align: center;
+  font-weight: bold;
+  //margin: 30px;
   margin-left: 0px;
 }
