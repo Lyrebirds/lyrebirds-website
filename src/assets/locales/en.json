@@ -1,6 +1,7 @@
 {
 	"ABOUT": {
-		"HERO": "Who are we?",
+		"HERO": "About us?",
+		"SUBTITLE": "under text",
 		"INTRO-1": "Lyrebirds was founded by three software engineers, with different industry experiences. Our motivation for starting Lyrebirds, came from first hand experience, with how insufficient the security is, in many important IT-systems. We have seen how great IT-systems can really make a difference when embraced by companies and their customers. But in order to maintain the trust in technology, the technology must be trustworthy.",
 		"INTRO-2": "Security can be a difficult task, and sometimes new technological errors are discovered which endangers even the most vigilant defenses. However, breaches and leaks are just as frequently caused by lack of proper security maintenance. We believe that we can support your company's trust in technology, freeing you to focus on your business."
 	},
@@ -90,22 +91,28 @@
 		"CHECKUP": {
 			"TITLE": "Technology Management",
 			"INTRO": "Most attacks on security will exploit publicly known vulnerabilities, and could have been prevented by a timely reaction to newly disclosed vulnerabilities.",
-			"BODY": "<h2>Preparation</h2><p>We can create a map of your IT-technology, from your online services, such as websites, mail servers or network equipment, to backups and encryption. With a complete report on your IT ecosystem, you will know if your IT currently contains publicly known vulnerabilities, and either rest easy or start correcting the risks.</p><h2>Awareness</h2><p>IT-Security is always evolving, with vulnerabilities being constantly discovered and corrected. We follow the evolution of cyber security every day, and understand how newly discovered vulnerabilities could affect you. With a map of your IT-technology, we can monitor the advancements in real-time and alert you of threats, before hackers use them to target you.</p>"
+			"BODY": [["Preparation", "We can create a map of your IT-technology, from your online services, such as websites, mail servers or network equipment, to backups and encryption. With a complete report on your IT ecosystem, you will know if your IT currently contains publicly known vulnerabilities, and either rest easy or start correcting the risks."],
+			["Awareness", "IT-Security is always evolving, with vulnerabilities being constantly discovered and corrected. We follow the evolution of cyber security every day, and understand how newly discovered vulnerabilities could affect you. With a map of your IT-technology, we can monitor the advancements in real-time and alert you of threats, before hackers use them to target you."]]
 		},
 		"EVAL": {
 			"TITLE": "Security Evaluation",
 			"INTRO": "How well would your current security measures fare against an attack? We can check your defences for weaknesses before a real attacker does.",
-			"BODY": "<h2>Current IT Security Evaluation</h2><p>We can evaluate your current IT Security plans, to help you find out if your plan still encapsulates all your devices and solutions.</p><h2>Simulated Attack</h2><p>The best way to know how well your organization is protected is to see how it fares against attacks. We can perform so-called Red Team attacks, which won't cause any damage, but will show where and how it could be done.</p>"
+			"BODY": [["Current IT Security Evaluation", "We can evaluate your current IT Security plans, to help you find out if your plan still encapsulates all your devices and solutions."], 
+			["Simulated Attack", "The best way to know how well your organization is protected is to see how it fares against attacks. We can perform so-called Red Team attacks, which won't cause any damage, but will show where and how it could be done."]]
 		},
 		"TRAINING": {
 			"TITLE": "Employee Workshops",
 			"INTRO": "Modern attacks are not limited to technological exploitation, and defences are often breached by assailants targeting well-meaning employees. Your defences are only as secure as the weakest point, and your employees are a major part of those defences.",
-			"BODY": "<h2>Security Training</h2><p>We offer workshops on recognizing attacks, such as phishing or social engineering, tailored to your specific security strategy. Let us help your company by educating your staff on their part in keeping up IT-security, and transform your employees from liabilities to valuable security assets.</p><h2>Contingency Planning</h2><p>While we believe that you should strive towards the best defence you can get, you should always have a plan for security failure scenarios. Depending on the attack, the ability to quickly react correctly can be crucial. Let us help you construct contingency plans such that in the event of a security failure, you know who to contact and how to start the recovery.</p>"
+			"BODY": [["Security Training", "We offer workshops on recognizing attacks, such as phishing or social engineering, tailored to your specific security strategy. Let us help your company by educating your staff on their part in keeping up IT-security, and transform your employees from liabilities to valuable security assets."], 
+			["Contingency Planning", "While we believe that you should strive towards the best defence you can get, you should always have a plan for security failure scenarios. Depending on the attack, the ability to quickly react correctly can be crucial. Let us help you construct contingency plans such that in the event of a security failure, you know who to contact and how to start the recovery."]]
 		},
 		"DATA": {
 			"TITLE": "Secure your Data",
 			"INTRO": "Your data is your business, but is it safe? Data can be lost to a destructive attack, or by unfortunate accidents. Securing your information is a vital precaution, and recovery must be available on demand.",
-			"BODY": "<h2>Data Access Control</h2><p>It is not always desirable to have executive strategy documents shared with your entire organization. Having control of data access will limit risks of exposure of private information or breaking GDPR agreements with your customers.</p><h2>Encryption</h2><p>Data can be stolen, and communication intercepted, but if encrypted correctly, your and your customer's data will be safe.</p><h2>Compliance</h2><p>We can help you create and evaluate your data safety and security strategy, making sure that you stay compliant with modern laws such as GDPR or the Cookie directive.</p><h2>Data Backup</h2><p>When all else fails, being able to restore data from recent backups quickly, might be the deciding factor in a crisis. We can implement best practices and make your data secure and recoverable.</p>"
+			"BODY":[["Data Access Control", "It is not always desirable to have executive strategy documents shared with your entire organization. Having control of data access will limit risks of exposure of private information or breaking GDPR agreements with your customers."], 
+			["Encryption", "Data can be stolen, and communication intercepted, but if encrypted correctly, your and your customer's data will be safe."],
+			["Compliance", "We can help you create and evaluate your data safety and security strategy, making sure that you stay compliant with modern laws such as GDPR or the Cookie directive."], 
+			["Data Backup", "When all else fails, being able to restore data from recent backups quickly, might be the deciding factor in a crisis. We can implement best practices and make your data secure and recoverable."]]
 		}
 	},
 	"TITLE": "Lyrebirds",

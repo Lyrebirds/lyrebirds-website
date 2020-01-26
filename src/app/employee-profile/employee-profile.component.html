@@ -1,11 +1,7 @@
-<mat-card>
-    <mat-card-header fxLayoutAlign="center">
-        <mat-card-title>
-            {{ employee.name }}
-        </mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="{{employee.image}}" alt="Picture missing">
-    <mat-card-content>
-        <p>{{ employee.email }}</p>
-    </mat-card-content>
-</mat-card>
+<img class="round-image" src="{{employee.image}}" alt="Picture missing">
+<p class="mat-body-1"><b>{{employee.name}}</b></p>
+<p class="mat-body-2">{{employee.email}}</p>
+<p class="mat-body-2"><a href="{{employee.linkedIn}}">LinkedIn</a></p>
+<br/>
+<br/>
+<br/>

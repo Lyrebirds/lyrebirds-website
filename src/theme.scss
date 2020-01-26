@@ -1,10 +1,11 @@
 @import "~@angular/material/theming";
+@import "./src/lib/core/theming/palette";
 
 $lyrebirds-typography: mat-typography-config(
-  $font-family: "Nunito Sans, sans-serif",
-  $display-4: mat-typography-level(116px, 96px, 800, $letter-spacing: -0.02em),
-  $display-3: mat-typography-level(76px, 70px, 700, $letter-spacing: -0.02em),
-  $display-2: mat-typography-level(56px, 56px, 600, $letter-spacing: -0.005em),
+  $font-family: "Helvetica Neue,Helvetica,Arial,sans-serif",
+  $display-4: mat-typography-level(116px, 96px, 800),
+  $display-3: mat-typography-level(76px, 70px, 700),
+  $display-2: mat-typography-level(56px, 56px, 600),
   $display-1: mat-typography-level(76px, 64px, 600),
   $headline: mat-typography-level(34px, 32px, 400),
   $title: mat-typography-level(34px, 40px, 400),
@@ -19,7 +20,7 @@ $lyrebirds-typography: mat-typography-config(
 
 @include mat-core($lyrebirds-typography);
 
-$lyrebirds-primary: mat-palette($mat-blue-grey, 700);
+$lyrebirds-primary: mat-palette($ch-blue, 500);
 $lyrebirds-accent: mat-palette($mat-green);
 $lyrebirds-warn: mat-palette($mat-red);
 $lyrebirds-theme: mat-light-theme($lyrebirds-primary, $lyrebirds-accent, $lyrebirds-warn);

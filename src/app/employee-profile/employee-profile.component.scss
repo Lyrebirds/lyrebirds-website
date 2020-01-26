@@ -1,6 +1,12 @@
-mat-card {
-  min-width: 300px;
-  text-align: center;
-  margin: 60px;
-  margin-bottom: 20px;
+.mat-body-2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
+
+ .round-image {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 125px;
+ }
