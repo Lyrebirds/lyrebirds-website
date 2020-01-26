@@ -1,6 +1,6 @@
 {
 	"ABOUT": {
-		"HERO": "Hvem er vi?",
+		"HERO": "Om os",
 		"INTRO-1": "Lyrebirds blev startet af tre software ingeniører, med hver sin baggrund i IT-industrien. Motiviation bag Lyrebirds, kom fra førstehåndserfaring med hvor mangelfuld IT-sikkerhed desværre ofte er. Vi har oplevet hvordan IT systemer kan gøre en positiv forskel, når virksomheder og deres kunder kommer dem i møde. Men hvis tilliden til teknologien skal bibeholdes, skal teknologien være troværdig.",
 		"INTRO-2": "Sikkerhed kan være en vanskelig opgave, og nogle gange opdages teknologiske fejltrin, der kan tvinge selv det bedste forsvar i knæ. Men langt oftere er sikkerhedsbrister forårsaget af mangefuld opsætning og vedligeholdelse. Vi kan understøtte din tillid til teknologien, så du bliver frigjort til at fokusere på at drive din virksomhed."
 	},
@@ -78,7 +78,7 @@
 		"TAGLINE": "IT-Sikkerhedsrådgivning"
 	},
 	"PAGES": {
-		"ABOUT": "Om Os",
+		"ABOUT": "Om os",
 		"CONTACT": "Kontakt",
 		"HOME": "Forside",
 		"SERVICES": "Services",
