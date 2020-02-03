@@ -26,6 +26,7 @@ import { faTwitter, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-
 import { faCheckCircle, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faLanguage, faLaptopCode, faBug, faUsers, faFingerprint } from '@fortawesome/free-solid-svg-icons';
 import { CableHauntVulnerabilityComponent } from './news/cable-haunt-vulnerability/cable-haunt-vulnerability.component';
+import { TechnicolorHttpdServerVulnerabilityComponent } from './news/technicolor-httpd-server-vulnerability/technicolor-httpd-server-vulnerability.component';
 
 // For Translation with AOT
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -43,7 +44,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     EmployeeProfileComponent,
     PageTemplateComponent,
     FooterComponent,
-    CableHauntVulnerabilityComponent
+    CableHauntVulnerabilityComponent,
+    TechnicolorHttpdServerVulnerabilityComponent
   ],
   imports: [
     BrowserModule,
