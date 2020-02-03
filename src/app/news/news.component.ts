@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ARTICLES } from '../articles';
 import { CableHauntVulnerabilityComponent } from './cable-haunt-vulnerability/cable-haunt-vulnerability.component';
+import { TechnicolorHttpdServerVulnerabilityComponent } from './technicolor-httpd-server-crash/technicolor-httpd-server-vulnerability.component'
 
 @Component({
   selector: 'app-news',
