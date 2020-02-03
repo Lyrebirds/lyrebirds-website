@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, InjectionToken } from '@angular/core';
 import { SlackService } from '../services/slack.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ContactMessage } from '../slack-message';

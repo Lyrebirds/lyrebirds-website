@@ -1,19 +1,41 @@
 <app-page-template [title]="'SERVICES.HERO'">
     <p class="mat-body-2 intro" [innerHTML]="'SERVICES.INTRO' | translate"></p>
-    <div fxLayout="row wrap" fxLayoutAlign="center stretch">
-        <mat-card *ngFor="let service of serviceList" fxLayout="column">
-            <mat-card-title>
-                <div class="card-image-container">
-                    <img mat-card-image src="{{service.image}}">
-                    <div class="center-over-image mat-display-2">
-                        {{ service.title }}
-                    </div>
+    
+    <div *ngIf="columns == 2">
+        <div *ngFor="let service of serviceList; let i = index" fxLayout="row wrap" fxLayoutAlign="center stretch">
+            <div fxFlex="50" *ngIf="i % 2 == 0">
+                <div style="margin-top: 95px;">
+                    <fa-icon style="font-size: 15em; color: lightgray;" [icon]="service.icon"></fa-icon>
                 </div>
-            </mat-card-title>
-            <mat-card-content>
-                <p>{{ service.intro }}</p>
-            </mat-card-content>
-            <mat-card-content [innerHTML]="service.content"></mat-card-content>
-        </mat-card>
+            </div>
+            <div fxFlex="50">
+                <div class="mat-title tit">{{ service.title }}</div>
+                <p class="mat-body-2 tex">{{ service.intro }}</p>
+                <div *ngFor="let block of service.content; let i = index">
+                    
+                    <div class="mat-display-3 tex2">{{ block[0] }}</div>
+                    <p class="mat-body-2 tex">{{ block[1] }}</p>
+                </div>
+            </div>
+            <div fxFlex="50" *ngIf="i % 2 == 1">
+                <div style="margin-top: 95px;">
+                    <fa-icon style="font-size: 15em; color: lightgray;" [icon]="service.icon"></fa-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="columns == 1">
+        <div *ngFor="let service of serviceList; let i = index" fxLayout="row wrap" fxLayoutAlign="center stretch">
+            <div fxFlex="100">
+                <fa-icon style="font-size: 15em; color: lightgray;" [icon]="service.icon"></fa-icon>
+                <div class="mat-title tit-mobile">{{ service.title }}</div>
+                <p class="mat-body-2 tex-mobile">{{ service.intro }}</p>
+                <div *ngFor="let block of service.content; let i = index">
+                    
+                    <div class="mat-display-3 tex2-mobile">{{ block[0] }}</div>
+                    <p class="mat-body-2 tex-mobile">{{ block[1] }}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </app-page-template>

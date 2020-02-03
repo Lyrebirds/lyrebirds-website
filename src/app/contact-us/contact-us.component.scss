@@ -11,13 +11,6 @@
   display: inline;
 }
 
-.mat-body-2 {
-  max-width: 800px;
-  width: 90%;
-  margin: 50px auto;
-  text-align: justify;
-}
-
 .header-divider {
   border-left: 1px solid #38546d;
   border-right: 1px solid #16222c;
@@ -33,16 +26,7 @@
 }
 
 mat-card {
-  margin: 20px;
-  padding: 20px;
-}
-
-.mat-card-header .mat-card-title {
+  width: 100%;
+  text-align: center;
   margin: 0px;
-  margin-bottom: 0px;
-}
-
-.receipt {
-  margin: auto;
-  align-content: center;
 }

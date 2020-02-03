@@ -1,40 +1,51 @@
-mat-card {
-  width: 500px;
-  text-align: center;
-  margin: 20px;
-}
-
-mat-card-content {
+.tex {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 800px;
+  width: 90%;
+  margin: 0px;
   text-align: left;
 }
 
-h2 {
-  font-size: 18px;
-}
-
-.card-image-container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.center-over-image {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.mat-card img {
-  max-height: 333px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.intro {
+.tex2 {
+  font-size: 20px;
+  line-height: 30px;
   max-width: 800px;
   width: 90%;
-  margin: 50px auto;
-  text-align: justify;
+  margin: 0px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.tit {
+  text-align: left;
+  font-weight: bold;
+  margin: 30px;
+  margin-left: 0px;
+}
+
+.tex-mobile {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 800px;
+  margin: 30px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.tex2-mobile {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 800px;
+  //width: 90%;
+  //margin-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.tit-mobile {
+  text-align: center;
+  font-weight: bold;
+  //margin: 30px;
+  margin-left: 0px;
 }

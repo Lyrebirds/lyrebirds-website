@@ -24,7 +24,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faTwitter, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faCheckCircle, faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faLanguage } from '@fortawesome/free-solid-svg-icons';
+import { faLanguage, faLaptopCode, faBug, faUsers, faFingerprint } from '@fortawesome/free-solid-svg-icons';
 import { CableHauntVulnerabilityComponent } from './news/cable-haunt-vulnerability/cable-haunt-vulnerability.component';
 
 // For Translation with AOT
@@ -69,6 +69,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 })
 export class AppModule {
   constructor(private library: FaIconLibrary) {
-    library.addIcons(faTwitter, faLinkedin, faFacebook, faCheckCircle, faLanguage, faEnvelope);
+    library.addIcons(faTwitter, faLinkedin, faFacebook, faCheckCircle, faLanguage, faEnvelope, faLaptopCode, faBug, faUsers, faFingerprint);
   }
 }
