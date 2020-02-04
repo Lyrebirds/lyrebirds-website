@@ -15,14 +15,32 @@
   background-size: cover;
 }
 
+.vl {
+  border-left: 6px solid white;
+}
+
 .title{
     font-weight: bold;
+    text-align: left;
 }
 
 .img-article{
     box-shadow: none;
     width: auto;
     height: 350px;
+}
+
+.iframe-container{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .action-buttons{
