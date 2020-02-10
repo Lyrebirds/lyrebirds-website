@@ -11,6 +11,8 @@ export class ArticleTemplateComponent implements OnInit {
   @Input() subtitle: string;
   @Input() id: string;
   @Input() hashtags: string;
+  @Input() dedicated: boolean = false;
+
   currentUrl = window.location.href;
 
   constructor(private translate: TranslateService) { }
