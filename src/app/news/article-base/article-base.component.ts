@@ -6,7 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./article-base.component.scss']
 })
 export class ArticleBaseComponent implements OnInit {
-  @Input() dedicated: boolean = false;
+  @Input() dedicated !: boolean;
+  @Input() id !: string;
 
   constructor() { }
 

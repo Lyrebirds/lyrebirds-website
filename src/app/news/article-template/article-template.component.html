@@ -40,5 +40,7 @@
 
 <ng-template #dedicatedDiv class="article-content">
     <h1>{{title}}</h1>
-    <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+    <div class="mat-body-2">
+        <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+    </div>
 </ng-template>

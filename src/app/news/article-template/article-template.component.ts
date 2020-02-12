@@ -18,6 +18,7 @@ export class ArticleTemplateComponent implements OnInit {
   constructor(private translate: TranslateService) { }
 
   ngOnInit() {
+    console.log(this.dedicated);
     this.translate.get('NEWS.ARTICLE_BUTTONS.MORE').subscribe(res => {
       this.moreButtonText = res;
     });

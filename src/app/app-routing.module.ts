@@ -20,9 +20,10 @@ const routes: Routes = [
   { path: 'about', component: AboutUsComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'contact', component: ContactUsComponent },
-  { path: 'news', component: NewsComponent },
+  { path: 'news/:id', component: NewsComponent },
   { path: '**', redirectTo: '', component: AboutCompanyComponent },
 ];
+// Add logic for specific article
 
 @NgModule({
   imports: [
