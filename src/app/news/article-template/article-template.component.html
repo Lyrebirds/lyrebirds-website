@@ -2,26 +2,30 @@
     <ng-content></ng-content>
 </ng-template>
 
-<mat-card *ngIf="!dedicated; else dedicatedDiv" id="{{'article-' + id}}" class="example-card">
+<mat-card *ngIf="!dedicated; else dedicatedDiv" id="{{'article-' + (route | localize)}}" class="example-card">
     <mat-card-header>
         <mat-card-title class="title">{{title}}</mat-card-title>
         <mat-card-subtitle class="subtitle">{{subtitle}}</mat-card-subtitle>
+        <span fxFlex.gt-sm="1 1 auto"></span>
+        <button [routerLink]="[route | localize]" mat-mini-fab color="primary">
+            <mat-icon>open_in_new</mat-icon>
+        </button>
     </mat-card-header>
-    <mat-card-content id="{{'article-content-' + id}}" class="article-content expandable-article-content article-mask">
+    <mat-card-content id="{{'article-content-' + (route | localize)}}" class="article-content expandable-article-content article-mask">
         <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
     </mat-card-content>
     <mat-card-actions class="action-buttons">
         <mat-menu #appMenu="matMenu">
-            <a mat-menu-item target="_blank" href="{{'mailto:?Subject=' + title + '&amp;Body=' + currentUrl + '#article-' + id}}" color="primary">
+            <a mat-menu-item target="_blank" href="{{'mailto:?Subject=' + title + '&amp;Body=' + currentUrl + '/' + (route | localize)}}" color="primary">
                 <fa-icon [icon]="['far', 'envelope']"></fa-icon> Mail
             </a>
-            <a mat-menu-item target="_blank" href="{{'http://www.facebook.com/sharer.php?u=' + currentUrl + '/#article-' + id}}" color="primary">
+            <a mat-menu-item target="_blank" href="{{'http://www.facebook.com/sharer.php?u=' + currentUrl + '/' + (route | localize)}}" color="primary">
                 <fa-icon [icon]="['fab', 'facebook']"></fa-icon> Facebook
             </a>
-            <a mat-menu-item target="_blank" href="{{'http://www.linkedin.com/shareArticle?url=' + currentUrl + '/#article-' + id}}" color="primary">
+            <a mat-menu-item target="_blank" href="{{'http://www.linkedin.com/shareArticle?url=' + currentUrl + '/' + (route | localize)}}" color="primary">
                 <fa-icon [icon]="['fab', 'linkedin']"></fa-icon> LinkedIn
             </a>
-            <a mat-menu-item target="_blank" href="{{'https://twitter.com/share?url=' + currentUrl + '/#article-' + id + '&amp;text=' + title + '&amp;hashtags=' + hashtags}}" color="primary">
+            <a mat-menu-item target="_blank" href="{{'https://twitter.com/share?url=' + currentUrl + '/' + (route | localize) + '&amp;text=' + title + '&amp;hashtags=' + hashtags}}" color="primary">
                 <fa-icon [icon]="['fab', 'twitter']"></fa-icon> Twitter
             </a>
         </mat-menu>
@@ -29,13 +33,9 @@
             <mat-icon>share</mat-icon> {{ 'NEWS.ARTICLE_BUTTONS.SHARE' | translate}}
         </button>
         <button mat-button color="primary" (click)="toggleCollapseArticle();">
-            <mat-icon>visibility</mat-icon><a id="{{'button-' + id}}">
+            <mat-icon>visibility</mat-icon><a id="{{'button-' + (route | localize)}}">
                 {{ currentKey | translate}}</a>
         </button>
-        <a [routerLink]="[route | localize]"><button mat-button color="primary">
-            Dedicated
-        </button>
-        </a>
     </mat-card-actions>
 </mat-card>
 
@@ -43,7 +43,8 @@
     <app-page-template [title]="'NEWS.HERO'">
         <div class="dedicated-article article-content">
             <a class="mat-body-2" [routerLink]="['/news' | localize]">... All articles</a>
-            <h1 class="headline">{{title}}</h1>
+            <h1 class="mat-h1">{{title}}</h1>
+            <h4 class="mat-h4">{{subtitle}}</h4>
             <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
         </div>
     </app-page-template>

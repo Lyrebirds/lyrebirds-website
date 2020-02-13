@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-article-template',
@@ -11,18 +12,26 @@ export class ArticleTemplateComponent {
   @Input() route: string;
   @Input() hashtags: string;
   @Input() dedicated: boolean;
-  @Input() id: string;
+
+  contentId: string;
 
   currentUrl = window.location.href;
 
-  constructor() { }
+  constructor(private translator: TranslateService) {
+    translator.get(this.route).subscribe(routeTranslation => {
+      console.log("Route: " + this.route)
+      console.log("Translation: " + routeTranslation);
+      //this.contentId = "article-content-" + routeTranslation;
+    })
+  }
 
   moreKey = 'NEWS.ARTICLE_BUTTONS.MORE';
   lessKey = 'NEWS.ARTICLE_BUTTONS.LESS';
   currentKey = this.moreKey;
 
   toggleCollapseArticle() {
-    let article = document.getElementById("article-content-" + this.route);
+    console.log('Content ID: ' + this.contentId)
+    let article = document.getElementById(this.contentId);
     if (this.currentKey === this.moreKey) {
       article.classList.remove("article-mask")
       this.updateHeight(article, article.scrollHeight);
