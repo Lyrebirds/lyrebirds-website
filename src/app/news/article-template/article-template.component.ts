@@ -1,43 +1,28 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-article-template',
   templateUrl: './article-template.component.html',
   styleUrls: ['./article-template.component.scss']
 })
-export class ArticleTemplateComponent implements OnInit {
+export class ArticleTemplateComponent {
   @Input() title: string;
   @Input() subtitle: string;
-  @Input() id: string;
+  @Input() route: string;
   @Input() hashtags: string;
-  @Input() dedicated: boolean = false;
+  @Input() dedicated: boolean;
+  @Input() id: string;
 
   currentUrl = window.location.href;
 
-  constructor(private translate: TranslateService) { }
-
-  ngOnInit() {
-    console.log(this.dedicated);
-    this.translate.get('NEWS.ARTICLE_BUTTONS.MORE').subscribe(res => {
-      this.moreButtonText = res;
-    });
-    this.translate.get('NEWS.ARTICLE_BUTTONS.LESS').subscribe(res => {
-      this.lessButtonText = res;
-    });
-  }
+  constructor() { }
 
   moreKey = 'NEWS.ARTICLE_BUTTONS.MORE';
   lessKey = 'NEWS.ARTICLE_BUTTONS.LESS';
   currentKey = this.moreKey;
 
-  moreButtonText = "";
-  lessButtonText = "";
-
   toggleCollapseArticle() {
-    let article = document.getElementById("article-content-" + this.id);
-    let button = document.getElementById("button-" + this.id);
-
+    let article = document.getElementById("article-content-" + this.route);
     if (this.currentKey === this.moreKey) {
       article.classList.remove("article-mask")
       this.updateHeight(article, article.scrollHeight);

@@ -3,12 +3,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HighlightModule } from 'ngx-highlightjs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { NewsComponent, ArticleDirective } from './news/news.component';
+import { NewsComponent } from './news/news.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { ServicesComponent } from './services/services.component';
 import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
@@ -49,8 +50,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     CableHauntVulnerabilityComponent,
     TechnicolorHttpdServerVulnerabilityComponent,
     ArticleTemplateComponent,
-    ArticleBaseComponent,
-    ArticleDirective
+    ArticleBaseComponent
   ],
   entryComponents: [ CableHauntVulnerabilityComponent, TechnicolorHttpdServerVulnerabilityComponent ],
   imports: [
@@ -63,7 +63,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     FormsModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    // Translation
+    HighlightModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

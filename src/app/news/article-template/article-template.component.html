@@ -2,7 +2,7 @@
     <ng-content></ng-content>
 </ng-template>
 
-<mat-card *ngIf="!dedicated;else dedicatedDiv" id="{{'article-' + id}}" class="example-card">
+<mat-card *ngIf="!dedicated; else dedicatedDiv" id="{{'article-' + id}}" class="example-card">
     <mat-card-header>
         <mat-card-title class="title">{{title}}</mat-card-title>
         <mat-card-subtitle class="subtitle">{{subtitle}}</mat-card-subtitle>
@@ -32,15 +32,19 @@
             <mat-icon>visibility</mat-icon><a id="{{'button-' + id}}">
                 {{ currentKey | translate}}</a>
         </button>
-        <button mat-button color="primary">
+        <a [routerLink]="[route | localize]"><button mat-button color="primary">
             Dedicated
         </button>
+        </a>
     </mat-card-actions>
 </mat-card>
 
 <ng-template #dedicatedDiv class="article-content">
-    <h1>{{title}}</h1>
-    <div class="mat-body-2">
-        <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
-    </div>
+    <app-page-template [title]="'NEWS.HERO'">
+        <div class="dedicated-article article-content">
+            <a class="mat-body-2" [routerLink]="['/news' | localize]">... All articles</a>
+            <h1 class="headline">{{title}}</h1>
+            <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+        </div>
+    </app-page-template>
 </ng-template>

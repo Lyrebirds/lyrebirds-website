@@ -1,17 +1,17 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-article-base',
-  templateUrl: './article-base.component.html',
+  template: '',
   styleUrls: ['./article-base.component.scss']
 })
-export class ArticleBaseComponent implements OnInit {
-  @Input() dedicated !: boolean;
-  @Input() id !: string;
+export class ArticleBaseComponent {
+  @Input() dedicated: boolean = true;
+  route: string;
+  id: string;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(inputRoute: string, inputId: string) {
+    this.route = inputRoute;
+    this.id = inputId;
   }
-
 }

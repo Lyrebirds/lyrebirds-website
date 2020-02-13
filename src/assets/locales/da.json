@@ -49,6 +49,14 @@
 			"MORE": "Mere",
 			"LESS": "Mindre",
 			"SHARE": "Del"
+		},
+		"ARTICLES": {
+			"CABLEHAUNT_VULNERABILITY": {
+				"URL": "cable-haunt-saarbarhed"
+			},
+			"BROADCOM_HTTPD_ERROR": {
+				"URL": "braodcom-httpd-fejl"
+			}
 		}
 	},
 	"FOOTER": {

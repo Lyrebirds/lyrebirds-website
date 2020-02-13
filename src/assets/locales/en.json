@@ -49,6 +49,14 @@
 			"MORE": "More",
 			"LESS": "Less",
 			"SHARE": "Share"
+		},
+		"ARTICLES": {
+			"CABLEHAUNT_VULNERABILITY": {
+				"URL": "cable-haunt-vulnerablitiy"
+			},
+			"BROADCOM_HTTPD_ERROR": {
+				"URL": "braodcom-httpd-error"
+			}
 		}
 	},
 	"FOOTER": {
