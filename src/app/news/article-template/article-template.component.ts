@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -6,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './article-template.component.html',
   styleUrls: ['./article-template.component.scss']
 })
-export class ArticleTemplateComponent {
+export class ArticleTemplateComponent implements OnInit {
   @Input() title: string;
   @Input() subtitle: string;
   @Input() route: string;
@@ -17,12 +17,12 @@ export class ArticleTemplateComponent {
 
   currentUrl = window.location.href;
 
-  constructor(private translator: TranslateService) {
-    translator.get(this.route).subscribe(routeTranslation => {
-      console.log("Route: " + this.route)
-      console.log("Translation: " + routeTranslation);
-      //this.contentId = "article-content-" + routeTranslation;
-    })
+  constructor(private translator: TranslateService) { }
+
+  ngOnInit(): void {
+    this.translator.get(this.route).subscribe((text: string) => {
+      this.contentId = "article-content-" + text;
+    });
   }
 
   moreKey = 'NEWS.ARTICLE_BUTTONS.MORE';

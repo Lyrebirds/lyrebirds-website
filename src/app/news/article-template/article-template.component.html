@@ -6,9 +6,9 @@
     <mat-card-header>
         <mat-card-title class="title">{{title}}</mat-card-title>
         <mat-card-subtitle class="subtitle">{{subtitle}}</mat-card-subtitle>
-        <span fxFlex.gt-sm="1 1 auto"></span>
+        <span fxFlex="1 1 auto"></span>
         <button [routerLink]="[route | localize]" mat-mini-fab color="primary">
-            <mat-icon>open_in_new</mat-icon>
+            <mat-icon>zoom_out_map</mat-icon>
         </button>
     </mat-card-header>
     <mat-card-content id="{{'article-content-' + (route | localize)}}" class="article-content expandable-article-content article-mask">
@@ -42,8 +42,13 @@
 <ng-template #dedicatedDiv class="article-content">
     <app-page-template [title]="'NEWS.HERO'">
         <div class="dedicated-article article-content">
-            <a class="mat-body-2" [routerLink]="['/news' | localize]">... All articles</a>
-            <h1 class="mat-h1">{{title}}</h1>
+            <div>
+                <h1 class="mat-h1">{{title}}</h1>
+                <span fxFlex="1 1 auto"></span>
+                <button [routerLink]="['/news' | localize]" mat-mini-fab color="primary">
+                    <mat-icon>arrow_back</mat-icon>
+                </button>
+            </div>
             <h4 class="mat-h4">{{subtitle}}</h4>
             <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
         </div>
