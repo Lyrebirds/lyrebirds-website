@@ -70,7 +70,7 @@
 				"URL": "broadcom-httpd-error",
 				"TITLE": "Broadcom Cable Modem HTTPD Error",
 				"BODY1": [
-					"A vulnerability exists that allows an attacker with existing access to the local network to initiate a denial of service attack against the local modem. The error lies in the Broadcom reference code and therefore exists on all cable modems using the Broadcom chipset, which includes the vast majority of cable modems in the world. Broadcom has not yet officially commented on the vulnerability, and we do therefore not know what the strategy for a solution is.",
+					"A vulnerability exists that allows an attacker with existing access to the local network to initiate a denial of service attack against the local modem. The error lies in the Broadcom reference code and therefore exists on all cable modems using the Broadcom chipset, which includes the vast majority of cable modems in the world.",
 					"The error lies in the handling of the WebSocket GET upgrade requests that are sent to the internal mongoose HTTPD server on the modem. If a device on the network sends a malformed upgrade request to the modem, the modem encounters a null pointer dereferencing and crashing. This can happen in 2 scenarios:",
 					"<ul><li>If the 'Sec-WebSocket-Key' header or only one of the 'Sec-WebSocket-Key1' and 'Sec-WebSocket-Key2' headers are set when the 'Sec-WebSocket-Version' header requires both.</li><li>If both or one of the 'Sec-WebSocket-Key1' and 'Sec-WebSocket-Key2' headers are set when the 'Sec-WebSocket-Version' header only requires the 'Sec-WebSocket-Key' header.</li></ul>",
 					"Below is a video explaining the problem with the assembly in detail."
