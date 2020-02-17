@@ -164,5 +164,8 @@
       }
     }
   },
-  "defaultProject": "lyrebirds-web"
+  "defaultProject": "lyrebirds-web",
+  "cli": {
+    "analytics": false
+  }
 }
