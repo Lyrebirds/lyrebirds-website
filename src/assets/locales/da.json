@@ -68,10 +68,10 @@
 			},
 			"BROADCOM_HTTPD_ERROR": {
 				"URL": "broadcom-httpd-fejl",
-				"TITLE": "Broadcom Kobelmodem HTTPD Fejl",
+				"TITLE": "Broadcom Kabelmodem HTTPD Fejl",
 				"BODY1": [
-					"Technicolor har for nyligt offentliggjort en sårbarhed som tillader en angriber med eksisterende adgang til det lokale netwærk at initiere et denial of service angreb imod folks modem. Fejlen ligger i Broadcom referencekode og eksisterer derfor på alle kabelmodem som benytter Broadcom chipsættet, hvilket inkluderer langt størstedelen af kabelmodemmer i verden. Broadcom har endnu ikke udtalt sig officielt om sårbarheden og vi ved derfor ikke hvad strategien for en løsning er.",
-					"Fejlen ligger i håndteringen af GET upgraderings requests som sendes til den interne mongoose HTTPD server på modemmet. Vi har kun været i stand til at bekræfte fejlen findes på spectrum analyzeren endpointet i modemmet, men der er mulighed for det også kan på lignende endpoints som hostes af modemmet. Antaget at fejlen kun findes på spectrum analyzeren ligner løsning/medigering af feljen meget det vi ser i <a href='https://cablehaunt.com' target='_blank'>Cable Haunt</a>. Hvis en enhed på netwærket sender en fejlkonstrueret upgraderings request til modemmet rammer modemmet en null-pointer dereferining og crasher. Dette kan ske i 2 scenarier:",
+					"En sårbarhed eksisterer som tillader en angriber med eksisterende adgang til det lokale netværk at initiere et denial of service angreb imod folks modem. Fejlen ligger i Broadcom referencekode og eksisterer derfor på alle kabelmodem som benytter Broadcom chipsættet, hvilket inkluderer langt størstedelen af kabelmodemmer i verden.",
+					"Fejlen ligger i håndteringen af WebSocket GET upgraderings requests som sendes til den interne mongoose HTTPD server på modemmet. Vi har kun været i stand til at bekræfte fejlen findes på spectrum analyzeren endpointet i modemmet, men der er mulighed for det også kan på lignende endpoints som hostes af modemmet. Antaget at fejlen kun findes på spectrum analyzeren ligner løsning/medigering af feljen meget det vi ser i <a href='https://cablehaunt.com' target='_blank'>Cable Haunt</a>. Hvis en enhed på netværket sender en fejlkonstrueret upgraderings request til modemmet rammer modemmet en null-pointer dereferining og crasher. Dette kan ske i 2 scenarier:",
 					"<ul><li>Hvis 'Sec-WebSocket-Key' headeren eller kun en af 'Sec-WebSocket-Key1' og 'Sec-WebSocket-Key2' headerne er sat, når 'Sec-WebSocket-Version' headeren kræver begge.</li><li>Hvis begge eller en af 'Sec-WebSocket-Key1' og 'Sec-WebSocket-Key2' headerne gives når 'Sec-WebSocket-Version' headeren kun kræver 'Sec-WebSocket-Key' headeren.</li></ul>"
 				],
 				"BODY2": [

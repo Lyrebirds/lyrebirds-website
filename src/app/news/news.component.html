@@ -1,4 +1,7 @@
 <app-page-template [title]="'NEWS.HERO'">
-    <app-technicolor-httpd-server-vulnerability [dedicated]="false"></app-technicolor-httpd-server-vulnerability>
-    <app-cable-haunt-vulnerability [dedicated]="false"></app-cable-haunt-vulnerability>
+    <router-outlet #newsOutlet = "outlet"></router-outlet>
+    <div [hidden]="newsOutlet.isActivated">
+        <app-technicolor-httpd-server-vulnerability [dedicated]="false"></app-technicolor-httpd-server-vulnerability>
+        <app-cable-haunt-vulnerability [dedicated]="false"></app-cable-haunt-vulnerability>
+    </div>
 </app-page-template>

@@ -30,27 +30,25 @@
             </a>
         </mat-menu>
         <button mat-button color="primary" [matMenuTriggerFor]="appMenu">
-            <mat-icon>share</mat-icon> {{ 'NEWS.ARTICLE_BUTTONS.SHARE' | translate}}
+            <mat-icon>share</mat-icon> {{ 'NEWS.ARTICLE_BUTTONS.SHARE' | translate }}
         </button>
         <button mat-button color="primary" (click)="toggleCollapseArticle();">
             <mat-icon>visibility</mat-icon><a id="{{'button-' + (route | localize)}}">
-                {{ currentKey | translate}}</a>
+                {{ currentKey | translate }}</a>
         </button>
     </mat-card-actions>
 </mat-card>
 
 <ng-template #dedicatedDiv class="article-content">
-    <app-page-template [title]="'NEWS.HERO'">
-        <div class="dedicated-article article-content">
-            <div>
-                <h1 class="mat-h1">{{title}}</h1>
-                <span fxFlex="1 1 auto"></span>
-                <button [routerLink]="['/news' | localize]" mat-mini-fab color="primary">
-                    <mat-icon>arrow_back</mat-icon>
-                </button>
-            </div>
-            <h4 class="mat-h4">{{subtitle}}</h4>
-            <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+    <div class="dedicated-article article-content">
+        <div>
+            <h1 class="mat-h1">{{title}}</h1>
+            <span fxFlex="1 1 auto"></span>
+            <button [routerLink]="['/news' | localize]" mat-mini-fab color="primary">
+                <mat-icon>arrow_back</mat-icon>
+            </button>
         </div>
-    </app-page-template>
+        <h4 class="mat-h4">{{subtitle}}</h4>
+        <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+    </div>
 </ng-template>
