@@ -49,6 +49,38 @@
 			"MORE": "Mere",
 			"LESS": "Mindre",
 			"SHARE": "Del"
+		},
+		"ARTICLES": {
+			"CABLEHAUNT_VULNERABILITY": {
+				"URL": "cable-haunt-saarbarhed",
+				"TITLE": "Kritisk Sikkerhedshul i Kabelmodemer Verden Over",
+				"BODY1": [
+					"Lyrebirds har i dag offentliggjort et nyt sikkerhedshul ved navn \"Cable Haunt\"."
+				],
+				"BODY2": [
+					"Cable Haunt er et kritisk sikkerhedshul fundet i kabelmodemer fra mange forskellige producenter i hele verden. Dit modem styrer din internetforbindelse og al den trafik som løber til og fra alle enheder på dit netværk. Sikkerhedshullet tillader en hacker, at få fuld kontrol over kabelmodemet, hvilket kan udnyttes til at opsnappe private beskeder og omdirigere internettrafik uden brugerens kendskab.",
+					"Sikkerhedshullet er kun tilgængeligt på dit lokale netværk, men kan tilgåes udefra pga. fejl i håndteringen af websocketprotokollen. Gennem specialkonstruerede pakker sendt til dit modem, kan en udefrakommende person få fuld kontrol over det. Yderligere tekniske detaljer kan findes på <a href='https://cablehaunt.com' target='_blank'>Cable Haunt hjemmesiden</a>.",
+					"Lyrebirds har samarbejdet med danske og udenlandske internetudbydere, samt Center for Cybersikkerhed, gennem de seneste måneder, for at få udbedret fejlen inden udgivelse. Vi har fået forsikring fra både TDC (Danmark), Stofa (Danmark), Get A/S (Norge) og Telia (Norge) om, at alle deres modemer har fået udrullet en opdatering, der fikser fejlen. Det vil sige, at hvis du bor i Danmark og har fået udleveret dit udstyr fra enten TDC eller Stofa er du allerede sikret. Vi har ikke set nogle tegn på, at fejlen er blevet udnyttet.",
+					"Har du dog mistanke om, at dit modem har være udsat for et angreb, anbefaler vi at du læser yderligere op på <a href='https: //cablehaunt.com' target='_blank'>Cable Haunt hjemmesiden</a>, og sørger for at få opdateret dit udstyr. Du bør derefter overveje om din tidligere ikke-krypterede internettrafik har indeholdt fortrolig information, som f.eks. passwords eller personlige emails, og tage de nødvendige forholdsregler.",
+					"Lyrebirds er meget positive over samarbejdet og serøsiteten vi er blevet mødt med fra de ansvarshavende.",
+					"Flere referencer til sikkerhedshullet kan findes her:"
+				]
+			},
+			"BROADCOM_HTTPD_ERROR": {
+				"URL": "broadcom-httpd-fejl",
+				"TITLE": "Broadcom Kabelmodem HTTPD Fejl",
+				"BODY1": [
+					"En sårbarhed eksisterer som tillader en angriber med eksisterende adgang til det lokale netværk at initiere et denial of service angreb imod folks modem. Fejlen ligger i Broadcom referencekode og eksisterer derfor på alle kabelmodem som benytter Broadcom chipsættet, hvilket inkluderer langt størstedelen af kabelmodemmer i verden.",
+					"Fejlen ligger i håndteringen af WebSocket GET upgraderings requests som sendes til den interne mongoose HTTPD server på modemmet. Vi har kun været i stand til at bekræfte fejlen findes på spectrum analyzeren endpointet i modemmet, men der er mulighed for det også kan på lignende endpoints som hostes af modemmet. Antaget at fejlen kun findes på spectrum analyzeren ligner løsning/medigering af feljen meget det vi ser i <a href='https://cablehaunt.com' target='_blank'>Cable Haunt</a>. Hvis en enhed på netværket sender en fejlkonstrueret upgraderings request til modemmet rammer modemmet en null-pointer dereferining og crasher. Dette kan ske i 2 scenarier:",
+					"<ul><li>Hvis 'Sec-WebSocket-Key' headeren eller kun en af 'Sec-WebSocket-Key1' og 'Sec-WebSocket-Key2' headerne er sat, når 'Sec-WebSocket-Version' headeren kræver begge.</li><li>Hvis begge eller en af 'Sec-WebSocket-Key1' og 'Sec-WebSocket-Key2' headerne gives når 'Sec-WebSocket-Version' headeren kun kræver 'Sec-WebSocket-Key' headeren.</li></ul>"
+				],
+				"BODY2": [
+					"Fejlen kræver kontrol over en enhed på netwærket og kan ikke udnyttes igennem fx folks browsere, da de påkrævne GET-requests stoppes af CORS. Endvidere sættes de pågældne headere automatisk af de fleste klienter, så som browsere, og kode-biblioteker. Requestet kan dog sendes med fx curl således:",
+					"<code>curl -i -s -k -H $'Connection: Upgrade' -H $'Upgrade: websocket' -H $'Sec-WebSocket-Key: g+jhLrqMeJso0clv8s/qIg==' $'http://192.168.100.1:8080/Frontend'</code>",
+					"Vi assisterede Technicolors interne sikkerhedspersonale med en dybere forståelse af fejlen da vi også stødte på den under vores arbejde med Cable Haunt. Eftersom vi ikke havde noget held eller direkte kontakt til Broadcom havde vi ikke mulighed for at rapportere og få udbedret fejlen. Eftersom Technicolor har direkte samarbejde med Broadcom, har de nu igangsat udbedringsprocessen.",
+					"Sårbarheden er registreret som <a href='https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7223' target='_blank'>CVE-2020-7223</a>."
+				]
+			}
 		}
 	},
 	"FOOTER": {
@@ -89,28 +121,66 @@
 		"CHECKUP": {
 			"TITLE": "Teknologisk Overblik",
 			"INTRO": "De fleste sikkerhedsangreb udnytter allerede publiceret fejl i systemer som ofte kan forhindres hvis rettidig kendskab og indgreb foretages til nye offentliggjorte sårbarheder.",
-			"BODY": [["Forberedelse", "Vi kortlægger jeres IT-teknologi, fra jeres online services, så som hjemmeside, mail servere eller netværksudstyr, til backup og kryptering. Med en komplet rapport over jeres IT økosystem, kan vi finde ud af om jeres system er i fare for allerede kendte sårbarheder og, hvis fejl eksisterer, påbegynde processen med at få rettet disse."],
-			["Bevidsthed", "IT-sikkerhed er i konstant udvikling, og sårbarheder opdages og rettes konstant. Vi følger udviklingen inden for cybersikkerhed hver dag og forstår, hvordan nyligt fundne sårbarheder kan påvirke jer. Med et kort over din IT-teknologi kan vi overvåge udviklingen i realtid og advare jer om trusler, før hackere bruger imod jer"]]
+			"BODY": [
+				[
+					"Forberedelse",
+					"Vi kortlægger jeres IT-teknologi, fra jeres online services, så som hjemmeside, mail servere eller netværksudstyr, til backup og kryptering. Med en komplet rapport over jeres IT økosystem, kan vi finde ud af om jeres system er i fare for allerede kendte sårbarheder og, hvis fejl eksisterer, påbegynde processen med at få rettet disse."
+				],
+				[
+					"Bevidsthed",
+					"IT-sikkerhed er i konstant udvikling, og sårbarheder opdages og rettes konstant. Vi følger udviklingen inden for cybersikkerhed hver dag og forstår, hvordan nyligt fundne sårbarheder kan påvirke jer. Med et kort over din IT-teknologi kan vi overvåge udviklingen i realtid og advare jer om trusler, før hackere bruger imod jer"
+				]
+			]
 		},
 		"EVAL": {
-			"BODY": [["Nuværende IT", "Vi kan evaluere dine nuværende IT-sikkerhedsplaner, for at afdække, om din plan stadig indkapsulerer alle dine enheder og IT-løsninger."],
-					 ["Simulerede Angreb", "Den bedste måde at finde us af, hvor godt din organisation er beskyttet, er at se, hvordan den modstår et angreb. Vi kan udføre såkaldte Red Team-angreb, som ikke forårsager nogen skade, men som viser, hvor og hvordan det kunne gøres."]],
+			"BODY": [
+				[
+					"Nuværende IT",
+					"Vi kan evaluere dine nuværende IT-sikkerhedsplaner, for at afdække, om din plan stadig indkapsulerer alle dine enheder og IT-løsninger."
+				],
+				[
+					"Simulerede Angreb",
+					"Den bedste måde at finde us af, hvor godt din organisation er beskyttet, er at se, hvordan den modstår et angreb. Vi kan udføre såkaldte Red Team-angreb, som ikke forårsager nogen skade, men som viser, hvor og hvordan det kunne gøres."
+				]
+			],
 			"INTRO": "Hvor godt vil dit system klare sig mod et angreb? Vi kan gennemgå dit forsvar for svagheder, inden du bliver udsat for et rigtigt angreb.",
 			"TITLE": "Evaluering af Sikkerheden"
 		},
 		"DATA": {
 			"TITLE": "Datasikkerhed",
 			"INTRO": "Jeres data er jeres virksomhed, men er det i sikkerhed? Data kan gå tabt ved et destruktivt angreb eller ved uheldige ulykker. Sikring af information er livsnødvendigt, og genskabelse skal være altid stå klart.",
-			"BODY":[["Datatilgangskontrol", "Det er ikke altid hensigtsmæssigt, at alle dokumenter deles med hele jeres organisation. At have kontrol over dataadgang vil begrænse risikoen for, at udefrakommende kan få fat i uhensigtet information eller at der opstår brud på GDPR-aftaler med jeres kunder. Vi hjælper jer med at få et overblik over hvem der har adgang til hvad og hjælper jer implementere en mere sikker dataadgangspolitik, som ikke strider med jeres normale arbejdsgang."],
-			["Kryptering", "Data kan stjæles og kommunikation opfanges, men hvis disse krypteres korrekt, er jeres og jeres kundes data stadig sikkert. Vi hjælper jer med at opdatere jeres kommunikationsformer så disse alle er krypteret."],
-			["Compliance", "Vi kan hjælpe jer med at oprette eller evaluere hvordan i deler data og jeres sikkerhedsstrategi og sikre jer, at I forbliver i overensstemmelse med moderne love som f.eks. GDPR eller cookiedirektivet."],
-			["Datasikkerhedskopi", "Når alt andet mislykkes, kan den at afgøre faktor i en krise være muligheden for at kunne gendanne data fra nye sikkerhedskopier hurtigt. Vi kan implementere de bedste standarder og gøre jeres data sikre og genoprettelige"]]
+			"BODY": [
+				[
+					"Datatilgangskontrol",
+					"Det er ikke altid hensigtsmæssigt, at alle dokumenter deles med hele jeres organisation. At have kontrol over dataadgang vil begrænse risikoen for, at udefrakommende kan få fat i uhensigtet information eller at der opstår brud på GDPR-aftaler med jeres kunder. Vi hjælper jer med at få et overblik over hvem der har adgang til hvad og hjælper jer implementere en mere sikker dataadgangspolitik, som ikke strider med jeres normale arbejdsgang."
+				],
+				[
+					"Kryptering",
+					"Data kan stjæles og kommunikation opfanges, men hvis disse krypteres korrekt, er jeres og jeres kundes data stadig sikkert. Vi hjælper jer med at opdatere jeres kommunikationsformer så disse alle er krypteret."
+				],
+				[
+					"Compliance",
+					"Vi kan hjælpe jer med at oprette eller evaluere hvordan i deler data og jeres sikkerhedsstrategi og sikre jer, at I forbliver i overensstemmelse med moderne love som f.eks. GDPR eller cookiedirektivet."
+				],
+				[
+					"Datasikkerhedskopi",
+					"Når alt andet mislykkes, kan den at afgøre faktor i en krise være muligheden for at kunne gendanne data fra nye sikkerhedskopier hurtigt. Vi kan implementere de bedste standarder og gøre jeres data sikre og genoprettelige"
+				]
+			]
 		},
 		"HERO": "Services",
 		"INTRO": "Vores services tilpasses altid til vores kunders behov, men her kan du læse om nogle af de områder, vi kan hjælpe dig med. Hvis du har spørgsmål eller specifikke ønsker, er du velkommen til at <a href=\"/da/kontakt\">kontakte os</a>!",
 		"TRAINING": {
-			"BODY": [["Sikkerhedskursus", "Vi tilbyder workshops om genkendelse af angreb, såsom phishing eller social engineering, skræddersyet til din specifikke sikkerhedsstrategi. Lad os hjælpe din virksomhed med at oplære dine medarbejdere i deres del af IT-sikkerheden, så de indgår aktivt i forsvaret af din IT."],
-			["Beredskabsplanlægning", "Selvom vi mener, at du skal stræbe mod det bedste forsvar, du kan få, bør du altid have en plan for håndtering af sikkerhedsbrud. Afhængigt af angrebet kan evnen til at reagere hurtigt, være afgørende. Lad os hjælpe dig med at konstruere beredskabsplaner, så i tilfælde af en sikkerhedsbrist, ved du, hvem du skal kontakte, og hvordan du kan komme igang igen."]],
+			"BODY": [
+				[
+					"Sikkerhedskursus",
+					"Vi tilbyder workshops om genkendelse af angreb, såsom phishing eller social engineering, skræddersyet til din specifikke sikkerhedsstrategi. Lad os hjælpe din virksomhed med at oplære dine medarbejdere i deres del af IT-sikkerheden, så de indgår aktivt i forsvaret af din IT."
+				],
+				[
+					"Beredskabsplanlægning",
+					"Selvom vi mener, at du skal stræbe mod det bedste forsvar, du kan få, bør du altid have en plan for håndtering af sikkerhedsbrud. Afhængigt af angrebet kan evnen til at reagere hurtigt, være afgørende. Lad os hjælpe dig med at konstruere beredskabsplaner, så i tilfælde af en sikkerhedsbrist, ved du, hvem du skal kontakte, og hvordan du kan komme igang igen."
+				]
+			],
 			"INTRO": "Moderne angreb er ikke begrænset til teknologien, og sikkerhedsbrud er ofte rettet imod hjælpesomme medarbejdere. Din beskyttelse er kun så godt som det svageste punkt, og dine medarbejdere er en vigtig del af dette forsvar.",
 			"TITLE": "Workshops for Ansatte"
 		}

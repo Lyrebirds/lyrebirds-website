@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HighlightModule } from 'ngx-highlightjs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +27,10 @@ import { faTwitter, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-
 import { faCheckCircle, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faLanguage, faLaptopCode, faBug, faUsers, faFingerprint } from '@fortawesome/free-solid-svg-icons';
 import { CableHauntVulnerabilityComponent } from './news/cable-haunt-vulnerability/cable-haunt-vulnerability.component';
+import { TechnicolorHttpdServerVulnerabilityComponent } from './news/technicolor-httpd-server-vulnerability/technicolor-httpd-server-vulnerability.component';
+import { ArticleTemplateComponent } from './news/article-template/article-template.component';
+import { ArticleBaseComponent } from './news/article-base/article-base.component';
+import { ArticleListComponent } from './news/article-list/article-list.component';
 
 // For Translation with AOT
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -43,8 +48,13 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     EmployeeProfileComponent,
     PageTemplateComponent,
     FooterComponent,
-    CableHauntVulnerabilityComponent
+    CableHauntVulnerabilityComponent,
+    TechnicolorHttpdServerVulnerabilityComponent,
+    ArticleTemplateComponent,
+    ArticleBaseComponent,
+    ArticleListComponent
   ],
+  entryComponents: [ CableHauntVulnerabilityComponent, TechnicolorHttpdServerVulnerabilityComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -55,7 +65,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     FormsModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    // Translation
+    HighlightModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
