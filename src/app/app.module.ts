@@ -29,7 +29,6 @@ import { faLanguage, faLaptopCode, faBug, faUsers, faFingerprint } from '@fortaw
 import { CableHauntVulnerabilityComponent } from './news/cable-haunt-vulnerability/cable-haunt-vulnerability.component';
 import { TechnicolorHttpdServerVulnerabilityComponent } from './news/technicolor-httpd-server-vulnerability/technicolor-httpd-server-vulnerability.component';
 import { ArticleTemplateComponent } from './news/article-template/article-template.component';
-import { ArticleBaseComponent } from './news/article-base/article-base.component';
 import { ArticleListComponent } from './news/article-list/article-list.component';
 
 // For Translation with AOT
@@ -51,7 +50,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     CableHauntVulnerabilityComponent,
     TechnicolorHttpdServerVulnerabilityComponent,
     ArticleTemplateComponent,
-    ArticleBaseComponent,
     ArticleListComponent
   ],
   entryComponents: [ CableHauntVulnerabilityComponent, TechnicolorHttpdServerVulnerabilityComponent ],

@@ -1,10 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-article-base',
-  template: '',
-  styleUrls: ['./article-base.component.scss']
-})
 export class ArticleBaseComponent {
   @Input() dedicated: boolean = true;
   route: string;
