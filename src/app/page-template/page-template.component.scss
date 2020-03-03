@@ -1,4 +1,7 @@
+@import '../../theme';
+
 .hero-image {
+  background-color: $accent;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;

@@ -2,6 +2,7 @@
 	"ABOUT": {
 		"HERO": "Om os",
 		"SUBTITLE": "uder text",
+		"INTRO-0": "Lyrehalen udnytter fuglekongerigets etableret tillid til sangmønstre for at komme ind i reder og sociale cirkler, hvor den ikke hører til. Lyrehalen bryder konventionerne og eksemplificerer, hvordan magelighed og forældede tankemønstre er en af de største risici inden for cyber sikkerhed.",
 		"INTRO-1": "Lyrebirds blev startet af tre software ingeniører, med hver sin baggrund i IT-industrien. Motiviation bag Lyrebirds, kom fra førstehåndserfaring med hvor mangelfuld IT-sikkerhed desværre ofte er. Vi har oplevet hvordan IT systemer kan gøre en positiv forskel, når virksomheder og deres kunder kommer dem i møde. Men hvis tilliden til teknologien skal bibeholdes, skal teknologien være troværdig.",
 		"INTRO-2": "Sikkerhed kan være en vanskelig opgave, og nogle gange opdages teknologiske fejltrin, der kan tvinge selv det bedste forsvar i knæ. Men langt oftere er sikkerhedsbrister forårsaget af mangefuld opsætning og vedligeholdelse. Vi kan understøtte din tillid til teknologien, så du bliver frigjort til at fokusere på at drive din virksomhed."
 	},
@@ -44,7 +45,7 @@
 	},
 	"NEWS": {
 		"HERO": "Nyheder",
-		"INTRO": "",
+		"INTRO": "Lyrebirds er en del af det internationale sikkerhedsmiljø. Vi laver vores egen research og holder os løbende opdateret på de nyeste exploits. På denne nyhedsside kan du følge med i vores research.",
 		"ARTICLE_BUTTONS": {
 			"MORE": "Mere",
 			"LESS": "Mindre",

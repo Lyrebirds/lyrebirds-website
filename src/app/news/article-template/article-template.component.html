@@ -29,10 +29,10 @@
                 <fa-icon [icon]="['fab', 'twitter']"></fa-icon> Twitter
             </a>
         </mat-menu>
-        <button mat-button color="primary" [matMenuTriggerFor]="appMenu">
+        <button mat-button color="accent" [matMenuTriggerFor]="appMenu">
             <mat-icon>share</mat-icon> {{ 'NEWS.ARTICLE_BUTTONS.SHARE' | translate }}
         </button>
-        <button mat-button color="primary" (click)="toggleCollapseArticle();">
+        <button mat-button color="accent" (click)="toggleCollapseArticle();">
             <mat-icon>visibility</mat-icon><a id="{{'button-' + (route | localize)}}">
                 {{ currentKey | translate }}</a>
         </button>

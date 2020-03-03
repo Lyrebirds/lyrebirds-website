@@ -1,11 +1,9 @@
-<app-page-template [title]="'SERVICES.HERO'">
-    <p class="mat-body-2 intro" [innerHTML]="'SERVICES.INTRO' | translate"></p>
-    
+<app-page-template [title]="'SERVICES.HERO'" [intro]="'SERVICES.INTRO'">    
     <div *ngIf="columns == 2">
         <div *ngFor="let service of serviceList; let i = index" fxLayout="row wrap" fxLayoutAlign="center stretch">
             <div fxFlex="50" *ngIf="i % 2 == 0">
                 <div style="margin-top: 95px;">
-                    <fa-icon style="font-size: 15em; color: lightgray;" [icon]="service.icon"></fa-icon>
+                    <fa-icon class="icons" [icon]="service.icon"></fa-icon>
                 </div>
             </div>
             <div fxFlex="50">
@@ -19,7 +17,7 @@
             </div>
             <div fxFlex="50" *ngIf="i % 2 == 1">
                 <div style="margin-top: 95px;">
-                    <fa-icon style="font-size: 15em; color: lightgray;" [icon]="service.icon"></fa-icon>
+                    <fa-icon class="icons" [icon]="service.icon"></fa-icon>
                 </div>
             </div>
         </div>
@@ -27,7 +25,7 @@
     <div *ngIf="columns == 1">
         <div *ngFor="let service of serviceList; let i = index" fxLayout="row wrap" fxLayoutAlign="center stretch">
             <div fxFlex="100">
-                <fa-icon style="font-size: 15em; color: lightgray;" [icon]="service.icon"></fa-icon>
+                <fa-icon class="icons" [icon]="service.icon"></fa-icon>
                 <div class="mat-title tit-mobile">{{ service.title }}</div>
                 <p class="mat-body-2 tex-mobile">{{ service.intro }}</p>
                 <div *ngFor="let block of service.content; let i = index">
