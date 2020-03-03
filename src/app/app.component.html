@@ -2,8 +2,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
 <div class="navigation">
-    <mat-toolbar color="accent" [ngClass]="{'toolbar': true, 'transparent': false }"
-        [ngClass.gt-sm]="{'toolbar': true, 'transparent': !scrolled }">
+    <mat-toolbar color="accent" [ngClass]="{'toolbar': true, 'transparent': false }" [ngClass.gt-sm]="{'toolbar': true, 'transparent': !scrolled }">
         <button mat-icon-button (click)="sidenav.toggle();" fxShow="true" fxHide.gt-sm>
             <ng-container *ngIf="!sidenav.opened; else elseTemplate">
                 <mat-icon inline=true>menu</mat-icon>
@@ -13,16 +12,14 @@
             </ng-template>
         </button>
         <span fxFlex.gt-sm="1 1 auto"></span>
-        <div [routerLink]="[ '/' | localize ]" style="cursor: pointer" class="mat-headline">
+        <div [routerLink]="[ '/' | localize ]" fxLayout="row" fxLayoutAlign=" center" style="cursor: pointer" class="mat-headline">
             {{ 'TITLE' | translate }}
+            <div style="padding-left: 10px;"></div>
+            <app-logo [height]="50"></app-logo>
         </div>
-        <div style="padding-left: 10px;"></div>
-
-        <app-logo [height]="50"></app-logo>
         <span fxFlex="1 1 auto"></span>
         <div fxShow="true" fxHide.lt-md="true">
-            <a mat-button [routerLink]="[ page.route | localize ]" *ngFor="let page of pages"
-                [ngClass.gt-sm]="{ 'button-hover': !scrolled }">
+            <a mat-button [routerLink]="[ page.route | localize ]" *ngFor="let page of pages" [ngClass.gt-sm]="{ 'button-hover': !scrolled }">
                 <div class="mat-button">{{ page.name | translate }}</div>
             </a>
         </div>
@@ -32,8 +29,7 @@
     <mat-sidenav-container class="container" fxFlexFill>
         <mat-sidenav #sidenav>
             <mat-nav-list>
-                <a (click)="sidenav.toggle()" mat-list-item [routerLink]="[ page.route | localize ]"
-                    *ngFor="let page of pages">
+                <a (click)="sidenav.toggle()" mat-list-item [routerLink]="[ page.route | localize ]" *ngFor="let page of pages">
                     <div class="mat-button">{{ page.name | translate }}</div>
                 </a>
             </mat-nav-list>
