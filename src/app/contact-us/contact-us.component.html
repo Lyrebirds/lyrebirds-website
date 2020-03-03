@@ -1,5 +1,4 @@
-<app-page-template [title]="'CONTACT.HERO'">
-    <p class="mat-body-2 intro" [innerHTML]="'CONTACT.INTRO' | translate" id="intro"></p>
+<app-page-template [title]="'CONTACT.HERO'" [intro]="'CONTACT.INTRO'">
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactForm" *ngIf="!messageReceived; else receipt">
 
         <div *ngIf="serverError" id="error">

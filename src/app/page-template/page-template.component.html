@@ -1,11 +1,17 @@
-<div [style.background-image]="getHero()" class="hero-image">
+<div class="hero-image">
     <div class="hero-text">
-        <div [ngClass.gt-sm]="'mat-display-4'" [ngClass.lt-md]="'mat-display-3'" [ngClass.xs]="'mat-display-1'">
-            {{ title | translate }}</div>
-        <div [ngClass.gt-sm]="'mat-title'" [ngClass.lt-md]="'mat-subheading-2'" [ngClass.xs]="'mat-subheading-1'">
-            {{ subtitle | translate }}</div>
+        <app-logo *ngIf="logo" [height]="200"></app-logo>
+        <div style="padding-top: 10px;"></div>
+        <div [ngClass.gt-sm]="'mat-display-3'" [ngClass.lt-md]="'mat-display-2'" [ngClass.xs]="'mat-display-1'">
+            {{ title | translate }}
+        </div>
+        <div [ngClass.gt-sm]="'mat-subheading-2'" [ngClass.lt-md]="'mat-subheading-1'" [ngClass.xs]="'mat-body-1'">
+            {{ subtitle | translate }}
+        </div>
+        <div *ngIf="!mobile" [ngClass.gt-sm]="'mat-subheading-1'" [ngClass.lt-md]="'mat-body-1'" [ngClass.xs]="'mat-body-2'" innerHtml='{{ intro | translate }}'></div>
     </div>
 </div>
 <div class="content">
+    <p class="mat-body-2 intro" *ngIf='mobile' innerHtml='{{ intro | translate }}'></p>
     <ng-content></ng-content>
 </div>

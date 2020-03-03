@@ -2,7 +2,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
 <div class="navigation">
-    <mat-toolbar color="primary" [ngClass]="{'toolbar': true, 'transparent': false }"
+    <mat-toolbar color="accent" [ngClass]="{'toolbar': true, 'transparent': false }"
         [ngClass.gt-sm]="{'toolbar': true, 'transparent': !scrolled }">
         <button mat-icon-button (click)="sidenav.toggle();" fxShow="true" fxHide.gt-sm>
             <ng-container *ngIf="!sidenav.opened; else elseTemplate">
@@ -16,6 +16,9 @@
         <div [routerLink]="[ '/' | localize ]" style="cursor: pointer" class="mat-headline">
             {{ 'TITLE' | translate }}
         </div>
+        <div style="padding-left: 10px;"></div>
+
+        <app-logo [height]="50"></app-logo>
         <span fxFlex="1 1 auto"></span>
         <div fxShow="true" fxHide.lt-md="true">
             <a mat-button [routerLink]="[ page.route | localize ]" *ngFor="let page of pages"

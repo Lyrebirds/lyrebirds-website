@@ -20,8 +20,8 @@ $lyrebirds-typography: mat-typography-config(
 
 @include mat-core($lyrebirds-typography);
 
-$lyrebirds-primary: mat-palette($ch-blue, 500);
-$lyrebirds-accent: mat-palette($mat-green);
+$lyrebirds-primary: mat-palette($ch-green);
+$lyrebirds-accent: mat-palette($ch-gray);
 $lyrebirds-warn: mat-palette($mat-red);
 $lyrebirds-theme: mat-light-theme($lyrebirds-primary, $lyrebirds-accent, $lyrebirds-warn);
 
@@ -39,3 +39,8 @@ $lyrebirds-theme: mat-light-theme($lyrebirds-primary, $lyrebirds-accent, $lyrebi
 
 @include angular-material-theme($lyrebirds-theme);
 @include footer-theme($lyrebirds-theme);
+
+// Export theme colors
+$primary: mat-color($lyrebirds-primary);
+$accent: mat-color($lyrebirds-accent);
+$warn: mat-color($lyrebirds-warn);
