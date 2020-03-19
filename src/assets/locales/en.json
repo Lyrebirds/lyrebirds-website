@@ -86,6 +86,34 @@
 			}
 		}
 	},
+	"CANARY": {
+		"HERO": "Lyrebirds Canary",
+		"INTRO": "",
+		"FORM": {
+			"EMAIL": {
+				"INVALID": "Ikke en gyldig e-mail",
+				"PLACEHOLDER": "Indtast din e-mail",
+				"REQUIRED": "E-mail påkrævet"
+			},
+			"MESSAGE": {
+				"PLACEHOLDER": "Skriv din besked",
+				"REQUIRED": "Besked påkrævet"
+			},
+			"NAME": {
+				"PLACEHOLDER": "Indtast dit navn",
+				"REQUIRED": "Navn påkrævet"
+			},
+			"PHONE": {
+				"PLACEHOLDER": "Telefonnummer"
+			},
+			"SUBJECT": {
+				"PLACEHOLDER": "Emne"
+			},
+			"SUBMIT": "Signup",
+			"ERROR": "Beskeden blev ikke modtaget, grundet en ukendt fejl. Kontakt os via e-email, eller prøv igen senere.",
+			"MESSAGE_SENT": "Besked afsendt!"
+		}
+	},
 	"FOOTER": {
 		"COPYRIGHT": "© 2020 Lyrebirds ApS",
 		"FOLLOW": "Follow us",
@@ -107,6 +135,11 @@
 				"BUTTON": "Services",
 				"CONTENT": "Read about some of the services we provide, to see how we can help you stay secure.",
 				"TITLE": "Our Services"
+			},
+			"CANARY": {
+				"BUTTON": "Lyrebirds Canary",
+				"CONTENT": "",
+				"TITLE": "Lyrebirds Canary"
 			}
 		},
 		"HERO": "Lyrebirds",
@@ -192,5 +225,6 @@
 	"contact": "contact",
 	"about": "about",
 	"services": "services",
-	"news": "news"
+	"news": "news",
+	"canary": "canary"
 }

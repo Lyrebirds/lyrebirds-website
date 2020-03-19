@@ -84,6 +84,34 @@
 			}
 		}
 	},
+	"CANARY": {
+		"HERO": "Lyrebirds Canary",
+		"INTRO": "Har du svært ved at følge med i den enorme strøm af fejl, sårbarheder og hacker-metoder der konstant udkommer? Er du bekymret for at du lige nu er sårbar over for kendte fejl som hackere udnytter? Indmeld dine systemer til Lyrebirds Canary og lad os stå for at finde sårbarhederne.",
+		"FORM": {
+			"EMAIL": {
+				"INVALID": "Ikke en gyldig e-mail",
+				"PLACEHOLDER": "Indtast din e-mail",
+				"REQUIRED": "E-mail påkrævet"
+			},
+			"MESSAGE": {
+				"PLACEHOLDER": "Skriv din besked",
+				"REQUIRED": "Besked påkrævet"
+			},
+			"NAME": {
+				"PLACEHOLDER": "Indtast dit navn",
+				"REQUIRED": "Navn påkrævet"
+			},
+			"PHONE": {
+				"PLACEHOLDER": "Telefonnummer"
+			},
+			"SUBJECT": {
+				"PLACEHOLDER": "Emne"
+			},
+			"SUBMIT": "Signup",
+			"ERROR": "Beskeden blev ikke modtaget, grundet en ukendt fejl. Kontakt os via e-email, eller prøv igen senere.",
+			"MESSAGE_SENT": "Besked afsendt!"
+		}
+	},
 	"FOOTER": {
 		"COPYRIGHT": "© 2020 Lyrebirds ApS",
 		"FOLLOW": "Følg os",
@@ -105,6 +133,11 @@
 				"BUTTON": "Services",
 				"CONTENT": "Læs om hvad vi tilbyder, og hvordan vi kan hjælpe din virksomhed.",
 				"TITLE": "Services"
+			},
+			"CANARY": {
+				"BUTTON": "Lyrebirds Canary",
+				"CONTENT": "",
+				"TITLE": "Lyrebirds Canary"
 			}
 		},
 		"HERO": "Lyrebirds",
@@ -190,5 +223,6 @@
 	"contact": "kontakt",
 	"about": "om_os",
 	"services": "services",
-	"news": "nyheder"
+	"news": "nyheder",
+	"canary": "canary"
 }

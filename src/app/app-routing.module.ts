@@ -4,6 +4,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
+import { CanaryComponent } from './canary/canary.component';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalizeRouterModule, LocalizeRouterSettings, LocalizeParser } from 'localize-router';
 import { LocalizeRouterHttpLoader } from 'localize-router-http-loader';
@@ -31,6 +32,7 @@ const routes: Routes = [
       { path: BROADCOM_HTTPD_ERROR_URL_KEY, component: TechnicolorHttpdServerVulnerabilityComponent },
     ]
   },
+  { path: 'canary', component: CanaryComponent },
   { path: '**', redirectTo: '', component: AboutCompanyComponent },
 ];
 // Add logic for specific article

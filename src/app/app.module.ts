@@ -31,6 +31,7 @@ import { TechnicolorHttpdServerVulnerabilityComponent } from './news/technicolor
 import { ArticleTemplateComponent } from './news/article-template/article-template.component';
 import { ArticleListComponent } from './news/article-list/article-list.component';
 import { LogoComponent } from './logo/logo.component';
+import { CanaryComponent } from './canary/canary.component';
 
 // For Translation with AOT
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -52,7 +53,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TechnicolorHttpdServerVulnerabilityComponent,
     ArticleTemplateComponent,
     ArticleListComponent,
-    LogoComponent
+    LogoComponent,
+    CanaryComponent
   ],
   entryComponents: [ CableHauntVulnerabilityComponent, TechnicolorHttpdServerVulnerabilityComponent ],
   imports: [
