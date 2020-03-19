@@ -1,0 +1,30 @@
+<app-page-template [title]="'CANARY.HERO'" [intro]="'CANARY.INTRO'">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactForm" *ngIf="!messageReceived; else receipt">
+
+        <div *ngIf="serverError" id="error">
+            <mat-divider></mat-divider>
+            <p class="mat-body-2" style="color: red;">
+                {{ 'CANARY.FORM.ERROR' | translate }}
+            </p>
+            <mat-divider></mat-divider>
+        </div>
+
+        <mat-form-field class="input-field">
+            <input matInput [placeholder]="'CANARY.FORM.NAME.PLACEHOLDER' | translate" formControlName="name">
+            <mat-error *ngIf="hasError('name','required')">{{ 'CANARY.FORM.NAME.REQUIRED' | translate }}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class=" input-field">
+            <input matInput [placeholder]="'CANARY.FORM.EMAIL.PLACEHOLDER' | translate" formControlName="email" required>
+            <mat-error *ngIf="hasError('email','required')">{{ 'CANARY.FORM.EMAIL.REQUIRED' | translate }}</mat-error>
+            <mat-error *ngIf="hasError('email','email')">{{ 'CANARY.FORM.EMAIL.INVALID' | translate }}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="input-field">
+            <input matInput [placeholder]="'CANARY.FORM.PHONE.PLACEHOLDER' | translate" formControlName="phone">
+        </mat-form-field>
+
+        <button mat-raised-button type="submit" [disabled]="!contactForm.valid" color="primary">{{ 'CANARY.FORM.SUBMIT' | translate }}</button>
+    </form>
+</app-page-template>
