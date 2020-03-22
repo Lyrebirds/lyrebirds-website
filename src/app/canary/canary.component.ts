@@ -1,9 +1,7 @@
-import { Component, OnInit, InjectionToken } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SlackService } from '../services/slack.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ContactMessage } from '../slack-message';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-canary',
@@ -15,7 +13,7 @@ export class CanaryComponent implements OnInit {
   messageReceived: boolean = false;
   serverError: boolean = false;
 
-  constructor(private slack: SlackService, private _snackBar: MatSnackBar, private translator: TranslateService) { }
+  constructor(private slack: SlackService) { }
 
   ngOnInit(): void {
     this.contactForm = new FormGroup({
@@ -32,8 +30,8 @@ export class CanaryComponent implements OnInit {
     const email = this.contactForm.value['email'];
     const phone = this.contactForm.value['phone'];
     this.slack.sendMessage(new ContactMessage(name, email, phone, subject, text)).subscribe(
-      ok => { this.messageReceived = true; },
-      error => {
+      () => { this.messageReceived = true; },
+      () => {
         this.serverError = true;
         document.getElementById("intro").scrollIntoView({ behavior: "smooth" })
       })

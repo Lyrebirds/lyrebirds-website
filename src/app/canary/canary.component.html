@@ -1,8 +1,8 @@
 <app-page-template [title]="'CANARY.HERO'" [intro]="'CANARY.INTRO'">
     <div *ngFor="let paragraph of 'CANARY.BODY' | translate; let i = index" fxLayout="row" fxLayoutAlign="space-between stretch">
-        <fa-icon *ngIf="i % 2 == 1" fxFlex="50" class="icons" [icon]="['fas', 'laptop-code']"></fa-icon>
-        <p fxFlex="50" class="mat-body-2" innerHtml="{{paragraph}}"></p>
-        <fa-icon *ngIf="i % 2 == 0" fxFlex="50" class="icons" [icon]="['fas', 'laptop-code']"></fa-icon>
+        <fa-icon *ngIf="i % 2 == 1" fxFlex="50" class="icons" [icon]="[paragraph.ICON.STYLE,paragraph.ICON.NAME]"></fa-icon>
+        <p fxFlex="50" class="mat-body-2" innerHtml="{{paragraph.TEXT}}"></p>
+        <fa-icon *ngIf="i % 2 == 0" fxFlex="50" class="icons" [icon]="[paragraph.ICON.STYLE,paragraph.ICON.NAME]"></fa-icon>
     </div>
 
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactForm" *ngIf="!messageReceived; else receipt">

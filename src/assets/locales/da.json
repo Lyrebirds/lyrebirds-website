@@ -88,8 +88,20 @@
 		"HERO": "Lyrebirds Canary",
 		"INTRO": "Har du svært ved at følge med i den enorme strøm af fejl, sårbarheder og hacker-metoder der konstant udkommer? Er du bekymret for at jeres systemer lige nu er sårbar over for kendte fejl som hackere udnytter? Indmeld dine systemer til Lyrebirds Canary og lad os stå for at finde og hjælpe dig udbedre sårbarhederne.",
 		"BODY": [
-			"Der er noget galt med IT-sikkerheden i Danmark. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non nibh a diam ornare ullamcorper. Mauris maximus vulputate sapien eu lacinia. Suspendisse vitae sem at ipsum ullamcorper eleifend sed nec lorem. Aenean in sapien massa. Nulla facilisi. Ut efficitur tristique metus et efficitur. Donec quis mauris eget purus pellentesque vestibulum. Aliquam erat volutpat. Donec feugiat urna a diam convallis interdum. Sed nec ligula interdum, pretium urna sed, aliquet tellus. Vivamus turpis risus, gravida vestibulum arcu ac, convallis imperdiet sem.",
-			"Ut id sapien quam. Vestibulum felis ante, dignissim vitae viverra in, tincidunt nec libero. Donec porttitor, odio vel viverra volutpat, tellus ligula interdum urna, sed tincidunt velit risus ac felis. Duis lacus urna, tincidunt ut placerat sed, malesuada ac justo. Integer pulvinar rutrum augue eu sodales. Maecenas id efficitur ligula. Nullam auctor quam imperdiet ante pharetra congue. Vestibulum ut metus ante. Donec tempor dolor sed nunc consequat luctus. Duis sed porttitor turpis. Nunc mauris mi, finibus nec sem id, venenatis commodo nunc. Sed vehicula odio sit amet enim lobortis, at tincidunt arcu vulputate. Aliquam vulputate quam et lorem cursus, eget elementum erat laoreet."
+			{
+				"TEXT": "Der er noget galt med IT-sikkerheden i Danmark. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non nibh a diam ornare ullamcorper. Mauris maximus vulputate sapien eu lacinia. Suspendisse vitae sem at ipsum ullamcorper eleifend sed nec lorem. Aenean in sapien massa. Nulla facilisi. Ut efficitur tristique metus et efficitur. Donec quis mauris eget purus pellentesque vestibulum. Aliquam erat volutpat. Donec feugiat urna a diam convallis interdum. Sed nec ligula interdum, pretium urna sed, aliquet tellus. Vivamus turpis risus, gravida vestibulum arcu ac, convallis imperdiet sem.",
+				"ICON": {
+					"NAME": "laptop-code",
+					"STYLE": "fas"
+				}
+			},
+			{
+				"TEXT": "Ut id sapien quam. Vestibulum felis ante, dignissim vitae viverra in, tincidunt nec libero. Donec porttitor, odio vel viverra volutpat, tellus ligula interdum urna, sed tincidunt velit risus ac felis. Duis lacus urna, tincidunt ut placerat sed, malesuada ac justo. Integer pulvinar rutrum augue eu sodales. Maecenas id efficitur ligula. Nullam auctor quam imperdiet ante pharetra congue. Vestibulum ut metus ante. Donec tempor dolor sed nunc consequat luctus. Duis sed porttitor turpis. Nunc mauris mi, finibus nec sem id, venenatis commodo nunc. Sed vehicula odio sit amet enim lobortis, at tincidunt arcu vulputate. Aliquam vulputate quam et lorem cursus, eget elementum erat laoreet.",
+				"ICON": {
+					"NAME": "laptop-code",
+					"STYLE": "fas"
+				}
+			}
 		],
 		"FORM": {
 			"EMAIL": {
