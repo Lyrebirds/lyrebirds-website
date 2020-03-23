@@ -86,24 +86,39 @@
 	},
 	"CANARY": {
 		"HERO": "Lyrebirds Canary",
-		"INTRO": "Har du svært ved at følge med i den enorme strøm af fejl, sårbarheder og hacker-metoder der konstant udkommer? Er du bekymret for at jeres systemer lige nu er sårbar over for kendte fejl som hackere udnytter? Indmeld dine systemer til Lyrebirds Canary og lad os stå for at finde og hjælpe dig udbedre sårbarhederne.",
+		"INTRO": "Har du og din virksomhed svært ved at følge med i den vedvarende strøm af fejl, sårbarheder og hacker-metoder der konstant udkommer? Er du bekymret for at jeres systemer lige nu er sårbar over for kendte fejl som hackere udnytter? Indmeld dine systemer til Lyrebirds Canary og lad os stå for at finde og hjælpe dig udbedre sårbarhederne.",
 		"BODY": [
 			{
-				"TEXT": "Der er noget galt med IT-sikkerheden i Danmark. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non nibh a diam ornare ullamcorper. Mauris maximus vulputate sapien eu lacinia. Suspendisse vitae sem at ipsum ullamcorper eleifend sed nec lorem. Aenean in sapien massa. Nulla facilisi. Ut efficitur tristique metus et efficitur. Donec quis mauris eget purus pellentesque vestibulum. Aliquam erat volutpat. Donec feugiat urna a diam convallis interdum. Sed nec ligula interdum, pretium urna sed, aliquet tellus. Vivamus turpis risus, gravida vestibulum arcu ac, convallis imperdiet sem.",
+				"TEXT": "Der er noget galt med IT-sikkerheden i Danmark. Virksomheder og det offentlige bliver i højere og højere grad ramt af hackerangreb på trods af at langt de fleste øger deres IT-sikkerheds budgetter. Mærsk blev i 2017 ramt af en sårbarhed som havde været kendt og patchet i over 3 måneder. I 2019 udnyttede hackere sårheder udgivet og fixet gennem Magento sikkerhedsprogrammer, til hacke blandt andet Bahne. Vi hører konstant om disse angreb, og endnu flere ser aldrig offentlighedens øje, specielt blandt små og mellemstore virksomheder. Der er noget galt.",
+				"ICON": {
+					"NAME": "bug",
+					"STYLE": "fas"
+				}
+			},
+			{
+				"TEXT": "Mange sikkreheds-virksomheder tilbyder sikkerhedstjek og lignende services. Dette kan være en god investering hvis I aldrig før har haft dedikeret personale til at kikke din IT-sikkerhed i sømmene, men det er kun en midlertidig løsning. Vi er forbi tiden hvor man kunne \"implementere\" sikkerhed. Sårbarheder udvikles konstant, 30-40 nye dagligt, og ingen kan forudse hvad der sker i morgen. Der udkommer konstant nye trudsler, og det kræver konstant overvågning og ekspertviden at følge med.",
 				"ICON": {
 					"NAME": "laptop-code",
 					"STYLE": "fas"
 				}
 			},
 			{
-				"TEXT": "Ut id sapien quam. Vestibulum felis ante, dignissim vitae viverra in, tincidunt nec libero. Donec porttitor, odio vel viverra volutpat, tellus ligula interdum urna, sed tincidunt velit risus ac felis. Duis lacus urna, tincidunt ut placerat sed, malesuada ac justo. Integer pulvinar rutrum augue eu sodales. Maecenas id efficitur ligula. Nullam auctor quam imperdiet ante pharetra congue. Vestibulum ut metus ante. Donec tempor dolor sed nunc consequat luctus. Duis sed porttitor turpis. Nunc mauris mi, finibus nec sem id, venenatis commodo nunc. Sed vehicula odio sit amet enim lobortis, at tincidunt arcu vulputate. Aliquam vulputate quam et lorem cursus, eget elementum erat laoreet.",
+				"TEXT": "Det er tydeligt for os at fejlen ligger i viden. Virksomhederne følger ikke med i den konstante strøm af nye sårbarheder, det har langt de fleste hverken økonomi eller personale til, specielt hos små og mellemstore virksomheder. Desværre følger hackerne med og det er det som gør at de kan udnytter huller som virksomhederne har ingen ide om at de er sårbare overfor. Lyrebirds følger med, og er en del af, det internationale sikkerheds-miljø og det er noget vi kan udnytte.",
 				"ICON": {
-					"NAME": "laptop-code",
+					"NAME": "book-medical",
+					"STYLE": "fas"
+				}
+			},
+			{
+				"TEXT": "For at hjælpe de danske virksomheder med at udnytte væres viden, udvikler vi nu \"Lyrebirds Canary\". Systemet kombinerer dit IT-personales viden om hvilke IT-systemer i bruger med vores konstante overvågning af fejl og sårbarheder, og i realtid informere jer så snart nye fejl, sårbarheder og hacker-metoder påvirker jer og sender specifikke instrukser til jeres IT-personale om hvordan de fixer dem. Indmeld jeres systemer til Lyrebirds Canary og tag hakernes største våben væk fra dem; viden.",
+				"ICON": {
+					"NAME": "search",
 					"STYLE": "fas"
 				}
 			}
 		],
 		"FORM": {
+			"INTRO": "Systemet er stadig under udvikling, men skriv dig op nu få adgang til systemet gratis når det udkommer! Tilmeldings processen er stadig manuel på vores side, så hav lidt tålmodighed med os, der kommer til at gå lidt før du modtager en bekræftelsesmail.",
 			"EMAIL": {
 				"INVALID": "Ikke en gyldig e-mail",
 				"PLACEHOLDER": "Indtast din e-mail",

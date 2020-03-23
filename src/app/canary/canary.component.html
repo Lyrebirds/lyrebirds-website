@@ -5,6 +5,10 @@
         <fa-icon *ngIf="i % 2 == 0" fxFlex="50" class="icons" [icon]="[paragraph.ICON.STYLE,paragraph.ICON.NAME]"></fa-icon>
     </div>
 
+    <p class="mat-body-2 intro">
+        {{ 'CANARY.FORM.INTRO' | translate }}
+    </p>
+
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactForm" *ngIf="!messageReceived; else receipt">
 
         <div *ngIf="serverError" id="error">

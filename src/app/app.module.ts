@@ -25,7 +25,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faTwitter, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faCheckCircle, faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faLanguage, faLaptopCode, faBug, faUsers, faFingerprint } from '@fortawesome/free-solid-svg-icons';
+import { faLanguage, faLaptopCode, faBug, faUsers, faFingerprint, faSearch, faBookMedical } from '@fortawesome/free-solid-svg-icons';
 import { CableHauntVulnerabilityComponent } from './news/cable-haunt-vulnerability/cable-haunt-vulnerability.component';
 import { TechnicolorHttpdServerVulnerabilityComponent } from './news/technicolor-httpd-server-vulnerability/technicolor-httpd-server-vulnerability.component';
 import { ArticleTemplateComponent } from './news/article-template/article-template.component';
@@ -56,7 +56,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     LogoComponent,
     CanaryComponent
   ],
-  entryComponents: [ CableHauntVulnerabilityComponent, TechnicolorHttpdServerVulnerabilityComponent ],
+  entryComponents: [CableHauntVulnerabilityComponent, TechnicolorHttpdServerVulnerabilityComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -81,6 +81,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 })
 export class AppModule {
   constructor(private library: FaIconLibrary) {
-    library.addIcons(faTwitter, faLinkedin, faFacebook, faCheckCircle, faLanguage, faEnvelope, faLaptopCode, faBug, faUsers, faFingerprint);
+    library.addIcons(faTwitter, faLinkedin, faFacebook, faCheckCircle, faLanguage, faEnvelope, faLaptopCode, faBug, faUsers, faFingerprint, faSearch, faBookMedical);
   }
 }
