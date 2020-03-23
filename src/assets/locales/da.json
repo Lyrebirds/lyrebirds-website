@@ -118,25 +118,17 @@
 			}
 		],
 		"FORM": {
-			"INTRO": "Systemet er stadig under udvikling, men skriv dig op nu få adgang til systemet gratis når det udkommer! Tilmeldings processen er stadig manuel på vores side, så hav lidt tålmodighed med os, der kommer til at gå lidt før du modtager en bekræftelsesmail.",
+			"INTRO": "Systemet er stadig under udvikling, men skriv dig op nu få adgang til systemet gratis når det udkommer! Tilmeldings processen er stadig manuel på vores side, så hav lidt tålmodighed med os, vi sender en bekræftelsesmail så hurtigt vi kan.",
 			"EMAIL": {
 				"INVALID": "Ikke en gyldig e-mail",
 				"PLACEHOLDER": "Indtast din e-mail",
 				"REQUIRED": "E-mail påkrævet"
 			},
-			"MESSAGE": {
-				"PLACEHOLDER": "Skriv din besked",
-				"REQUIRED": "Besked påkrævet"
-			},
 			"NAME": {
-				"PLACEHOLDER": "Indtast dit navn",
-				"REQUIRED": "Navn påkrævet"
+				"PLACEHOLDER": "Indtast dit navn eller virksomhed"
 			},
 			"PHONE": {
 				"PLACEHOLDER": "Telefonnummer"
-			},
-			"SUBJECT": {
-				"PLACEHOLDER": "Emne"
 			},
 			"SUBMIT": "Signup",
 			"ERROR": "Beskeden blev ikke modtaget, grundet en ukendt fejl. Kontakt os via e-email, eller prøv igen senere.",
