@@ -146,23 +146,20 @@
 			"AUTHOR": "Lyrebirds ApS",
 			"KEYWORDS": "cybersecurity,security,it-security,consultancy"
 		},
-		"CARDS": {
-			"CONTACT": {
-				"BUTTON": "Kontakt",
+		"CARDS": [
+			{
+				"TITLE": "Kontakt",
 				"CONTENT": "Din sikkerhedsstrategi skal afspejle din virksomhed. Kontakt os, så finder vi ud af, hvordan vores indsats bedst passer til dine behov.",
-				"TITLE": "Kontakt"
+				"BUTTON": "Kontakt",
+				"ROUTE": "/contact"
 			},
-			"SERVICES": {
-				"BUTTON": "Services",
+			{
+				"TITLE": "Services",
 				"CONTENT": "Læs om hvad vi tilbyder, og hvordan vi kan hjælpe din virksomhed.",
-				"TITLE": "Services"
-			},
-			"CANARY": {
-				"BUTTON": "Lyrebirds Canary",
-				"CONTENT": "",
-				"TITLE": "Lyrebirds Canary"
+				"BUTTON": "Services",
+				"ROUTE": "/services"
 			}
-		},
+		],
 		"HERO": "Lyrebirds",
 		"INTRO": "Lyrebirds er en konsulentvirksomhed inden for cybersikkerhed, der er specialiseret i opdagelsen af IT-sårbarheder og forebyggelse af dem. Vi mener, at sikkerhed er en kombination af forberedelse og opmærksomhed, og er centralt i de tjenester, vi leverer. Vores viden og ekspertise vil være i stand til at guide dig til et moderne forsvar, så du sikkert kan udnytte fordelene ved IT-teknologi.",
 		"TAGLINE": "IT-Sikkerhedsrådgivning"
@@ -175,72 +172,90 @@
 		"NEWS": "Nyheder"
 	},
 	"SERVICES": {
-		"CHECKUP": {
-			"TITLE": "Teknologisk Overblik",
-			"INTRO": "De fleste sikkerhedsangreb udnytter allerede publiceret fejl i systemer som ofte kan forhindres hvis rettidig kendskab og indgreb foretages til nye offentliggjorte sårbarheder.",
-			"BODY": [
-				[
-					"Forberedelse",
-					"Vi kortlægger jeres IT-teknologi, fra jeres online services, så som hjemmeside, mail servere eller netværksudstyr, til backup og kryptering. Med en komplet rapport over jeres IT økosystem, kan vi finde ud af om jeres system er i fare for allerede kendte sårbarheder og, hvis fejl eksisterer, påbegynde processen med at få rettet disse."
-				],
-				[
-					"Bevidsthed",
-					"IT-sikkerhed er i konstant udvikling, og sårbarheder opdages og rettes konstant. Vi følger udviklingen inden for cybersikkerhed hver dag og forstår, hvordan nyligt fundne sårbarheder kan påvirke jer. Med et kort over din IT-teknologi kan vi overvåge udviklingen i realtid og advare jer om trusler, før hackere bruger imod jer"
-				]
-			]
-		},
-		"EVAL": {
-			"BODY": [
-				[
-					"Nuværende IT",
-					"Vi kan evaluere dine nuværende IT-sikkerhedsplaner, for at afdække, om din plan stadig indkapsulerer alle dine enheder og IT-løsninger."
-				],
-				[
-					"Simulerede Angreb",
-					"Den bedste måde at finde us af, hvor godt din organisation er beskyttet, er at se, hvordan den modstår et angreb. Vi kan udføre såkaldte Red Team-angreb, som ikke forårsager nogen skade, men som viser, hvor og hvordan det kunne gøres."
-				]
-			],
-			"INTRO": "Hvor godt vil dit system klare sig mod et angreb? Vi kan gennemgå dit forsvar for svagheder, inden du bliver udsat for et rigtigt angreb.",
-			"TITLE": "Evaluering af Sikkerheden"
-		},
-		"DATA": {
-			"TITLE": "Datasikkerhed",
-			"INTRO": "Jeres data er jeres virksomhed, men er det i sikkerhed? Data kan gå tabt ved et destruktivt angreb eller ved uheldige ulykker. Sikring af information er livsnødvendigt, og genskabelse skal være altid stå klart.",
-			"BODY": [
-				[
-					"Datatilgangskontrol",
-					"Det er ikke altid hensigtsmæssigt, at alle dokumenter deles med hele jeres organisation. At have kontrol over dataadgang vil begrænse risikoen for, at udefrakommende kan få fat i uhensigtet information eller at der opstår brud på GDPR-aftaler med jeres kunder. Vi hjælper jer med at få et overblik over hvem der har adgang til hvad og hjælper jer implementere en mere sikker dataadgangspolitik, som ikke strider med jeres normale arbejdsgang."
-				],
-				[
-					"Kryptering",
-					"Data kan stjæles og kommunikation opfanges, men hvis disse krypteres korrekt, er jeres og jeres kundes data stadig sikkert. Vi hjælper jer med at opdatere jeres kommunikationsformer så disse alle er krypteret."
-				],
-				[
-					"Compliance",
-					"Vi kan hjælpe jer med at oprette eller evaluere hvordan i deler data og jeres sikkerhedsstrategi og sikre jer, at I forbliver i overensstemmelse med moderne love som f.eks. GDPR eller cookiedirektivet."
-				],
-				[
-					"Datasikkerhedskopi",
-					"Når alt andet mislykkes, kan den at afgøre faktor i en krise være muligheden for at kunne gendanne data fra nye sikkerhedskopier hurtigt. Vi kan implementere de bedste standarder og gøre jeres data sikre og genoprettelige"
-				]
-			]
-		},
 		"HERO": "Services",
 		"INTRO": "Vores services tilpasses altid til vores kunders behov, men her kan du læse om nogle af de områder, vi kan hjælpe dig med. Hvis du har spørgsmål eller specifikke ønsker, er du velkommen til at <a href=\"/da/kontakt\">kontakte os</a>!",
-		"TRAINING": {
-			"BODY": [
-				[
-					"Sikkerhedskursus",
-					"Vi tilbyder workshops om genkendelse af angreb, såsom phishing eller social engineering, skræddersyet til din specifikke sikkerhedsstrategi. Lad os hjælpe din virksomhed med at oplære dine medarbejdere i deres del af IT-sikkerheden, så de indgår aktivt i forsvaret af din IT."
-				],
-				[
-					"Beredskabsplanlægning",
-					"Selvom vi mener, at du skal stræbe mod det bedste forsvar, du kan få, bør du altid have en plan for håndtering af sikkerhedsbrud. Afhængigt af angrebet kan evnen til at reagere hurtigt, være afgørende. Lad os hjælpe dig med at konstruere beredskabsplaner, så i tilfælde af en sikkerhedsbrist, ved du, hvem du skal kontakte, og hvordan du kan komme igang igen."
+		"SERVICES": [
+			{
+				"TITLE": "Teknologisk Overblik",
+				"INTRO": "De fleste sikkerhedsangreb udnytter allerede publiceret fejl i systemer som ofte kan forhindres hvis rettidig kendskab og indgreb foretages til nye offentliggjorte sårbarheder.",
+				"ICON": {
+					"NAME": "laptop-code",
+					"STYLE": "fas"
+				},
+				"PARAGRAPHS": [
+					{
+						"TITLE": "Forberedelse",
+						"BODY": "Vi kortlægger jeres IT-teknologi, fra jeres online services, så som hjemmeside, mail servere eller netværksudstyr, til backup og kryptering. Med en komplet rapport over jeres IT økosystem, kan vi finde ud af om jeres system er i fare for allerede kendte sårbarheder og, hvis fejl eksisterer, påbegynde processen med at få rettet disse."
+					},
+					{
+						"TITLE": "Bevidsthed",
+						"BODY": "IT-sikkerhed er i konstant udvikling, og sårbarheder opdages og rettes konstant. Vi følger udviklingen inden for cybersikkerhed hver dag og forstår, hvordan nyligt fundne sårbarheder kan påvirke jer. Med et kort over din IT-teknologi kan vi overvåge udviklingen i realtid og advare jer om trusler, før hackere bruger imod jer"
+					}
 				]
-			],
-			"INTRO": "Moderne angreb er ikke begrænset til teknologien, og sikkerhedsbrud er ofte rettet imod hjælpesomme medarbejdere. Din beskyttelse er kun så godt som det svageste punkt, og dine medarbejdere er en vigtig del af dette forsvar.",
-			"TITLE": "Workshops for Ansatte"
-		}
+			},
+			{
+				"TITLE": "Evaluering af Sikkerheden",
+				"INTRO": "Hvor godt vil dit system klare sig mod et angreb? Vi kan gennemgå dit forsvar for svagheder, inden du bliver udsat for et rigtigt angreb.",
+				"ICON": {
+					"NAME": "bug",
+					"STYLE": "fas"
+				},
+				"PARAGRAPHS": [
+					{
+						"TITLE": "Nuværende IT",
+						"BODY": "Vi kan evaluere dine nuværende IT-sikkerhedsplaner, for at afdække, om din plan stadig indkapsulerer alle dine enheder og IT-løsninger."
+					},
+					{
+						"TITLE": "Simulerede Angreb",
+						"BODY": "Den bedste måde at finde us af, hvor godt din organisation er beskyttet, er at se, hvordan den modstår et angreb. Vi kan udføre såkaldte Red Team-angreb, som ikke forårsager nogen skade, men som viser, hvor og hvordan det kunne gøres."
+					}
+				]
+			},
+			{
+				"TITLE": "Datasikkerhed",
+				"INTRO": "Jeres data er jeres virksomhed, men er det i sikkerhed? Data kan gå tabt ved et destruktivt angreb eller ved uheldige ulykker. Sikring af information er livsnødvendigt, og genskabelse skal være altid stå klart.",
+				"ICON": {
+					"NAME": "users",
+					"STYLE": "fas"
+				},
+				"PARAGRAPHS": [
+					{
+						"TITLE": "Datatilgangskontrol",
+						"BODY": "Det er ikke altid hensigtsmæssigt, at alle dokumenter deles med hele jeres organisation. At have kontrol over dataadgang vil begrænse risikoen for, at udefrakommende kan få fat i uhensigtet information eller at der opstår brud på GDPR-aftaler med jeres kunder. Vi hjælper jer med at få et overblik over hvem der har adgang til hvad og hjælper jer implementere en mere sikker dataadgangspolitik, som ikke strider med jeres normale arbejdsgang."
+					},
+					{
+						"TITLE": "Kryptering",
+						"BODY": "Data kan stjæles og kommunikation opfanges, men hvis disse krypteres korrekt, er jeres og jeres kundes data stadig sikkert. Vi hjælper jer med at opdatere jeres kommunikationsformer så disse alle er krypteret."
+					},
+					{
+						"TITLE": "Compliance",
+						"BODY": "Vi kan hjælpe jer med at oprette eller evaluere hvordan i deler data og jeres sikkerhedsstrategi og sikre jer, at I forbliver i overensstemmelse med moderne love som f.eks. GDPR eller cookiedirektivet."
+					},
+					{
+						"TITLE": "Datasikkerhedskopi",
+						"BODY": "Når alt andet mislykkes, kan den at afgøre faktor i en krise være muligheden for at kunne gendanne data fra nye sikkerhedskopier hurtigt. Vi kan implementere de bedste standarder og gøre jeres data sikre og genoprettelige"
+					}
+				]
+			},
+			{
+				"TITLE": "Workshops for Ansatte",
+				"INTRO": "Moderne angreb er ikke begrænset til teknologien, og sikkerhedsbrud er ofte rettet imod hjælpesomme medarbejdere. Din beskyttelse er kun så godt som det svageste punkt, og dine medarbejdere er en vigtig del af dette forsvar.",
+				"ICON": {
+					"NAME": "fingerprint",
+					"STYLE": "fas"
+				},
+				"PARAGRAPHS": [
+					{
+						"TITLE": "Sikkerhedskursus",
+						"BODY": "Vi tilbyder workshops om genkendelse af angreb, såsom phishing eller social engineering, skræddersyet til din specifikke sikkerhedsstrategi. Lad os hjælpe din virksomhed med at oplære dine medarbejdere i deres del af IT-sikkerheden, så de indgår aktivt i forsvaret af din IT."
+					},
+					{
+						"TITLE": "Beredskabsplanlægning",
+						"BODY": "Selvom vi mener, at du skal stræbe mod det bedste forsvar, du kan få, bør du altid have en plan for håndtering af sikkerhedsbrud. Afhængigt af angrebet kan evnen til at reagere hurtigt, være afgørende. Lad os hjælpe dig med at konstruere beredskabsplaner, så i tilfælde af en sikkerhedsbrist, ved du, hvem du skal kontakte, og hvordan du kan komme igang igen."
+					}
+				]
+			}
+		]
 	},
 	"TITLE": "Lyrebirds",
 	"contact": "kontakt",

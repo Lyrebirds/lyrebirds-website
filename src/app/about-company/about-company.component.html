@@ -1,14 +1,14 @@
 <app-page-template [title]="'FRONT.HERO'" [subtitle]="'FRONT.TAGLINE'" [logo]="true">
     <p class="mat-body-2 intro" [innerHTML]="'FRONT.INTRO' | translate"></p>
     <div class="card-container" fxLayout="row wrap" fxLayoutAlign="center stretch">
-        <mat-card fxLayout="column" *ngFor="let card of cards">
-            <mat-card-title>{{ card.title | translate }}</mat-card-title>
+        <mat-card fxLayout="column" *ngFor="let card of 'FRONT.CARDS' | translate">
+            <mat-card-title>{{ card.TITLE }}</mat-card-title>
             <mat-card-content>
-                <p>{{ card.content | translate }}</p>
+                <p>{{ card.CONTENT }}</p>
             </mat-card-content>
             <mat-card-actions>
-                <a [routerLink]="[ card.route | localize ]">
-                    <button mat-raised-button color="primary">{{ card.button | translate }}</button>
+                <a [routerLink]="[ card.ROUTE | localize ]">
+                    <button mat-raised-button color="primary">{{ card.BUTTON }}</button>
                 </a>
             </mat-card-actions>
         </mat-card>

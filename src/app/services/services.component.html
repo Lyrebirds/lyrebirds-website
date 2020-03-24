@@ -1,39 +1,20 @@
-<app-page-template [title]="'SERVICES.HERO'" [intro]="'SERVICES.INTRO'">    
-    <div *ngIf="columns == 2">
-        <div *ngFor="let service of serviceList; let i = index" fxLayout="row wrap" fxLayoutAlign="center stretch">
-            <div fxFlex="50" *ngIf="i % 2 == 0">
-                <div style="margin-top: 95px;">
-                    <fa-icon class="icons" [icon]="service.icon"></fa-icon>
+<app-page-template [title]="'SERVICES.HERO'" [intro]="'SERVICES.INTRO'">
+    <div *ngFor="let service of 'SERVICES.SERVICES' | translate; let i = index" fxLayout="row" fxLayoutAlign="space-between stretch">
+        <fa-icon *ngIf="i % 2 == 0" fxFlex="50" class="icons" [icon]="[service.ICON.STYLE, service.ICON.NAME]"></fa-icon>
+        <div>
+            <div class="mat-title left-align">{{ service.TITLE }}</div>
+            <p class="mat-body-2 left-align">
+                {{ service.INTRO }}
+            </p>
+            <div *ngFor="let paragraph of service.PARAGRAPHS">
+                <div class="mat-subheading-2 left-align">
+                    {{ paragraph.TITLE }}
                 </div>
-            </div>
-            <div fxFlex="50">
-                <div class="mat-title tit">{{ service.title }}</div>
-                <p class="mat-body-2 tex">{{ service.intro }}</p>
-                <div *ngFor="let block of service.content; let i = index">
-                    
-                    <div class="mat-display-3 tex2">{{ block[0] }}</div>
-                    <p class="mat-body-2 tex">{{ block[1] }}</p>
-                </div>
-            </div>
-            <div fxFlex="50" *ngIf="i % 2 == 1">
-                <div style="margin-top: 95px;">
-                    <fa-icon class="icons" [icon]="service.icon"></fa-icon>
-                </div>
+                <p class="mat-body-2 left-align">
+                    {{ paragraph.BODY }}
+                </p>
             </div>
         </div>
-    </div>
-    <div *ngIf="columns == 1">
-        <div *ngFor="let service of serviceList; let i = index" fxLayout="row wrap" fxLayoutAlign="center stretch">
-            <div fxFlex="100">
-                <fa-icon class="icons" [icon]="service.icon"></fa-icon>
-                <div class="mat-title tit-mobile">{{ service.title }}</div>
-                <p class="mat-body-2 tex-mobile">{{ service.intro }}</p>
-                <div *ngFor="let block of service.content; let i = index">
-                    
-                    <div class="mat-display-3 tex2-mobile">{{ block[0] }}</div>
-                    <p class="mat-body-2 tex-mobile">{{ block[1] }}</p>
-                </div>
-            </div>
-        </div>
+        <fa-icon *ngIf="i % 2 == 1" fxFlex="50" class="icons" [icon]="[service.ICON.STYLE, service.ICON.NAME]"></fa-icon>
     </div>
 </app-page-template>
