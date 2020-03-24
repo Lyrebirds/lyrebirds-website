@@ -37,4 +37,15 @@
 
         <button mat-raised-button type="submit" [disabled]="!contactForm.valid" color="primary">{{ 'CANARY.FORM.SUBMIT' | translate }}</button>
     </form>
+
+    <ng-template #receipt>
+        <div class="receipt" fxLayout="row" fxLayoutAlign="center center">
+            <mat-card>
+                <mat-card-header fxLayout="row" fxLayoutAlign="center">
+                    <mat-card-title>{{ 'CANARY.FORM.MESSAGE_SENT' | translate }}</mat-card-title>
+                    <fa-icon style="font-size: 2.5em; color: green" [icon]="['far', 'check-circle']"></fa-icon>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </ng-template>
 </app-page-template>
