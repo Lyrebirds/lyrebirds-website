@@ -26,7 +26,7 @@ export class CanaryComponent implements OnInit {
   onSubmit() {
     const name = this.contactForm.value['name'];
     const subject = "Lyrebirds Canary Signup";
-    const text = this.contactForm.value['email'] + " would like to sign up for Lyrebirds Canary. Remember to send a confirmation e-mail to " + this.contactForm.value['email'] + "!";
+    const text = this.contactForm.value['name'] + " would like to sign up for Lyrebirds Canary. Remember to send a confirmation e-mail to " + this.contactForm.value['email'] + "!";
     const email = this.contactForm.value['email'];
     const phone = this.contactForm.value['phone'];
     this.slack.sendMessage(new ContactMessage(name, email, phone, subject, text)).subscribe(
