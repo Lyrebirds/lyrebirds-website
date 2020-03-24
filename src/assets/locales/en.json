@@ -89,29 +89,32 @@
 	"CANARY": {
 		"HERO": "Lyrebirds Canary",
 		"INTRO": "",
+		"BODY": [
+			{
+				"TEXT": "",
+				"ICON": {
+					"NAME": "bug",
+					"STYLE": "fas"
+				}
+			}
+		],
 		"FORM": {
+			"INTRO": "",
 			"EMAIL": {
-				"INVALID": "Ikke en gyldig e-mail",
-				"PLACEHOLDER": "Indtast din e-mail",
-				"REQUIRED": "E-mail påkrævet"
-			},
-			"MESSAGE": {
-				"PLACEHOLDER": "Skriv din besked",
-				"REQUIRED": "Besked påkrævet"
+				"INVALID": "Not a valid email",
+				"PLACEHOLDER": "Enter your email",
+				"REQUIRED": "Email required"
 			},
 			"NAME": {
-				"PLACEHOLDER": "Indtast dit navn",
-				"REQUIRED": "Navn påkrævet"
+				"PLACEHOLDER": "Enter your name or company",
+				"REQUIRED": "Name/company required"
 			},
 			"PHONE": {
-				"PLACEHOLDER": "Telefonnummer"
-			},
-			"SUBJECT": {
-				"PLACEHOLDER": "Emne"
+				"PLACEHOLDER": "Phone number"
 			},
 			"SUBMIT": "Signup",
-			"ERROR": "Beskeden blev ikke modtaget, grundet en ukendt fejl. Kontakt os via e-email, eller prøv igen senere.",
-			"MESSAGE_SENT": "Besked afsendt!"
+			"ERROR": "An error occured while trying to send the message. Please use our email, or try again later.",
+			"MESSAGE_SENT": "Message sent!"
 		}
 	},
 	"FOOTER": {
