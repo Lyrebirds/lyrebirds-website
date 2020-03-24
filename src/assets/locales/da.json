@@ -125,7 +125,8 @@
 				"REQUIRED": "E-mail påkrævet"
 			},
 			"NAME": {
-				"PLACEHOLDER": "Indtast dit navn eller virksomhed"
+				"PLACEHOLDER": "Indtast dit navn eller virksomhed",
+				"REQUIRED": "Navn/virksomhed påkrævet"
 			},
 			"PHONE": {
 				"PLACEHOLDER": "Telefonnummer"
