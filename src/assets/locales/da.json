@@ -96,7 +96,7 @@
 				}
 			},
 			{
-				"TEXT": "Mange virksomheder tilbyder sikkerhedstjek og lignende services. Dette kan være en god investering for virksomheder som ikke har ressourcer til selv at varetage opgaven og som aldrig før har haft deres IT-sikkerhed kikket i sømmene, men det er kun en midlertidig løsning. Vi er forbi tiden hvor man kunne \"implementere\" sikkerhed. Der konstateres 30-40 nye sårbarheder hver dag, og det tal er kun stigende. Ingen kan forudse hvad der sker i morgen, og det kræver derfor konstant overvågning og ekspertviden at følge med.",
+				"TEXT": "Mange virksomheder tilbyder sikkerhedstjek og lignende services. Disse services kan være en god investering for virksomheder som ikke før har haft deres IT-sikkerhed kikket i sømmene, men det er kun en midlertidig løsning. Vi er forbi tiden hvor man kunne \"implementere\" sikkerhed. Der konstateres 30-40 nye sårbarheder hver dag, og det tal er kun stigende. Ingen kan forudse hvad der sker i morgen, og det kræver derfor konstant overvågning og ekspertviden at følge med.",
 				"ICON": {
 					"NAME": "laptop-code",
 					"STYLE": "fas"
@@ -152,6 +152,12 @@
 				"TITLE": "Kontakt",
 				"CONTENT": "Din sikkerhedsstrategi skal afspejle din virksomhed. Kontakt os, så finder vi ud af, hvordan vores indsats bedst passer til dine behov.",
 				"BUTTON": "Kontakt",
+				"ROUTE": "/contact"
+			},
+			{
+				"TITLE": "Lyrebirds Canary",
+				"CONTENT": "Er du bekymret for at din virksomheds IT infrastruktur er usikker? Indmeld jeres system til Lyrebirds Canary og hold jer opdateret.",
+				"BUTTON": "Lyrebirds Canary",
 				"ROUTE": "/contact"
 			},
 			{
