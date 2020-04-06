@@ -158,7 +158,7 @@
 				"TITLE": "Lyrebirds Canary",
 				"CONTENT": "Er du bekymret for at din virksomheds IT infrastruktur er usikker? Indmeld jeres system til Lyrebirds Canary og hold jer opdateret.",
 				"BUTTON": "Lyrebirds Canary",
-				"ROUTE": "/contact"
+				"ROUTE": "/canary"
 			},
 			{
 				"TITLE": "Services",
