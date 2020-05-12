@@ -88,18 +88,39 @@
 	},
 	"CANARY": {
 		"HERO": "Lyrebirds Canary",
-		"INTRO": "",
+		"INTRO": "Do you and your business have difficulty keeping up with the constant flow of vulnerabilities and hacker practices that are published every day? Are you concerned that your systems are currently vulnerable to known vulnerabilities that hackers exploit? Enrol your systems in Lyrebirds Canary and let us identify and fix your weaknesses.",
 		"BODY": [
 			{
-				"TEXT": "",
+				"TEXT": "There is something wrong with IT security in Denmark. Private and public companies are increasingly affected by hacker attacks despite most increasing their IT security budgets. In 2017, several Danish companies, including a large Danish shipping company, were hacked due to a vulnerability that had been known and patched for over three months. In 2019, hackers exploited vulnerabilities released and fixed through Magento security programs, to hack several Danish webshops. We hear about these attacks all the time, and many more are never see the light of day.",
 				"ICON": {
 					"NAME": "bug",
+					"STYLE": "fas"
+				}
+			},
+			{
+				"TEXT": "Many IT security companies offer security checks and similar services. These services can be a good investment for companies who have never had their IT security thoroughly checked, but it is only a temporary solution. We are past the time when you could \"implement\" security. We identify 30-40 new vulnerabilities every day, and that number is only increasing. No one can predict what will happen tomorrow, so it requires constant monitoring and expert knowledge to know what affects your infrastructure and stay secure.",
+				"ICON": {
+					"NAME": "laptop-code",
+					"STYLE": "fas"
+				}
+			},
+			{
+				"TEXT": "It is clear to Lyrebirds that the error lies in knowledge. Most companies do not prioritize having staff dedicated to following the constant flow of new exploits. Unfortunately, the hackers do stay updated, and that is what allows them to exploit vulnerabilities that companies had no idea that they had. Lyrebirds follow and are part of the international security environment, and our goal is to help the Danish companies.",
+				"ICON": {
+					"NAME": "book-medical",
+					"STYLE": "fas"
+				}
+			},
+			{
+				"TEXT": "To help your business leverage our knowledge, we are developing \"Lyrebirds Canary\". The system combines your IT staff's knowledge of which IT systems you use with our constant monitoring of errors and vulnerabilities. We inform you, in real-time, as soon as new vulnerabilities that affect exactly your system are discovered. We send guidance to your IT staff so that they, with our help, can secure the systems. Enrol your systems in Lyrebirds Canary and take away the hackers biggest weapon; knowledge.",
+				"ICON": {
+					"NAME": "search",
 					"STYLE": "fas"
 				}
 			}
 		],
 		"FORM": {
-			"INTRO": "",
+			"INTRO": "The system is still under development, but sign up now to access the system for free when it is released! The signup process is still manual on our side, so have a little patience with us, we'll send a confirmation email as soon as we can.",
 			"EMAIL": {
 				"INVALID": "Not a valid email",
 				"PLACEHOLDER": "Enter your email",
@@ -134,6 +155,12 @@
 				"CONTENT": "Your security strategy should reflect your business. Contact us and we'll figure out how our efforts best suit your needs.",
 				"BUTTON": "Contact",
 				"ROUTE": "/contact"
+			},
+			{
+				"TITLE": "Lyrebirds Canary",
+				"CONTENT": "Are you afraid that your IT infrastructure may currently be vulnerable? Signup for Lyrebirds Canary and stay up to date.",
+				"BUTTON": "Lyrebirds Canary",
+				"ROUTE": "/canary"
 			},
 			{
 				"TITLE": "Our Services",
