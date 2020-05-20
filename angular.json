@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lyrebirds-web": {
+    "lyrebirds-website": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,16 +17,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/lyrebirds-web",
+            "outputPath": "dist/lyrebirds-website",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/.well-known"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
@@ -46,7 +45,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -58,41 +56,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "100kb",
-                  "maximumError": "200kb"
-                }
-              ]
-            },
-            "dk": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "outputPath": "dist/dk/",
-              "i18nFile": "src/i18n/messages.dk.xlf",
-              "i18nFormat": "xlf",
-              "i18nLocale": "dk",
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "100kb",
-                  "maximumError": "200kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
               ]
             }
@@ -101,21 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "lyrebirds-web:build"
+            "browserTarget": "lyrebirds-website:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "lyrebirds-web:build:production"
-            },
-            "dk": {
-              "browserTarget": "lyrebirds-web:build:dk"
+              "browserTarget": "lyrebirds-website:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lyrebirds-web:build"
+            "browserTarget": "lyrebirds-website:build"
           }
         },
         "test": {
@@ -127,8 +89,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/.well-known"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
@@ -153,19 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "lyrebirds-web:serve"
+            "devServerTarget": "lyrebirds-website:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "lyrebirds-web:serve:production"
+              "devServerTarget": "lyrebirds-website:serve:production"
             }
           }
         }
       }
-    }
-  },
-  "defaultProject": "lyrebirds-web",
-  "cli": {
-    "analytics": false
-  }
+    }},
+  "defaultProject": "lyrebirds-website"
 }
