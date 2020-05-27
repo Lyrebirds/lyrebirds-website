@@ -1,4 +1,115 @@
 <app-page-template>
     <app-hero [heroPath]="'FRONT.HERO.IMAGE'"></app-hero>
-    <p>frontpage works!</p>
+    <div fxLayout="row wrap" fxLayoutAlign="center start">
+        <div fxFlex="20"></div>
+        <mat-card class="front-page-card background-accent" fxFlex="30">
+            <mat-card-header>
+                <mat-card-title>
+                    NEWSLETTER
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p class="mat-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non dictum
+                    hendrerit, augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius natoque penatibus
+                    et
+                    magnis dis parturient montes, nascetur ridiculus mus. Suspendisse posuere, odio vehicula bibendum
+                    blandit, urna augue interdum lacus, eu aliquet ex est nec risus. Pellentesque tincidunt ultrices
+                    urna et
+                    sollicitudin.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button color="warn" class="front-page-button">
+                    SIGN UP
+                </button>
+            </mat-card-actions>
+        </mat-card>
+        <mat-card class="front-page-card background-primary" fxFlex="30">
+            <mat-card-header>
+                <mat-card-title class="color-white">
+                    BROADCOM
+                </mat-card-title>
+                <mat-card-title class="color-white">
+                    CABLE MODEM ERROR
+                </mat-card-title>
+                <mat-card-subtitle class="color-warn">
+                    03-02-2020
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p class="mat-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non dictum
+                    hendrerit, augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius natoque penatibus
+                    et
+                    magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button color="warn" class="front-page-button">
+                    READ MORE
+                </button>
+            </mat-card-actions>
+        </mat-card>
+        <div fxFlex></div>
+        <div fxFlex="20"></div>
+        <mat-card fxFlex="30" class="front-page-image-card">
+            <img mat-card-image class="" src="/assets/img/stocks.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-footer style="height: -100px;"></mat-card-footer>
+        </mat-card>
+        <mat-card class="front-page-card no-shadow" fxFlex="30">
+            <mat-card-header>
+                <mat-card-title>
+                    ABOUT LYREBIRDS
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p class="mat-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non dictum
+                    hendrerit, augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius natoque
+                    penatibus
+                    et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse posuere, odio vehicula
+                    bibendum
+                    blandit, urna augue interdum lacus, eu aliquet ex est nec risus. Pellentesque tincidunt ultrices
+                    urna et sollicitudin.
+                </p>
+            </mat-card-content>
+        </mat-card>
+        <div fxFlex></div>
+    </div>
+    <div class="image-background" style="background-image: url('/assets/img/computer-coffee.jpg');" fxLayout="column"
+        fxLayoutAlign="center center">
+        <h1 class="mat-h1 center color-white" fxFlex>
+            SERVICES
+        </h1>
+        <p class="mat-body color-white" fxFlex>
+            Our services are always adjusted to fit the requirements of our clients, but here you can read about some of
+            the areas we can help you with. If you have any questions or specific needs, feel free to contact us!
+        </p>
+        <div fxLayout="row" fxLayoutAlign="center center">
+            <div fxFlex="10"></div>
+            <mat-card class="front-page-card-2" fxFlex="20">
+                <mat-card-header>
+                    <mat-card-title>
+                        Technology
+                    </mat-card-title>
+                    <mat-card-title>
+                        Management
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="mat-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non dictum
+                        hendrerit, augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius natoque
+                        penatibus
+                        et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse posuere, odio vehicula
+                        bibendum
+                        blandit, urna augue interdum lacus, eu aliquet ex est nec risus. Pellentesque tincidunt ultrices
+                        urna et sollicitudin.
+                    </p>
+                </mat-card-content>
+            </mat-card>
+            <div fxFlex></div>
+        </div>
+    </div>
 </app-page-template>

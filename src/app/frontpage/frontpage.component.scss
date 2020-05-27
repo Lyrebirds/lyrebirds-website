@@ -1,0 +1,55 @@
+@import "../../theme";
+
+.front-page-card{
+    margin: 20px;
+    padding: 50px 100px 50px 100px;
+}
+
+.no-shadow {
+    background-color: rgb(250, 250, 250);
+    transition: none !important;
+    box-shadow: none !important;
+}
+
+.front-page-image-card {
+    margin: 20px;
+}
+.front-page-image-card > img {
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: -7px!important;
+}
+
+.front-page-button {
+    padding: 10px;
+}
+
+.background-accent{
+    background-color: $accent;
+}
+
+.background-primary {
+    background-color: $primary;
+}
+
+.color-warn {
+    color: $warn;
+}
+
+.color-white {
+    color: white;
+}
+
+.image-background{
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-background > .mat-h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+.image-background > .mat-body {
+    width: 500px;
+    text-align: center;
+}
