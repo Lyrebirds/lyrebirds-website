@@ -1,0 +1,36 @@
+<mat-toolbar class="toolbar">
+    <span fxFlex.gt-sm="1 1 auto"></span>
+    <div [routerLink]="[ '/' | localize ]" fxLayout="row" fxLayoutAlign=" center" style="cursor: pointer"
+        class="mat-headline">
+        {{ 'TITLE' | translate }}
+        <div style="padding-left: 10px;"></div>
+    </div>
+    <span fxFlex="1 1 auto"></span>
+    <a class="menu-item" mat-button [routerLink]="[ page.route | localize ]" *ngFor="let page of pages"
+        [ngClass.gt-sm]="{ 'button-hover': !scrolled }">
+        <div class="mat-button">{{ page.name | translate }}</div>
+    </a>
+    <span fxFlex.gt-sm="1 1 auto"></span>
+</mat-toolbar>
+<div class="navigation">
+    <mat-sidenav-container class="container" fxFlexFill>
+        <mat-sidenav #sidenav>
+            <mat-nav-list>
+                <a (click)="sidenav.toggle()" mat-list-item [routerLink]="[ page.route | localize ]"
+                    *ngFor="let page of pages">
+                    <div class="mat-button">{{ page.name | translate }}</div>
+                </a>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content #content fxLayout="column" fxLayoutAlign="space-between">
+            <div class="content">
+                <p class="mat-body-2 intro" *ngIf='mobile'></p>
+                <ng-content (activate)="onActivate($event)"></ng-content>
+            </div>
+            <div fxFlex="1 1 0"></div>
+            <footer fxFlex="0 0 auto">
+                <app-footer></app-footer>
+            </footer>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

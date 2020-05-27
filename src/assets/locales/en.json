@@ -1,0 +1,279 @@
+{
+	"ABOUT": {
+		"HERO": "About us?",
+		"SUBTITLE": "under text",
+		"INTRO-0": "The Lyrebird relies on the bird kingdoms established trust in song patterns to get into nests and social circles where it is not supposed to be. The Lyrebird breaks the conventions and exemplifies how complacency and outdated thought patterns is one of the largest risks within security.",
+		"INTRO-1": "Lyrebirds was founded by three software engineers, with different industry experiences. Our motivation for starting Lyrebirds, came from first hand experience, with how insufficient the security is, in many important IT-systems. We have seen how great IT-systems can really make a difference when embraced by companies and their customers. But in order to maintain the trust in technology, the technology must be trustworthy.",
+		"INTRO-2": "Security can be a difficult task, and sometimes new technological errors are discovered which endangers even the most vigilant defenses. However, breaches and leaks are just as frequently caused by lack of proper security maintenance. We believe that we can support your company's trust in technology, freeing you to focus on your business."
+	},
+	"CONTACT": {
+		"META": {
+			"DESCRIPTION": "Whether you have questions about our services, your own security, or otherwise, you can always contact us. Feel free to write us an email at <a href='mailto:contact@lyrebirds.dk'  target='_blank'>contact@lyrebirds.dk</a> or fill out the form on our website and we will get back to you as soon possible.",
+			"AUTHOR": "Lyrebirds ApS"
+		},
+		"FORM": {
+			"EMAIL": {
+				"INVALID": "Not a valid email",
+				"PLACEHOLDER": "Enter your email",
+				"REQUIRED": "Email required"
+			},
+			"MESSAGE": {
+				"PLACEHOLDER": "Write us a message",
+				"REQUIRED": "Message required"
+			},
+			"NAME": {
+				"PLACEHOLDER": "Enter your name",
+				"REQUIRED": "Name required"
+			},
+			"PHONE": {
+				"PLACEHOLDER": "Phone number"
+			},
+			"SUBJECT": {
+				"PLACEHOLDER": "Subject"
+			},
+			"SUBMIT": "Send Message",
+			"ERROR": "An error occured while trying to send the message. Please use our email, or try again later.",
+			"MESSAGE_SENT": "Message sent!"
+		},
+		"HERO": "Contact us!",
+		"INTRO": "Whether you have questions about our services, your own security, or otherwise, you can always contact us. Feel free to write us an email at <a href='mailto:contact@lyrebirds.dk'  target='_blank'>contact@lyrebirds.dk</a> or fill out the form below and we will get back to you as soon possible.",
+		"PGP": {
+			"COPIED": "PGP Key copied!",
+			"COPY": "Click to copy PGP-key",
+			"USE": "For secure communication, please use our public PGP key"
+		}
+	},
+	"NEWS": {
+		"HERO": "News",
+		"INTRO": "Lyrebirds is a part of the international security research community. We do our own research and continuously keep up to date on exploits and techniques. On this news page, you can follow our research.",
+		"ARTICLE_BUTTONS": {
+			"MORE": "More",
+			"LESS": "Less",
+			"SHARE": "Share"
+		},
+		"ARTICLES": {
+			"CABLEHAUNT_VULNERABILITY": {
+				"URL": "cable-haunt-vulnerablitiy",
+				"TITLE": "Worldwide Critical Security Vulnerability in Cable Modems",
+				"BODY1": [
+					"Lyrebirds have today released a new security vulnerablitity by the name \"Cable Haunt\"."
+				],
+				"BODY2": [
+					"Cable Haunt is a critical security vulnerability found in cable modems from many different manufacturers around the world. Your modem manages your Internet connection and all traffic flowing to and from all devices on your network. The security vulnerability allows a hacker to gain full control of the cable modem, which can be used to intercept private messages and redirect Internet traffic without the user's knowledge. ",
+					"The security vulnerability is only available on your local network, but can be accessed from the outside due to websocket protocol handling errors. Through specially designed packages sent to your modem, an outside person can gain full control over it. Further technical details can be found at <a href = 'https://cablehaunt.com' target='_ blank'> Cable Haunt Website </a>. ",
+					"Lyrebirds has partnered with Danish and foreign ISPs, as well as the Center for Cyber ​​Security, in recent months to correct the error before release. We have received insurance from both TDC (Denmark), Stofa (Denmark), Get A/S (Norway) and Telia (Norway) that all their modems have been rolling out an update that fixes the error, which means that if you live in Denmark and have had your equipment delivered from either TDC or Stofa you are already secured. not seen any evidence that the error has been exploited. ",
+					"However, if you suspect that your modem has been attacked, we recommend that you read the <a href='https://cablehaunt.com' target='_blank'>Cable Haunt website</a> and make sure your equipment is up to date, then consider whether your previously unencrypted Internet traffic contained confidential information, such as passwords or personal emails, and take the necessary precautions. ",
+					"Lyrebirds are very positive about the cooperation and the seriousness we have been met by those responsible.",
+					"More references to the security vulnerability can be found here:"
+				]
+			},
+			"BROADCOM_HTTPD_ERROR": {
+				"URL": "broadcom-httpd-error",
+				"TITLE": "Broadcom Cable Modem HTTPD Error",
+				"BODY1": [
+					"A vulnerability exists that allows an attacker with existing access to the local network to initiate a denial of service attack against the local modem. The error lies in the Broadcom reference code and therefore exists on all cable modems using the Broadcom chipset, which includes the vast majority of cable modems in the world.",
+					"The error lies in the handling of the WebSocket GET upgrade requests that are sent to the internal mongoose HTTPD server on the modem. If a device on the network sends a malformed upgrade request to the modem, the modem encounters a null pointer dereferencing and crashing. This can happen in 2 scenarios:",
+					"<ul><li>If the 'Sec-WebSocket-Key' header or only one of the 'Sec-WebSocket-Key1' and 'Sec-WebSocket-Key2' headers are set when the 'Sec-WebSocket-Version' header requires both.</li><li>If both or one of the 'Sec-WebSocket-Key1' and 'Sec-WebSocket-Key2' headers are set when the 'Sec-WebSocket-Version' header only requires the 'Sec-WebSocket-Key' header.</li></ul>",
+					"Below is a video explaining the problem with the assembly in detail."
+				],
+				"BODY2": [
+					"We have only been able to confirm that the error exists on spectrum analyzer endpoint in the modem, but it is possible that the modem hosts similar endpoints with the same error. Assuming the error is only found on the spectrum analyzer, the solution/mitigation of the error is very similar to what we see in <a href='https://cablehaunt.com' target='_blank'>Cable Haunt</a>.",
+					"The error requires control over a device on the network and cannot be exploited through eg people's browsers, as the required GET requests are restricted by CORS. Furthermore, the headers in question are automatically set by most clients, such as browsers and code libraries, and custom socket control of a local device is therefore usually needed. However, the request can be sent with eg curl as follows:",
+					"<code>curl -i -s -k -H $'Connection: Upgrade' -H $'Upgrade: websocket' -H $'Sec-WebSocket-Key: g+jhLrqMeJso0clv8s/qIg==' $'http://192.168.100.1:8080/Frontend'</code>",
+					"The error was discovered by Technicolor during their creation of firmware updates for Cable Haunt. We have assisted Technicolor's internal security staff with a deeper understanding of the error, as we also encountered it during our work with Cable Haunt. As Technicolor is in direct cooperation with Broadcom, they were able to initiate the repair process directly.",
+					"The vulnerability is publicly disclosed here and is registered as <a href='https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7223' target='_blank'>CVE-2020-7223</a>."
+				]
+			}
+		}
+	},
+	"CANARY": {
+		"HERO": "Lyrebirds Canary",
+		"INTRO": "Do you and your business have difficulty keeping up with the constant flow of vulnerabilities and hacker practices that are published every day? Are you concerned that your systems are currently vulnerable to known vulnerabilities that hackers exploit? Enrol your systems in Lyrebirds Canary and let us identify and fix your weaknesses.",
+		"BODY": [
+			{
+				"TEXT": "There is something wrong with IT security in Denmark. Private and public companies are increasingly affected by hacker attacks despite most increasing their IT security budgets. In 2017, several Danish companies, including a large Danish shipping company, were hacked due to a vulnerability that had been known and patched for over three months. In 2019, hackers exploited vulnerabilities released and fixed through Magento security programs, to hack several Danish webshops. We hear about these attacks all the time, and many more are never see the light of day.",
+				"ICON": {
+					"NAME": "bug",
+					"STYLE": "fas"
+				}
+			},
+			{
+				"TEXT": "Many IT security companies offer security checks and similar services. These services can be a good investment for companies who have never had their IT security thoroughly checked, but it is only a temporary solution. We are past the time when you could \"implement\" security. We identify 30-40 new vulnerabilities every day, and that number is only increasing. No one can predict what will happen tomorrow, so it requires constant monitoring and expert knowledge to know what affects your infrastructure and stay secure.",
+				"ICON": {
+					"NAME": "laptop-code",
+					"STYLE": "fas"
+				}
+			},
+			{
+				"TEXT": "It is clear to Lyrebirds that the error lies in knowledge. Most companies do not prioritize having staff dedicated to following the constant flow of new exploits. Unfortunately, the hackers do stay updated, and that is what allows them to exploit vulnerabilities that companies had no idea that they had. Lyrebirds follow and are part of the international security environment, and our goal is to help the Danish companies.",
+				"ICON": {
+					"NAME": "book-medical",
+					"STYLE": "fas"
+				}
+			},
+			{
+				"TEXT": "To help your business leverage our knowledge, we are developing \"Lyrebirds Canary\". The system combines your IT staff's knowledge of which IT systems you use with our constant monitoring of errors and vulnerabilities. We inform you, in real-time, as soon as new vulnerabilities that affect exactly your system are discovered. We send guidance to your IT staff so that they, with our help, can secure the systems. Enrol your systems in Lyrebirds Canary and take away the hackers biggest weapon; knowledge.",
+				"ICON": {
+					"NAME": "search",
+					"STYLE": "fas"
+				}
+			}
+		],
+		"FORM": {
+			"INTRO": "The system is still under development, but sign up now to access the system for free when it is released! The signup process is still manual on our side, so have a little patience with us, we'll send a confirmation email as soon as we can.",
+			"EMAIL": {
+				"INVALID": "Not a valid email",
+				"PLACEHOLDER": "Enter your email",
+				"REQUIRED": "Email required"
+			},
+			"NAME": {
+				"PLACEHOLDER": "Enter your name or company",
+				"REQUIRED": "Name/company required"
+			},
+			"PHONE": {
+				"PLACEHOLDER": "Phone number"
+			},
+			"SUBMIT": "Signup",
+			"ERROR": "An error occured while trying to send the message. Please use our email, or try again later.",
+			"MESSAGE_SENT": "Message sent!"
+		}
+	},
+	"FOOTER": {
+		"TITLE": "Test!",
+		"COPYRIGHT": "© 2020 Lyrebirds ApS",
+		"FOLLOW": "Follow us",
+		"OTHERLANG": "Dansk"
+	},
+	"FRONT": {
+		"HERO": {
+			"IMAGE": "/assets/img/buildings-blur.jpg",
+			"STRIPES": "/assets/img/stripes-high-res.png"
+		},
+		"META": {
+			"DESCRIPTION": "Lyrebirds is a cyber security consultancy company, specialized in the discovery of security vulnerabilities, and incident prevention.",
+			"AUTHOR": "Lyrebirds ApS",
+			"KEYWORDS": "cybersikkerhed,sikkerhed,it-sikkerhed,konsulent"
+		},
+		"CARDS": [
+			{
+				"TITLE": "Contact Us",
+				"CONTENT": "Your security strategy should reflect your business. Contact us and we'll figure out how our efforts best suit your needs.",
+				"BUTTON": "Contact",
+				"ROUTE": "/contact"
+			},
+			{
+				"TITLE": "Lyrebirds Canary",
+				"CONTENT": "Are you afraid that your IT infrastructure may currently be vulnerable? Signup for Lyrebirds Canary and stay up to date.",
+				"BUTTON": "Lyrebirds Canary",
+				"ROUTE": "/canary"
+			},
+			{
+				"TITLE": "Our Services",
+				"CONTENT": "Read about some of the services we provide, to see how we can help you stay secure.",
+				"BUTTON": "Services",
+				"ROUTE": "/services"
+			}
+		],
+		"INTRO": "Lyrebirds is a cyber security consultancy company, specialized in the discovery of security vulnerabilities, and incident prevention. We believe that security comes from preparation and awareness, which is central in the services we provide. Our knowledge and expertize will be able to guide you to a modern defense, allowing you to safely leverage the advantages of IT-technology.",
+		"TAGLINE": "Security Consultancy"
+	},
+	"PAGES": {
+		"ABOUT": "About",
+		"CONTACT": "Contact",
+		"HOME": "Home",
+		"SERVICES": "Services",
+		"NEWS": "News"
+	},
+	"SERVICES": {
+		"HERO": "Services",
+		"INTRO": "Our services are always adjusted to fit the requirements of our clients, but here you can read about some of the areas we can help you with. If you have any questions or specific needs, feel free to <a href=\"/en/contact\">contact us</a>!",
+		"SERVICES": [
+			{
+				"TITLE": "Technology Management",
+				"INTRO": "Most attacks on security will exploit publicly known vulnerabilities, and could have been prevented by a timely reaction to newly disclosed vulnerabilities.",
+				"ICON": {
+					"NAME": "laptop-code",
+					"STYLE": "fas"
+				},
+				"PARAGRAPHS": [
+					{
+						"TITLE": "Preparation",
+						"BODY": "We can create a map of your IT-technology, from your online services, such as websites, mail servers or network equipment, to backups and encryption. With a complete report on your IT ecosystem, you will know if your IT currently contains publicly known vulnerabilities, and either rest easy or start correcting the risks."
+					},
+					{
+						"TITLE": "Awareness",
+						"BODY": "IT-Security is always evolving, with vulnerabilities being constantly discovered and corrected. We follow the evolution of cyber security every day, and understand how newly discovered vulnerabilities could affect you. With a map of your IT-technology, we can monitor the advancements in real-time and alert you of threats, before hackers use them to target you."
+					}
+				]
+			},
+			{
+				"TITLE": "Security Evaluation",
+				"INTRO": "How well would your current security measures fare against an attack? We can check your defences for weaknesses before a real attacker does.",
+				"ICON": {
+					"NAME": "bug",
+					"STYLE": "fas"
+				},
+				"PARAGRAPHS": [
+					{
+						"TITLE": "Current IT Security Evaluation",
+						"BODY": "We can evaluate your current IT Security plans, to help you find out if your plan still encapsulates all your devices and solutions."
+					},
+					{
+						"TITLE": "Simulated Attack",
+						"BODY": "The best way to know how well your organization is protected is to see how it fares against attacks. We can perform so-called Red Team attacks, which won't cause any damage, but will show where and how it could be done."
+					}
+				]
+			},
+			{
+				"TITLE": "Employee Workshops",
+				"INTRO": "Modern attacks are not limited to technological exploitation, and defences are often breached by assailants targeting well-meaning employees. Your defences are only as secure as the weakest point, and your employees are a major part of those defences.",
+				"ICON": {
+					"NAME": "users",
+					"STYLE": "fas"
+				},
+				"PARAGRAPHS": [
+					{
+						"TITLE": "Security Training",
+						"BODY": "We offer workshops on recognizing attacks, such as phishing or social engineering, tailored to your specific security strategy. Let us help your company by educating your staff on their part in keeping up IT-security, and transform your employees from liabilities to valuable security assets."
+					},
+					{
+						"TITLE": "Contingency Planning",
+						"BODY": "While we believe that you should strive towards the best defence you can get, you should always have a plan for security failure scenarios. Depending on the attack, the ability to quickly react correctly can be crucial. Let us help you construct contingency plans such that in the event of a security failure, you know who to contact and how to start the recovery."
+					}
+				]
+			},
+			{
+				"TITLE": "Secure your Data",
+				"INTRO": "Your data is your business, but is it safe? Data can be lost to a destructive attack, or by unfortunate accidents. Securing your information is a vital precaution, and recovery must be available on demand.",
+				"ICON": {
+					"NAME": "fingerprint",
+					"STYLE": "fas"
+				},
+				"PARAGRAPHS": [
+					{
+						"TITLE": "Data Access Control",
+						"BODY": "It is not always desirable to have executive strategy documents shared with your entire organization. Having control of data access will limit risks of exposure of private information or breaking GDPR agreements with your customers."
+					},
+					{
+						"TITLE": "Encryption",
+						"BODY": "Data can be stolen, and communication intercepted, but if encrypted correctly, your and your customer's data will be safe."
+					},
+					{
+						"TITLE": "Compliance",
+						"BODY": "We can help you create and evaluate your data safety and security strategy, making sure that you stay compliant with modern laws such as GDPR or the Cookie directive."
+					},
+					{
+						"TITLE": "Data Backup",
+						"BODY": "When all else fails, being able to restore data from recent backups quickly, might be the deciding factor in a crisis. We can implement best practices and make your data secure and recoverable."
+					}
+				]
+			}
+		]
+	},
+	"TITLE": "Lyrebirds",
+	"contact": "contact",
+	"about": "about",
+	"services": "services",
+	"news": "news",
+	"canary": "canary"
+}

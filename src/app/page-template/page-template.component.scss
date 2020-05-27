@@ -1,0 +1,16 @@
+@import "../../theme";
+
+.toolbar {
+    margin-top: 30px;
+    position: fixed;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.mat-button {
+    color: $primary;
+}
+
+.menu-item {
+    margin: 20px;
+}
