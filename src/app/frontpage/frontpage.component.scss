@@ -1,5 +1,7 @@
 @import "../../theme";
 
+$config: mat-typography-config();
+
 .front-page-card{
     margin: 20px;
     padding: 50px 100px 50px 100px;
@@ -52,4 +54,8 @@
 .image-background > .mat-body {
     width: 500px;
     text-align: center;
+}
+
+.mat-body {
+    font-family: 'transat' !important;
 }
