@@ -2,9 +2,23 @@
 
 $config: mat-typography-config();
 
+
+::ng-deep .mat-card-header-text {
+    margin: 0px !important;
+  }
+
 .front-page-card{
-    margin: 20px;
+    position: unset;
+    height: inherit;
     padding: 50px 100px 50px 100px;
+}
+
+.front-page-page {
+    min-height: 100vh;
+}
+
+.divider {
+    height: 20px;
 }
 
 .no-shadow {
@@ -13,13 +27,10 @@ $config: mat-typography-config();
     box-shadow: none !important;
 }
 
-.front-page-image-card {
-    margin: 20px;
-}
-.front-page-image-card > img {
-    height: 300px;
+.front-page-image {
+    height: 1px;
     object-fit: cover;
-    margin-bottom: -7px!important;
+    //margin-bottom: -7px!important;
 }
 
 .front-page-button {
@@ -43,7 +54,6 @@ $config: mat-typography-config();
 }
 
 .image-background{
-    height: auto;
     background-size: cover;
     background-repeat: no-repeat;
 }

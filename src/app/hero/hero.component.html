@@ -1,15 +1,31 @@
 <div class="hero">
     <img class="hero-image" src="{{ heroPath | translate }}">
     <img class="stripes" src="/assets/img/stripes-high-res.png">
-    <mat-card class="hero-card">
-        <mat-card-title>
-            Lyrebirds
-        </mat-card-title>
-        <mat-card-subtitle>
-        Forefront of Cybersecurity
-        </mat-card-subtitle>
-        <mat-card-content>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non dictum hendrerit, augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse posuere, odio vehicula bibendum blandit, urna augue interdum lacus, eu aliquet ex est nec risus. Pellentesque tincidunt ultrices urna et sollicitudin. Praesent posuere ex ut est gravida, in scelerisque nisl tempus. Nulla facilisi. Fusce vestibulum diam et dictum venenatis. Vivamus quam augue, bibendum eget dignissim ut, suscipit eu odio. Integer tempus blandit lacus sit amet efficitur. Mauris molestie molestie dui sit amet lacinia. Fusce a porttitor urna, a fermentum sapien.
-        </mat-card-content>
-    </mat-card>
+    <div class="center-wrap" fxLayout="row wrap" fxLayoutAlign="center start">
+        <div fxFlex="6"></div>
+        <div fxFlex="88" fxLayout="row wrap" fxLayoutAlign="center stretch">
+            <mat-card class="hero-card" fxFlex="49">
+                <mat-card-title class="mat-subheading-1">
+                    Lyrebirds
+                </mat-card-title>
+                <mat-card-subtitle class="mat-subheading-3">
+                    Forefront of Cybersecurity
+                </mat-card-subtitle>
+                <mat-card-content class="mat-body-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non dictum
+                    hendrerit,
+                    augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius natoque penatibus et magnis
+                    dis
+                    parturient montes, nascetur ridiculus mus. Suspendisse posuere, odio vehicula bibendum blandit
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" class="hero-card-button">
+                        READ MORE
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+            <div fxFlex></div>
+        </div>
+        <div fxFlex></div>
+    </div>
 </div>

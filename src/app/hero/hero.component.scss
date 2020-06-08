@@ -1,3 +1,5 @@
+@import "../../theme";
+
 .hero {
   height: 100vh;
   position: relative;
@@ -19,21 +21,28 @@
   color: whitesmoke;
 }
 
+.hero-card-button {
+  padding: 10px;
+}
+
 .stripes {
   position: absolute;
   top: -5px;
-  bottom: -10px;
+  height: 135vh;
   right: 0px;
-  height: 100%;
 }
 
 .hero-card {
-  width: 400px;
-  position: absolute;
-  top: 40vh;
-  margin-left: 150px;
-  margin-top: auto;
-  margin-bottom: auto;
   padding: 50px 100px 50px 100px;
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.center-wrap {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: auto;
+  margin-bottom: auto;
 }

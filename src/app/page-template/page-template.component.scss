@@ -1,10 +1,16 @@
 @import "../../theme";
 
 .toolbar {
+    padding: 0;
     margin-top: 30px;
-    position: fixed;
+    position: absolute;
     z-index: 2;
     background-color: transparent;
+}
+
+.toolbar-logo {
+    height: 40px;
+    padding-left: 100px;
 }
 
 .mat-button {

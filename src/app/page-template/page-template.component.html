@@ -1,16 +1,16 @@
-<mat-toolbar class="toolbar">
-    <span fxFlex.gt-sm="1 1 auto"></span>
-    <div [routerLink]="[ '/' | localize ]" fxLayout="row" fxLayoutAlign=" center" style="cursor: pointer"
-        class="mat-headline">
-        {{ 'TITLE' | translate }}
-        <div style="padding-left: 10px;"></div>
+<mat-toolbar class="toolbar" fxLayout="row" fxLayoutAlign="center start">
+    <div fxFlex="6"></div>
+    <div fxFlex="44" [routerLink]="[ '/' | localize ]" style="cursor: pointer" class="mat-headline">
+        <img class="toolbar-logo" src="/assets/img/logo-blaa.png">
     </div>
-    <span fxFlex="1 1 auto"></span>
-    <a class="menu-item" mat-button [routerLink]="[ page.route | localize ]" *ngFor="let page of pages"
-        [ngClass.gt-sm]="{ 'button-hover': !scrolled }">
-        <div class="mat-button">{{ page.name | translate }}</div>
-    </a>
-    <span fxFlex.gt-sm="1 1 auto"></span>
+    <div fxFlex></div>
+    <div style="align-self: flex-end;">
+        <a class="menu-item" mat-button [routerLink]="[ page.route | localize ]" *ngFor="let page of pages"
+            [ngClass.gt-sm]="{ 'button-hover': !scrolled }">
+            <div class="mat-button">{{ page.name | translate }}</div>
+        </a>
+    </div>
+    <span fxFlex="12"></span>
 </mat-toolbar>
 <div class="navigation">
     <mat-sidenav-container class="container" fxFlexFill>
