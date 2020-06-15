@@ -20,13 +20,9 @@ export class FrontpageComponent implements OnInit {
   }
 
   update(): void {
-    this.aboutCard.nativeElement.ngAfterViewInit +=
-      console.log(this.img);
     let boundingClientRect = this.aboutCard.nativeElement.getBoundingClientRect();
     let bla = this.aboutCard.nativeElement;
-    console.log(bla.style);
     let height = boundingClientRect.height;
-    console.log(height);
     this.img.nativeElement.style.height = height + "px";
     setTimeout(_ => {
       this.update();

@@ -13,6 +13,16 @@ $config: mat-typography-config();
     padding: 50px 100px 50px 100px;
 }
 
+.front-page-card-2{
+    position: unset;
+    height: inherit;
+    padding: 25px 50px 25px 50px;
+}
+
+.front-page-contact-body{
+    max-width: 500px;
+}
+
 .front-page-page {
     min-height: 100vh;
 }
@@ -34,7 +44,11 @@ $config: mat-typography-config();
 }
 
 .front-page-button {
-    padding: 10px;
+    padding: 10px 60px 10px 60px;
+}
+
+.mat-raised-button {
+    border-radius: 2px;
 }
 
 .background-accent{
@@ -68,4 +82,34 @@ $config: mat-typography-config();
 
 .mat-body {
     font-family: 'transat' !important;
+}
+
+.services-paragraph{
+    text-align: center;
+    max-width: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.mat-title{
+    font-weight: 900;
+}
+
+.mat-subheading-1{
+    font-weight: 900;
+}
+
+.stripes {
+    position: absolute;
+    top: 300vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.mascot {
+    position: absolute;
+    top: 330vh;
+    right: 0;
+    height: 40vh;
+    margin-right: 50px;
 }

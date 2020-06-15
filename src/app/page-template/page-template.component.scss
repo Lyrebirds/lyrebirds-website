@@ -8,6 +8,11 @@
     background-color: transparent;
 }
 
+.active div{
+    color: $warn;
+    text-decoration: underline;
+}
+
 .toolbar-logo {
     height: 40px;
     padding-left: 100px;

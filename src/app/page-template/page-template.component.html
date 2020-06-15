@@ -5,7 +5,8 @@
     </div>
     <div fxFlex></div>
     <div style="align-self: flex-end;">
-        <a class="menu-item" mat-button [routerLink]="[ page.route | localize ]" *ngFor="let page of pages"
+        <a class="menu-item" mat-button [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active']"
+            [routerLink]="[ page.route | localize ]" *ngFor="let page of pages"
             [ngClass.gt-sm]="{ 'button-hover': !scrolled }">
             <div class="mat-button">{{ page.name | translate }}</div>
         </a>
