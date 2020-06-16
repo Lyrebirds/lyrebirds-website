@@ -9,7 +9,7 @@ $config: mat-typography-config();
 
 .front-page-card{
     position: unset;
-    height: inherit;
+    //height: inherit;
     padding: 40px 80px 40px 80px;
     max-width: 700px !important;
 }
@@ -40,9 +40,10 @@ $config: mat-typography-config();
 }
 
 .front-page-image {
-    height: 1px;
+    height: auto;
     object-fit: cover;
     max-width: 700px !important;
+    //height: 2px;
 }
 
 .front-page-button {

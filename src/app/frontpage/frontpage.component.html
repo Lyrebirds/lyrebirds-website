@@ -2,7 +2,7 @@
     <app-hero [heroPath]="'FRONT.HERO.IMAGE'"></app-hero>
     <div class="front-page-page" fxLayout="column" fxLayoutAlign="space-evenly center">
         <div fxFlex></div>
-        <div fxLayout="row wrap" fxLayoutAlign="center stretch">
+        <div fxLayout="row wrap" fxLayoutAlign="center stretch" style="padding: 0 50px 0 50px;">
             <mat-card fxFlex class="front-page-card background-accent">
                 <mat-card-header>
                     <mat-card-title class="mat-title">
@@ -50,10 +50,10 @@
             </mat-card>
         </div>
         <div style="height: 10px;"></div>
-        <div fxLayout="row wrap" fxLayoutAlign="center stretch">
-            <img fxFlex class="front-page-image" src="/assets/img/stocks.jpg" alt="tablet" #tabletImage>
+        <div fxLayout="row wrap" fxLayoutAlign="center stretch" style="padding: 0 50px 0 50px;">
+            <img fxFlex class="front-page-image" src="/assets/img/stocks.jpg" alt="tablet">
             <div style="width: 10px;"></div>
-            <mat-card fxFlex #aboutCard class="front-page-card no-shadow">
+            <mat-card fxFlex class="front-page-card no-shadow">
                 <mat-card-header>
                     <mat-card-title class="mat-title">
                         ABOUT LYREBIRDS
