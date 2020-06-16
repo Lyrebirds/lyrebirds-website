@@ -1,224 +1,226 @@
 <app-page-template>
     <app-hero [heroPath]="'FRONT.HERO.IMAGE'"></app-hero>
     <div class="front-page-page" fxLayout="column" fxLayoutAlign="space-evenly center">
-        <div style="height: 50px;"></div>
-        <div fxFill fxLayout="row wrap" fxLayoutAlign="center start">
-            <div fxFlex="6"></div>
-            <div fxFlex="88" fxLayout="row wrap" fxLayoutAlign="center stretch">
-                <mat-card class="front-page-card background-accent" fxFlex="49">
-                    <mat-card-header>
-                        <mat-card-title class="mat-title">
-                            NEWSLETTER
-                        </mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content>
-                        <p class="mat-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non
-                            dictum hendrerit, augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius
-                            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse
-                            posuere, odio vehicula bibendum blandit, urna augue interdum lacus, eu aliquet ex est nec
-                            risus. Pellentesque tincidunt ultrices urna et sollicitudin.
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <button mat-raised-button color="warn" class="front-page-button">
-                            SIGN UP
-                        </button>
-                    </mat-card-actions>
-                </mat-card>
-                <div fxFlex="2"></div>
-                <mat-card class="front-page-card background-primary" fxFlex="49">
-                    <mat-card-header class="no-ident">
-                        <mat-card-title class="mat-title color-white">
-                            BROADCOM CABLE MODEM ERROR
-                        </mat-card-title>
-                        <mat-card-subtitle class="color-warn">
-                            03-02-2020
-                        </mat-card-subtitle>
-                    </mat-card-header>
-                    <mat-card-content>
-                        <p class="mat-body" style="color: white;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non
-                            dictum
-                            hendrerit, augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius natoque
-                            penatibus
-                            et
-                            magnis dis parturient montes, nascetur ridiculus mus.
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <button mat-raised-button color="warn" class="front-page-button">
-                            READ MORE
-                        </button>
-                    </mat-card-actions>
-                </mat-card>
-            </div>
-            <div fxFlex="6"></div>
-            <div fxFlex="100" class="divider"></div>
-            <div fxFlex="6"></div>
-            <div fxFlex="88" fxLayout="row wrap" fxLayoutAlign="center start">
-                <img class="front-page-image" src="/assets/img/stocks.jpg" alt="tablet" fxFlex="49" #tabletImage>
-                <div fxFlex="2"></div>
-                <div fxFlex="49" #aboutCard>
-                    <mat-card class="front-page-card no-shadow" style="padding-bottom: 10px;">
-                        <mat-card-header>
-                            <mat-card-title class="mat-title">
-                                ABOUT LYREBIRDS
-                            </mat-card-title>
-                        </mat-card-header>
-                        <mat-card-content>
-                            <p class="mat-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non
-                                dictum
-                                hendrerit, augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius
-                                natoque
-                                penatibus
-                                et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse posuere, odio
-                                vehicula
-                                bibendum
-                                blandit, urna augue interdum lacus, eu aliquet ex est nec risus. Pellentesque tincidunt
-                                ultrices
-                                urna et sollicitudin.
-                            </p>
-                        </mat-card-content>
-                        <mat-card-actions>
-                            <button mat-raised-button color="primary" class="front-page-button">
-                                READ MORE
-                            </button>
-                        </mat-card-actions>
-                    </mat-card>
-                </div>
-            </div>
-            <div fxFlex></div>
+        <div fxFlex></div>
+        <div fxLayout="row wrap" fxLayoutAlign="center stretch">
+            <mat-card fxFlex class="front-page-card background-accent">
+                <mat-card-header>
+                    <mat-card-title class="mat-title">
+                        NEWSLETTER
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="mat-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non
+                        dictum hendrerit, augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius
+                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse
+                        posuere, odio vehicula bibendum blandit, urna augue interdum lacus, eu aliquet ex est nec
+                        risus. Pellentesque tincidunt ultrices urna et sollicitudin.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="warn" class="front-page-button">
+                        SIGN UP
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+            <div style="width: 10px;"></div>
+            <mat-card fxFlex class="front-page-card background-primary">
+                <mat-card-header class="no-ident">
+                    <mat-card-title class="mat-title color-white">
+                        BROADCOM CABLE MODEM ERROR
+                    </mat-card-title>
+                    <mat-card-subtitle class="color-warn">
+                        03-02-2020
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="mat-body" style="color: white;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non
+                        dictum
+                        hendrerit, augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius natoque
+                        penatibus.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="warn" class="front-page-button">
+                        READ MORE
+                    </button>
+                </mat-card-actions>
+            </mat-card>
         </div>
-        <div style="height: 50px;"></div>
+        <div style="height: 10px;"></div>
+        <div fxLayout="row wrap" fxLayoutAlign="center stretch">
+            <img fxFlex class="front-page-image" src="/assets/img/stocks.jpg" alt="tablet" #tabletImage>
+            <div style="width: 10px;"></div>
+            <mat-card fxFlex #aboutCard class="front-page-card no-shadow">
+                <mat-card-header>
+                    <mat-card-title class="mat-title">
+                        ABOUT LYREBIRDS
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="mat-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, nunc non
+                        dictum
+                        hendrerit, augue lacus interdum diam, non bibendum neque ante ac erat. Orci varius
+                        natoque
+                        penatibus
+                        et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse posuere, odio
+                        vehicula
+                        bibendum
+                        blandit, urna augue interdum lacus, eu aliquet ex est nec risus. Pellentesque tincidunt
+                        ultrices
+                        urna et sollicitudin.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" class="front-page-button">
+                        READ MORE
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex></div>
     </div>
-    <div class="front-page-page image-background" style="background-image: url('/assets/img/computer-coffee.jpg');"
-        fxLayout="column" fxLayoutAlign="center center">
-        <div fxLayout="column" fxLayoutAlign="center center">
-            <h1 class="mat-title center color-white" fxFlex>
+    <div class="front-page-page image-background" [ngStyle]="{backgroundImage:'url(/assets/img/computer-coffee.jpg)'}"
+        fxLayout="column" fxLayoutAlign="space-between center">
+        <div fxFlex></div>
+        <div class="front-page-service-container" fxLayout="column" fxLayoutAlign="center center">
+            <h1 class="mat-title color-white">
                 SERVICES
             </h1>
-            <p class="mat-body color-white services-paragraph" fxFlex>
+            <p class="mat-body color-white services-paragraph">
                 Our services are always adjusted to fit the requirements of our clients, but here you can read about
                 some of the areas we can help you with.<br>
                 If you have any questions or specific needs, feel free to
                 contact us!
             </p>
-            <div fxLayout="row" fxLayoutAlign="center center">
-                <div fxFlex="5"></div>
-                <mat-card class="front-page-card-2 background-accent" fxFlex>
-                    <mat-card-header>
-                        <mat-card-title class="mat-title">
-                            Technology Management
-                        </mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content>
-                        <p class="mat-body">
-                            Most attacks on security will explait publicly known vulnerabilities, and could have been
-                            prevented by a timely reaction to newly disclosed vulnerabilities.
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
-                        <button mat-raised-button color="primary" class="front-page-button">
-                            READ MORE
-                        </button>
-                    </mat-card-actions>
-                </mat-card>
-                <div fxFlex="1"></div>
-                <mat-card class="front-page-card-2 background-accent" fxFlex>
-                    <mat-card-header>
-                        <mat-card-title class="mat-title">
-                            Technology Management
-                        </mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content>
-                        <p class="mat-body">
-                            Most attacks on security will explait publicly known vulnerabilities, and could have been
-                            prevented by a timely reaction to newly disclosed vulnerabilities.
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
-                        <button mat-raised-button color="primary" class="front-page-button">
-                            READ MORE
-                        </button>
-                    </mat-card-actions>
-                </mat-card>
-                <div fxFlex="1"></div>
-                <mat-card class="front-page-card-2 background-accent" fxFlex>
-                    <mat-card-header>
-                        <mat-card-title class="mat-title">
-                            Technology Management
-                        </mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content>
-                        <p class="mat-body">
-                            Most attacks on security will explait publicly known vulnerabilities, and could have been
-                            prevented by a timely reaction to newly disclosed vulnerabilities.
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
-                        <button mat-raised-button color="primary" class="front-page-button">
-                            READ MORE
-                        </button>
-                    </mat-card-actions>
-                </mat-card>
-                <div fxFlex="1"></div>
-                <mat-card class="front-page-card-2 background-accent" fxFlex>
-                    <mat-card-header>
-                        <mat-card-title class="mat-title">
-                            Technology Management
-                        </mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content>
-                        <p class="mat-body">
-                            Most attacks on security will explait publicly known vulnerabilities, and could have been
-                            prevented by a timely reaction to newly disclosed vulnerabilities.
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
-                        <button mat-raised-button color="primary" class="front-page-button">
-                            READ MORE
-                        </button>
-                    </mat-card-actions>
-                </mat-card>
-                <div fxFlex="5"></div>
+        </div>
+        <div fxFlex class="front-page-service-card-container" fxLayout="row" fxLayoutAlign="center center">
+            <div fxFlex="5"></div>
+            <mat-card fxFlex class="front-page-card-2 background-accent" fxLayout="column"
+                fxLayoutAlign="center center">
+                <mat-card-header>
+                    <mat-card-title class="mat-title" style="text-align: center; margin-top: 30px;">
+                        Technology Management
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="mat-body" style="text-align: center;">
+                        Most attacks on security will explait publicly known vulnerabilities, and could have been
+                        prevented by a timely reaction to newly disclosed vulnerabilities.
+                    </p>
+                </mat-card-content>
+                <div fxFlex></div>
+                <mat-card-actions fxLayoutAlign="center center" style="margin-bottom: 30px;">
+                    <button mat-raised-button color="primary" class="front-page-button">
+                        READ MORE
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+            <div fxFlex="1"></div>
+            <mat-card fxFlex class="front-page-card-2 background-accent" fxLayout="column"
+                fxLayoutAlign="center center">
+                <mat-card-header>
+                    <mat-card-title class="mat-title" style="text-align: center;">
+                        Technology Management
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="mat-body" style="text-align: center;">
+                        Most attacks on security will explait publicly known vulnerabilities, and could have been
+                        prevented by a timely reaction to newly disclosed vulnerabilities.
+                    </p>
+                </mat-card-content>
+                <div fxFlex></div>
+                <mat-card-actions fxLayoutAlign="center center">
+                    <button mat-raised-button color="primary" class="front-page-button">
+                        READ MORE
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+            <div fxFlex="1"></div>
+            <mat-card fxFlex class="front-page-card-2 background-accent" fxLayout="column"
+                fxLayoutAlign="center center">
+                <mat-card-header>
+                    <mat-card-title class="mat-title" style="text-align: center;">
+                        Technology Management
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="mat-body" style="text-align: center;">
+                        Most attacks on security will explait publicly known vulnerabilities, and could have been
+                        prevented by a timely reaction to newly disclosed vulnerabilities.
+                    </p>
+                </mat-card-content>
+                <div fxFlex></div>
+                <mat-card-actions fxLayoutAlign="center center">
+                    <button mat-raised-button color="primary" class="front-page-button">
+                        READ MORE
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+            <div fxFlex="1"></div>
+            <mat-card fxFlex class="front-page-card-2 background-accent" fxLayout="column"
+                fxLayoutAlign="center center">
+                <mat-card-header>
+                    <mat-card-title class="mat-title" style="text-align: center;">
+                        Technology Management
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="mat-body" style="text-align: center;">
+                        Most attacks on security will explait publicly known vulnerabilities, and could have been
+                        prevented by a timely reaction to newly disclosed vulnerabilities.
+                    </p>
+                </mat-card-content>
+                <div fxFlex></div>
+                <mat-card-actions fxLayoutAlign="center center">
+                    <button mat-raised-button color="primary" class="front-page-button">
+                        READ MORE
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+            <div fxFlex="5"></div>
+        </div>
+        <div fxFlex></div>
+    </div>
+    <div class="front-page-page" fxLayout="row" fxLayoutAlign="space-between center">
+        <div class="stripes-container">
+            <img class="stripes" src="/assets/img/stripes-high-res-2.png">
+        </div>
+        <div fxFlex="10"></div>
+        <div fxFlex="20">
+            <h1 class="mat-title">
+                CONTACT
+            </h1>
+            <p class="mat-body front-page-contact-body">
+                Whether you have questions about our services, your own security, or otherwise, feel free to write
+                us an
+                email or give us a call.
+            </p>
+            <div style="height: 20px;"></div>
+            <h1 class="mat-subheading-1">
+                contact@lyrebirds.dk
+            </h1>
+            <h1 class="mat-subheading-1">
+                +45 12 34 56 78
+            </h1>
+            <div fxLayout="row">
+                <a href="https://www.linkedin.com/company/lyrebirds">
+                    <fa-icon style="font-size: 3em; color: rgb(0, 119, 181);" [icon]="['fab', 'linkedin']">
+                    </fa-icon>
+                </a>
+                <div style="width: 15px;"></div>
+                <a href="https://twitter.com/lyrebirds_dk">
+                    <fa-icon style="font-size: 3em; color: rgb(29, 161, 242);" [icon]="['fab', 'twitter']">
+                    </fa-icon>
+                </a>
             </div>
         </div>
-    </div>
-    <div class="front-page-page" fxLayout="row wrap" fxLayoutAlign=" center">
-        <img class="stripes" src="/assets/img/stripes-high-res.png">
-        <img class="mascot" src="/assets/img/mascot.png">
         <div fxFlex="20"></div>
-        <h1 fxFlex="80" class="mat-title">
-            CONTACT
-        </h1>
-        <div fxFlex="20"></div>
-        <p class="mat-body front-page-contact-body" fxFlex>
-            Whether you have questions about our services, your own security, or otherwise, feel free to write us an
-            email or give us a call.
-        </p>
-        <div fxFill></div>
-        <div style="height: 20px;"></div>
-        <div fxFlex=20></div>
-        <h1 fxFlex class="mat-subheading-1">
-            contact@lyrebirds.dk
-        </h1>
-        <div fxFill></div>
-        <div fxFlex=20></div>
-        <h1 fxFlex class="mat-subheading-1">
-            +45 12 34 56 78
-        </h1>
-        <div fxFill></div>
-        <div fxFlex=20></div>
-        <a href="https://www.linkedin.com/company/lyrebirds">
-            <fa-icon style="font-size: 3em; color: rgb(0, 119, 181);" [icon]="['fab', 'linkedin']">
-            </fa-icon>
-        </a>
-        <div style="width: 15px;"></div>
-        <a href="https://twitter.com/lyrebirds_dk">
-            <fa-icon style="font-size: 3em; color: rgb(29, 161, 242);" [icon]="['fab', 'twitter']"></fa-icon>
-        </a>
-        <div fxFill></div>
+        <img fxFlex="30" class="mascot" src="/assets/img/mascot.png">
+        <div fxFlex="10"></div>
     </div>
 </app-page-template>

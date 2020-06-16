@@ -10,13 +10,15 @@ $config: mat-typography-config();
 .front-page-card{
     position: unset;
     height: inherit;
-    padding: 50px 100px 50px 100px;
+    padding: 40px 80px 40px 80px;
+    max-width: 700px !important;
 }
 
 .front-page-card-2{
     position: unset;
-    height: inherit;
+    height: 100%;
     padding: 25px 50px 25px 50px;
+    z-index: 9;
 }
 
 .front-page-contact-body{
@@ -40,7 +42,7 @@ $config: mat-typography-config();
 .front-page-image {
     height: 1px;
     object-fit: cover;
-    //margin-bottom: -7px!important;
+    max-width: 700px !important;
 }
 
 .front-page-button {
@@ -68,8 +70,10 @@ $config: mat-typography-config();
 }
 
 .image-background{
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: -2;
 }
 .image-background > .mat-h1 {
     margin-top: 50px;
@@ -99,17 +103,32 @@ $config: mat-typography-config();
     font-weight: 900;
 }
 
-.stripes {
+.stripes-container{
     position: absolute;
-    top: 300vh;
     width: 100%;
+    z-index: -1;
+    overflow-y: hidden;
+    height: 130vh;
+    bottom: 0;
+}
+
+.front-page-service-card-container{
+    min-height: 500px;
+    margin-bottom: 50px;
+}
+
+.front-page-service-container{
+    margin-top: 50px;
+}
+
+.stripes {
+    top: 0;
+    height: 100%;
     z-index: -1;
 }
 
 .mascot {
-    position: absolute;
-    top: 330vh;
+    position: relative;
     right: 0;
-    height: 40vh;
     margin-right: 50px;
 }
