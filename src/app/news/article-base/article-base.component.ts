@@ -1,5 +1,6 @@
-import { Component, Input, Injectable } from '@angular/core';
+import { Component, Input, Injectable, Directive } from '@angular/core';
 
+@Directive()
 export class ArticleBaseComponent {
   @Input() dedicated: boolean = true;
   route: string;
